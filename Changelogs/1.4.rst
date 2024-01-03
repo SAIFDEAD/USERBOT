@@ -20,7 +20,7 @@ Changelog 📃 :
     - **Core:** Changed HellBot's core once again for future updates.
      *In future:* Assistant, Voice Chat Player, and many more.
     - **Custom Plugins Repo:** You can now choose your own plugins repo. Add an environment variable ``GIT_REPO`` with your repo name as value.
-     *For Example:* ``GIT_REPO`` = ``HellBoy-OP/Plugins``
+     *For Example:* ``GIT_REPO`` = ``SAUFDEAD/HELPBOT``
 * **Bugs Fixes:**
     - **Remove BG:** ``.rmbg`` command was not uploading output image.
      Now it is fixed and improved for better use.
