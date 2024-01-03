@@ -30,7 +30,9 @@
 [![Telegram Group](https://img.shields.io/badge/Telegram-Group-white?&style=social&logo=telegram)](https://t.me/SAIFHELPGC)
 [![Telegram Channel](https://img.shields.io/badge/Telegram-Channel-white?&style=social&logo=telegram)](https://t.me/SAIFALLBOT)
 
-[[Ɖιcтαтσя ].(https://img.shields.io/badge/Telegram-Channel-white?&style=social&logo=telegram)(https://t.me/SAIF_DICTATOR)]
+<p align="center">
+<a href="https://telegram.me/SAIF_DICTATOR"><img src="https://img.shields.io/badge/-OWNER%20-blue.svg?style=for-the-badge&logo=Telegram"></a>
+</p>
 
 [![Documentation](https://img.shields.io/badge/Documentations-docs.SAIFDEAD.tech-white?&style=social&logo=gitbook)](https://SAIFDEAD.tech)
 
@@ -45,7 +47,9 @@
 
 - NOTE: Click on deploy button from your fork only.
 - 
-- [![Deploy](https://dashboard.heroku.com/new?template=https://github.com/SAIFDEAD/USERBOT))]
+-<p align="center">
+<a href="https://dashboard.heroku.com/new?template=https://github.com/SAIFDEAD/USERBOT"> <img src="https://img.shields.io/badge/Deploy%20On%20Heroku-darkgreen?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
+
 ------
 ## Variables
 
