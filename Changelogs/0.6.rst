@@ -1,5 +1,5 @@
 ========================
-HellBot Version Update
+Userbot Version Update
 ========================
 
 +-------------------------+
@@ -16,9 +16,9 @@ Changelog 📃 :
 * Increased speed of ``Autowaifu``.
 * Bugs fixes.
 
-Report Bugs and Suggestions in comments of `this post <https://t.me/its_hellbot/38>`_
+Report Bugs and Suggestions in comments of `this post <https://t.me/SAIFALLBOT/4>`_
 =====================================================================================
 
-📌 To update your Hêllẞø† do ``.update build``
+📌 To update your Userbot do ``.update build``
 
-:Regards: `@ForGo10God <https://t.me/forgo10god>`_
+:Regards: `Dead <https://t.me/DRIC01>`_
