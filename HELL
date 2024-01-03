@@ -21,7 +21,7 @@ _library () {
 
 _starter () {
     local hellpath
-    hellpath="HELPBOT.zip"
+    hellpath="hell.zip"
     echo "••• DOWNLOADING SAIFBOTZ •••"
     wget -q $(_hell_zip) -O "$hellpath"
     HELLPATH=$(zipinfo -1 "$hellpath" | grep -v "/.");
