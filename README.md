@@ -35,38 +35,15 @@
 [![Documentation](https://img.shields.io/badge/Documentations-docs.SAIFDEAD.tech-white?&style=social&logo=gitbook)](https://SAIFDEAD.tech)
 
 ------
-## Deploy 🚀
 
-- [![Railway](https://img.shields.io/badge/SAIFDEAD-Deploy%20On%20Railway-black?style=for-the-badge&logo=railway)](#Deploy-on-Railway)
 
-- [![Locally](https://img.shields.io/badge/SAIFDEAD-Deploy%20Locally-black?style=for-the-badge&logo=linux)](#Deploy-Locally)
-
-------
-## YouTube 📺
-- [![YouTube Channel Subscribers](https://img.shields.io/youtube/channel/subscribers/UC7Jr0FnRApx5nJASUfOjqJQ?style=social)](https://youtube.com/channel/UC7Jr0FnRApx5nJASUfOjqJQ)
-- [![YouTube Video Views](https://img.shields.io/youtube/views/leMyoT-qDH4?label=Tutorial+•+Heroku+•&style=social)](https://youtu.be/leMyoT-qDH4)
-
-------
 ## Deploy To Heroku
 - Get All The Necessary Variables And Deploy To Heroku.
 - Some Mandatory Variables Are listed [Here](#Variables).
 - Fork & Star this repo.
 - Click on below button to access deploy page.
 - NOTE: Click on deploy button from your fork only.
-- [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
-
-------
-## Deploy on Railway
-- Get all the necessary variables and deploy on railway.
-- Every mandatory variables are listed [Here](#Variables).
-- Fork & Star this repo.
-- Some commands might not work properly on railway.
-- Due to railway's privacy policy I removed railway button from repo. But you can get deploy guide in our [@HellBot_Chat](https://t.me/hellbot_chat). Type `#railway` to get deploy guide.
-
-------
-## Deploy Locally
-- Get detailed guide at [docs.hellbot.tech](https://docs.hellbot.tech/hellbot-userbot/deploy-locally)
-
+- [![Deploy]([https://www.herokucdn.com/deploy/button.svg](https://dashboard.heroku.com/new?template=https://github.com/SAIFDEAD/USERBOT))]
 ------
 ## Variables
 
@@ -76,71 +53,6 @@
 - `BOT_TOKEN`  =  Make A Bot From [@BotFather](https://t.me/botfather) and paste it's token.
 - `HANDLER`  =  Your command handler.
 - `DATABASE_URL`  =  A Postgresql database url.
-
-`For all config variables and their detailed explanation go to` [docs.hellbot.tech](https://docs.hellbot.tech/hellbot-userbot/config-variables)
-
-------
-## HellBot Session
-
-### Repl
-- Open Repl Link.
-- Click on Green Play Button.
-- Wait for requirements to finish.
-- Do human verification.
-- Select the type of session.
-    - HellBot Session
-        - Fill API ID, API HASH, Phone number (with country code).
-        - Paste the OTP received on Telegram.
-        - If You have Enabled 2-Step Verification then fill your password.
-        - Your HellBot Session Will be saved in your Telegram Saved Message.
-    - Telethon
-        - Fill API ID, API HASH, Phone number (with country code).
-        - Paste the OTP received on Telegram.
-        - If You have Enabled 2-Step Verification then fill your password.
-        - Your Telethon Session Will be saved in your Telegram Saved Message.
-    - Pyrogram
-        - Fill API ID, API HASH, Phone number (with country code).
-        - Paste the OTP received on Telegram.
-        - If You have Enabled 2-Step Verification then fill your password.
-        - Your Pyrogram Session will be saved in your Telegram Saved Message.
-    - Instagram
-        - Fill instagram username and password.
-        - If asked for OTP check yout email and fill up the OTP from there.
-        - Your Instagram Session will be displayed on the screen.
-        - Copy it carefully and Do Not Share With Anyone!
-        - Using a fake account is recommended.
-
-- [![Replit](https://img.shields.io/badge/HellBot-Run%20On%20ReplIT-black?style=for-the-badge&logo=replit)](https://replit.com/@TheHellBot/HellBot?v=1)
-
-### Terminal
-- Open the terminal.
-- Paste this code.
-
-`pkg install python wget -y && pip install telethon && pip install pyrogram && pip install instagrapi && wget https://raw.githubusercontent.com/The-HellBot/HellBot/master/hell_string.py && python3 hell_string.py`
-
-- Select the type of session.
-    - HellBot Session
-        - Fill API ID, API HASH, Phone number (with country code).
-        - Paste the OTP received on Telegram.
-        - If You have Enabled 2-Step Verification then fill your password.
-        - Your Telethon Session Will be saved in your Telegram Saved Message.
-    - Telethon
-        - Fill API ID, API HASH, Phone number (with country code).
-        - Paste the OTP received on Telegram.
-        - If You have Enabled 2-Step Verification then fill your password.
-        - Your Telethon Session Will be saved in your Telegram Saved Message.
-    - Pyrogram
-        - Fill API ID, API HASH, Phone number (with country code).
-        - Paste the OTP received on Telegram.
-        - If You have Enabled 2-Step Verification then fill your password.
-        - Your Pyrogram Session will be saved in your Telegram Saved Message.
-    - Instagram
-        - Fill instagram username and password.
-        - If asked for OTP check yout email and fill up the OTP from there.
-        - Your Instagram Session will be displayed on the screen.
-        - Copy it carefully and Do Not Share With Anyone!
-        - Using a fake account is recommended.
-- Note that Termux Doesn't show passwords when filled. Just paste your password and hit enter.
 
 ------
 ## Disclaimer
@@ -163,21 +75,3 @@
     Copyright (C) 2023 <a href="https://github.com/The-HellBot">The-HellBot</a>
 </h4>
 
-Project [HellBot](https://github.com/The-HellBot/HellBot) is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-You should have received a copy of the GNU General Public License
-along with this program. If not, see <https://www.gnu.org/licenses/>.
-
-------
-## Credits
-
-- 💖 All the Dependencies
-- 💖 [Team HellBot](https://github.com/The-HellBot)
-
-------
