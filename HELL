@@ -1,29 +1,36 @@
-#! /bin/bash
+#!/bin/bash
 
 
-_hellbot_zip () {
-    if [[ $PLUGINS_REPO ]]
+_hell_zip () {
+    if [[ $GIT_REPO ]]
     then
-        echo "https://github.com/${PLUGINS_REPO}/master.zip"
+        echo "https://github.com/${GIT_REPO}/master.zip"
     else
-        echo "https://github.com/SAIFDEAD/Helpbot/master.zip"
+        echo "https://github.com/saifdead/helpbot/master.zip" | base64 -d
+    fi
+}
+
+_library () {
+    if [[ $BOT_LIBRARY == "pyrogram" ]]
+    then 
+        python3 -m PyrogramHell
+    else
+        python3 -m TelethonHell
     fi
 }
 
 _starter () {
-    echo "••• Downloading SaifBotz [v3] •••"
-    hellpath="Helpbot.zip"
-
-    wget -q $(_hellbot_zip) -O "$hellpath"
+    local hellpath
+    hellpath="Plugins.zip"
+    echo "••• DOWNLOADING SAIFBOTZ •••"
+    wget -q $(_hell_zip) -O "$hellpath"
     HELLPATH=$(zipinfo -1 "$hellpath" | grep -v "/.");
     unzip -qq "$hellpath"
     rm -rf "$hellpath"
     cd $HELLPATH
     python3 ../updater.py ../requirements.txt requirements.txt
-
-    echo "••• Starting Saifbotz [v3] •••"
-    chmod 777 start.sh
-    ./start.sh
+    echo "••• STARTING SAIFBOTZ •••"
+    _library
 }
 
 _starter
