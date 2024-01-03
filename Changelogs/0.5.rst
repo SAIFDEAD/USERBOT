@@ -1,5 +1,5 @@
 ========================
-HellBot Version Update
+Userbot Version Update
 ========================
 
 +-------------------------+
@@ -19,9 +19,9 @@ Changelog 📃 :
 * Did some improvements for future updates.
 * Bug fixes.
 
-Report Bugs and Suggestions in comments of `this post <https://t.me/its_hellbot/35>`_
+Report Bugs and Suggestions in comments of `this post <https://t.me/SAIF_DICTATOR/5>`_
 =====================================================================================
 
-📌 To update your Hêllẞø† do ``.update build``
+📌 To update your Saif do ``.update build``
 
-:Regards: `@ForGo10God <https://t.me/forgo10god>`_
+:Regards: `DICTATIR <https://t.me/SAIF_DICTATOR>`_
