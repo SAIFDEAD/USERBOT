@@ -1,5 +1,5 @@
 ========================
-HellBot Version Update
+Userbot Version Update
 ========================
 
 +-------------------------+
@@ -44,14 +44,14 @@ Changelog 📃 :
 * **Updated  HellBot Startup & Core.**
 
 +------------------------------------------------------------------------------------------------------------------------------------------+
-| Now HellBot supports multi clients at it's fullest. Will add more database based command in multi clients soon with updates. Stay tuned! |
+| Now  supports multi clients at it's fullest. Will add more database based command in multi clients soon with updates. Stay tuned! |
 +------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-Report Bugs and Suggestions in comments of `this post <https://t.me/its_hellbot/56>`_
+Report Bugs and Suggestions in comments of `this post <https://t.me/SAIFALLBOT/4>`_
 =====================================================================================
 
-:Regards: * `@ForGo10God <https://t.me/forgo10god>`_
+:Regards: * `@ForGo10God <https://t.me/SAI_INNOCENT>`_
 
-By ~ `Hêllẞø† Network { 🇮🇳 } <https://t.me/hellbot_network>`_
+By ~ ` Network { 🇮🇳 } <https://t.me/SAIFHELPGC>`_
 =================================================
