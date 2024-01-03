@@ -30,7 +30,7 @@
 [![Telegram Group](https://img.shields.io/badge/Telegram-Group-white?&style=social&logo=telegram)](https://t.me/SAIFHELPGC)
 [![Telegram Channel](https://img.shields.io/badge/Telegram-Channel-white?&style=social&logo=telegram)](https://t.me/SAIFALLBOT)
 
-[![Ɖιcтαтσя ].(https://img.shields.io/badge/Telegram-Channel-white?&style=social&logo=telegram).].(https://t.me/SAIF_DICTATOR).
+[[Ɖιcтαтσя ].(https://img.shields.io/badge/Telegram-Channel-white?&style=social&logo=telegram)(https://t.me/SAIF_DICTATOR)]
 
 [![Documentation](https://img.shields.io/badge/Documentations-docs.SAIFDEAD.tech-white?&style=social&logo=gitbook)](https://SAIFDEAD.tech)
 
@@ -42,8 +42,10 @@
 - Some Mandatory Variables Are listed [Here](#Variables).
 - Fork & Star this repo.
 - Click on below button to access deploy page.
+
 - NOTE: Click on deploy button from your fork only.
-- [![Deploy]([https://www.herokucdn.com/deploy/button.svg](https://dashboard.heroku.com/new?template=https://github.com/SAIFDEAD/USERBOT))]
+- 
+- [![Deploy](https://dashboard.heroku.com/new?template=https://github.com/SAIFDEAD/USERBOT))]
 ------
 ## Variables
 
