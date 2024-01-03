@@ -1,5 +1,5 @@
 ========================
-HellBot Version Update
+UserBot Version Update
 ========================
 
 +-------------------------+
@@ -9,7 +9,7 @@ HellBot Version Update
 Changelog 📃 :
 ~~~~~~~~~~~~~~
 
-* **Stability:** HellBot is now more stable than ever. Less crash, zero downtime, smoother performance, etc.
+* **Stability:** Saif Userbot is now more stable than ever. Less crash, zero downtime, smoother performance, etc.
 * **Build:** 
     - *Python - 3.11.0*
     - *Updated Dependencies*
@@ -17,7 +17,7 @@ Changelog 📃 :
     - *New asyncio updater*
     - *Custom repo support*
 * **Major Updates:**
-    - **Core:** Changed HellBot's core once again for future updates.
+    - **Core:** Changed  core once again for future updates.
      *In future:* Assistant, Voice Chat Player, and many more.
     - **Custom Plugins Repo:** You can now choose your own plugins repo. Add an environment variable ``GIT_REPO`` with your repo name as value.
      *For Example:* ``GIT_REPO`` = ``SAUFDEAD/HELPBOT``
@@ -52,7 +52,7 @@ Changelog 📃 :
 Report Bugs and Suggestions in comments of `this post <https://t.me/its_hellbot/66>`_
 =====================================================================================
 
-:Regards: * `@ForGo10God <https://t.me/forgo10god>`_
+:Regards: * `@SAI_INNOCENT <https://t.me/SAI_INNOCENT>`_
 
-By ~ `Hêllẞø† Network { 🇮🇳 } <https://t.me/hellbot_network>`_
-=================================================
+By ~ ` Network {⚡} <https://t.me/SAIFALLBOT>`_
+================================================
