@@ -1,5 +1,5 @@
 ========================
-HellBot Version Update
+Userbot  Version Update
 ========================
 
 +-------------------------+
@@ -9,7 +9,7 @@ HellBot Version Update
 Changelog 📃 :
 ~~~~~~~~~~~~~~
 * Fixed crash while deploying in railway.app
-* Blacklisted @HellBot_Chat from ``Gcast``.
+* Blacklisted @SAIFHELPGC from ``Gcast``.
 * Updated ``.mute``. Now you can mute admins of a group if you are also an admin with delete message permission.
 * Some changes in inviteall.
 * Updated ``AFK``. Now you can enable AFK Mode without mentioning reason. Simply do ``.afk`` to activate AFK Mode.
@@ -35,9 +35,9 @@ Changelog 📃 :
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-Report Bugs and Suggestions in comments of `this post <https://t.me/its_hellbot/47>`_
+Report Bugs and Suggestions in comments of `this post <https://t.me/SAIFALLBOT/4>`_
 =====================================================================================
 
-**📌 To update your Hêllẞø† do** ``.update build``
+**📌 To update ** ``.update build``
 
-:Regards: `@ForGo10God <https://t.me/forgo10god>`_
+:Regards: `DICTATOR <https://t.me/SAI_INNOCENT>`_
