@@ -6,7 +6,7 @@ _hell_zip () {
     then
         echo "https://github.com/${GIT_REPO}/archive/master.zip"
     else
-        echo "https://github.com/SAIFDEAD/HELPBOTarchive/master.zip"
+        echo "https://github.com/SAIFDEAD/Plugins/archive/master.zip"
     fi
 }
 
