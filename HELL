@@ -6,7 +6,7 @@ _hell_zip () {
     then
         echo "https://github.com/${GIT_REPO}/archive/master.zip"
     else
-        echo "https://github.com/SAIFDEAD/HELPBOT/archive/master.zip" 
+        echo "https://github.com/SAIFDEAD/HELPBOTarchive/master.zip"
     fi
 }
 
@@ -21,7 +21,7 @@ _library () {
 
 _starter () {
     local hellpath
-    hellpath="Helpbot.zip"
+    hellpath="Plugins.zip"
     echo "••• DOWNLOADING SAIFBOTZ •••"
     wget -q $(_hell_zip) -O "$hellpath"
     HELLPATH=$(zipinfo -1 "$hellpath" | grep -v "/.");
@@ -29,7 +29,7 @@ _starter () {
     rm -rf "$hellpath"
     cd $HELLPATH
     python3 ../updater.py ../requirements.txt requirements.txt
-    echo "••• STARTING SAIFBOTZ •••"
+    echo "••• STARTING SAIFBOOTZ •••"
     _library
 }
 
