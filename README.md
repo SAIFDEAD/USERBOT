@@ -48,7 +48,7 @@
 - NOTE: Click on deploy button from your fork only.
 - 
 -<p align="center">
-<a href="https://dashboard.heroku.com/new?template=https://github.com/SAIFDEAD/USERBOT"> <img src="https://img.shields.io/badge/Deploy%20On%20Heroku-darkgreen?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
+<a href="https://dashboard.heroku.com/new?template=https://github.com/SAIFDEAD/SAIFDEAD"> <img src="https://img.shields.io/badge/Deploy%20On%20Heroku-darkgreen?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
 
 ------
 ## Variables
