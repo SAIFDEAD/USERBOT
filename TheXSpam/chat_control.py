@@ -1,4 +1,4 @@
-# 𝑪𝒐𝒑𝒚𝒓𝒊𝒈𝒉𝒕 𝑩𝒚 𝑨𝒍𝒕𝒓𝒐𝒏
+# 𝑪𝒐𝒑𝒚𝒓𝒊𝒈𝒉𝒕 𝑩𝒚 𝑆𝑎𝑖𝑓𝑑𝑒𝑎𝑑
 # 𝑨𝒍𝒍 𝑹𝒊𝒈𝒉𝒕𝒔 𝑹𝒆𝒔𝒆𝒓𝒗𝒆𝒅
 
 
@@ -15,10 +15,10 @@ from pyrogram.types import Message
 async def join(client: Client, message: Message):
     alt = message.text.split(" ")
     if len(alt) == 1:
-        return await message.reply_text("`Need a chat username or chat-id or invite link to join.`")
+        return await message.reply_text("`𝐍ᴇᴇᴅ 𝐀 𝐂ʜᴀᴛ 𝐔sᴇʀɴᴀᴍᴇ 𝐎ʀ 𝐂ʜᴀᴛ-𝐈ᴅ 𝐎ʀ 𝐈ɴᴠɪᴛᴇ 𝐋ɪɴᴋ 𝐓ᴏ 𝐉ᴏɪɴ.`")
     try:
         await client.join_chat(alt[1])
-        await message.reply_text(f"**Joined**")
+        await message.reply_text(f"**𝐉ᴏɪɴᴇᴅ**")
     except Exception as ex:
         await message.reply_text(f"**ERROR:** \n\n{str(ex)}")
   
@@ -33,14 +33,14 @@ async def leave(xspam: Client, message: Message):
             return
         try:
            await xspam.leave_chat(alt[1])
-           await message.reply_text(f"**Left Successfully ✅**")
+           await message.reply_text(f"**𝐋eft 𝐒uccessfully ✅**")
         except Exception as ex:
            await message.reply_text(f"**ERROR:** \n\n{str(ex)}")
     else:
         chat = message.chat.id
         ok = message.from_user.id
         if chat == ok:
-            return await message.reply_text(f"⚡ ᴜsᴀɢᴇ:\n !leave <chat username or id> or !leave [type in Group for Direct leave]")
+            return await message.reply_text(f" 🎀 ᴜsᴀɢᴇ:\n !leave <ᴄʜᴀᴛ ᴜsᴇʀɴᴀᴍᴇ ᴏʀ ɪᴅ> or !leave [ᴛʏᴘᴇ ɪɴ ɢʀᴏᴜᴘ ғᴏʀ ᴅɪʀᴇᴄᴛ ʟᴇᴀᴠᴇ]")
         elif chat in GROUP:
               return
         try:
