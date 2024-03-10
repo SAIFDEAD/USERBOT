@@ -19,7 +19,7 @@ async def raid(xspam: Client, message: Message):
             ok = await xspam.get_users(alt[2])
             id = ok.id
             if id in THE_ALTS:
-                  await message.reply_text("» ɴᴏ, ᴛʜɪꜱ ɢᴜʏ ɪꜱ ᴀʟᴛʀᴏɴ'ꜱ ᴏᴡɴᴇʀ")
+                  await message.reply_text("» ɴᴏ, ᴛʜɪꜱ ɢᴜʏ ɪꜱ ʏᴏᴜʀ ғᴀᴛʜᴇʀ ")
             elif id == OWNER_ID:
                   await message.reply_text("» ɴᴏ, ᴛʜɪꜱ ɢᴜʏ ɪꜱ ᴏᴡɴᴇʀ ᴏꜰ ᴛʜᴇ ʙᴏᴛꜱ.")
             elif id in SUDO_USERS:
@@ -39,7 +39,7 @@ async def raid(xspam: Client, message: Message):
             ok = await xspam.get_users(user_id)
             id = ok.id
             if id in THE_ALTS:
-                  await message.reply_text("» ɴᴏ, ᴛʜɪꜱ ɢᴜʏ ɪꜱ ᴀʟᴛʀᴏɴ'ꜱ ᴏᴡɴᴇʀ")
+                  await message.reply_text("» ɴᴏ, ᴛʜɪꜱ ɢᴜʏ ɪꜱ ʏᴏᴜʀ ғᴀᴛʜᴇʀ")
             elif id == OWNER_ID:
                   await message.reply_text("» ɴᴏ, ᴛʜɪꜱ ɢᴜʏ ɪꜱ ᴏᴡɴᴇʀ ᴏꜰ ᴛʜᴇ ʙᴏᴛꜱ.")
             elif id in SUDO_USERS:
@@ -55,7 +55,7 @@ async def raid(xspam: Client, message: Message):
                         await asyncio.sleep(0.3)
 
       else:
-          await message.reply_text("𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲: 𝐑𝐚𝐢𝐝\n  » .raid <ᴜꜱᴇʀɴᴀᴍᴇ ᴏꜰ ᴜꜱᴇʀ>\n  » .raid <ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴜꜱᴇʀ>")
+          await message.reply_text("ᴍᴏᴅᴜʟᴇ ɴᴀᴍᴇ: 𝐑𝐚𝐢𝐝\n  » .raid <ᴜꜱᴇʀɴᴀᴍᴇ ᴏꜰ ᴜꜱᴇʀ>\n  » .raid <ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴜꜱᴇʀ>")
 
 
 rusers = []
@@ -69,7 +69,7 @@ async def rraid(xspam: Client, message: Message):
           ok = await xspam.get_users(alt[1])
           id = ok.id
           if id in THE_ALTS:
-                await message.reply_text("» ɴᴏ, ᴛʜɪꜱ ɢᴜʏ ɪꜱ ᴀʟᴛʀᴏɴ'ꜱ ᴏᴡɴᴇʀ")
+                await message.reply_text("» ɴᴏ, ᴛʜɪꜱ ɢᴜʏ ɪꜱ ʏᴏᴜʀ ғᴀᴛʜᴇʀ")
           elif id == OWNER_ID:
                 await message.reply_text("» ɴᴏ, ᴛʜɪꜱ ɢᴜʏ ɪꜱ ᴏᴡɴᴇʀ ᴏꜰ ᴛʜᴇ ʙᴏᴛꜱ.")
           elif id in SUDO_USERS:
@@ -81,7 +81,7 @@ async def rraid(xspam: Client, message: Message):
       elif message.reply_to_message:
           user_id = message.reply_to_message.from_user.id
           if user_id in THE_ALTS:
-                await message.reply_text("» ɴᴏ, ᴛʜɪꜱ ɢᴜʏ ɪꜱ ᴀʟᴛʀᴏɴ'ꜱ ᴏᴡɴᴇʀ")
+                await message.reply_text("» ɴᴏ, ᴛʜɪꜱ ɢᴜʏ ɪꜱ ʏᴏᴜʀ ғᴀᴛʜᴇʀ")
           elif user_id == OWNER_ID:
                 await message.reply_text("» ɴᴏ, ᴛʜɪꜱ ɢᴜʏ ɪꜱ ᴏᴡɴᴇʀ ᴏꜰ ᴛʜᴇ ʙᴏᴛꜱ.")
           elif user_id in SUDO_USERS:
