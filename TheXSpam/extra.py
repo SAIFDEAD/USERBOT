@@ -9,12 +9,12 @@ from pyrogram import Client, filters
 from pyrogram.types import Message
 
 
-FIRST_TEXT = f"""★ 𝙏𝙝𝙚𝙓𝙎𝙥𝙖𝙢 𝙃𝙚𝙡𝙥 𝙈𝙚𝙣𝙪 ★
+FIRST_TEXT = f"""★ 𝗦𝗔𝗜𝗙 𝗨𝗦𝗘𝗥𝗕𝗢𝗧 𝗛𝗘𝗟𝗣 𝗠𝗘𝗡𝗨 ★
 
-**» ʙᴏᴛ ᴄᴏᴍᴍᴀɴᴅꜱ:** [ᴄʟɪᴄᴋ ʜᴇʀᴇ](https://t.me/AltronAds/11)
-**» ʀᴀɪᴅ ᴄᴏᴍᴍᴀɴᴅꜱ:** [ᴄʟɪᴄᴋ ʜᴇʀᴇ](https://t.me/AltronAds/12)
-**» ꜱᴘᴀᴍ ᴄᴏᴍᴍᴀɴᴅꜱ:** [ᴄʟɪᴄᴋ ʜᴇʀᴇ](https://t.me/AltronAds/13)
-**» ᴅᴍ ᴄᴏᴍᴍᴀɴᴅꜱ:** [ᴄʟɪᴄᴋ ʜᴇʀᴇ](https://t.me/AltronAds/14)"""
+**» 𝐀ʟʟ 𝐂ᴏᴍᴍᴀɴᴅ:** [ᴄʟɪᴄᴋ ʜᴇʀᴇ](https://t.me/AltronAds/11)
+**» 𝐌ᴜsɪᴄ:** [ᴄʟɪᴄᴋ ʜᴇʀᴇ](https://t.me/AltronAds/12)
+**» 𝐑ᴏʙᴏᴛ:** [ᴄʟɪᴄᴋ ʜᴇʀᴇ](https://t.me/)
+**» 𝐎ᴡɴᴇʀ:** [ᴄʟɪᴄᴋ ʜᴇʀᴇ](https://t.me/SAIF_DICTATOR)"""
 
 
 @Client.on_message(filters.user(SUDO_USERS) & filters.command(["help"], [".", "!", "/"]))
@@ -32,10 +32,10 @@ async def add_sudo(_, message: Message):
               await message.reply_text("» ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴜꜱᴇʀ !!")
               return
        elif HEROKU_APP_NAME is None:
-              await message.reply_text("`[HEROKU]:" "\nPlease Setup Your` **HEROKU_APP_NAME**")
+              await message.reply_text("`[HEROKU]:" "\nᴘʟᴇᴀsᴇ sᴇᴛᴜᴘ ʏᴏᴜʀ` **HEROKU_APP_NAME**")
               return
        elif HEROKU_API_KEY is None:
-              await message.reply_text("`[HEROKU]:" "\nPlease Setup Your` **HEROKU_API_KEY**")
+              await message.reply_text("`[HEROKU]:" "\nᴘʟᴇᴀsᴇ sᴇᴛᴜᴘ ʏᴏᴜʀ` **HEROKU_API_KEY**")
               return
        else:
               heroku = heroku3.from_key(HEROKU_API_KEY)
