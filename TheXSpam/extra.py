@@ -1,4 +1,4 @@
-# © @PyXen
+# © @SAIFDEAD
 
 import heroku3
 
@@ -11,10 +11,10 @@ from pyrogram.types import Message
 
 FIRST_TEXT = f"""★ 𝗦𝗔𝗜𝗙 𝗨𝗦𝗘𝗥𝗕𝗢𝗧 𝗛𝗘𝗟𝗣 𝗠𝗘𝗡𝗨 ★
 
-**» 𝐀ʟʟ 𝐂ᴏᴍᴍᴀɴᴅ:** [ᴄʟɪᴄᴋ ʜᴇʀᴇ](https://t.me/AltronAds/11)
-**» 𝐌ᴜsɪᴄ:** [ᴄʟɪᴄᴋ ʜᴇʀᴇ](https://t.me/AltronAds/12)
-**» 𝐑ᴏʙᴏᴛ:** [ᴄʟɪᴄᴋ ʜᴇʀᴇ](https://t.me/)
-**» 𝐎ᴡɴᴇʀ:** [ᴄʟɪᴄᴋ ʜᴇʀᴇ](https://t.me/SAIF_DICTATOR)"""
+**» 𝐀ʟʟ 𝐂ᴏᴍᴍᴀɴᴅ:** [𝐂ʟɪᴄᴋ ʜᴇʀᴇ](https://t.me/SAIFALLBOT/19)
+**» 𝐌ᴜsɪᴄ:** [𝐂ʟɪᴄᴋ ʜᴇʀᴇ](https://t.me/HINATA_N_BOT)
+**» 𝐑ᴏʙᴏᴛ:** [𝐂ʟɪᴄᴋ ʜᴇʀᴇ](https://t.me/NARUTO_X_ROBOT)
+**» 𝐎ᴡɴᴇʀ:** [𝐂ʟɪᴄᴋ](https://t.me/SAIF_DICTATOR)"""
 
 
 @Client.on_message(filters.user(SUDO_USERS) & filters.command(["help"], [".", "!", "/"]))
@@ -29,19 +29,19 @@ async def help(client: Client, message: Message):
 @Client.on_message(filters.user(OWNER_ID) & filters.command(["sudo"], ["/", ".", "!"]))
 async def add_sudo(_, message: Message):
        if not message.reply_to_message:
-              await message.reply_text("» ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴜꜱᴇʀ !!")
+              await message.reply_text("» 𝐑ᴇᴘʟʏ 𝐓ᴏ 𝐀 𝐔ꜱᴇʀ !!")
               return
        elif HEROKU_APP_NAME is None:
-              await message.reply_text("`[HEROKU]:" "\nᴘʟᴇᴀsᴇ sᴇᴛᴜᴘ ʏᴏᴜʀ` **HEROKU_APP_NAME**")
+              await message.reply_text("`[HEROKU]:" "\n𝐏ʟᴇᴀsᴇ 𝐒ᴇᴛᴜᴘ 𝐘ᴏᴜʀ` **HEROKU_APP_NAME**")
               return
        elif HEROKU_API_KEY is None:
-              await message.reply_text("`[HEROKU]:" "\nᴘʟᴇᴀsᴇ sᴇᴛᴜᴘ ʏᴏᴜʀ` **HEROKU_API_KEY**")
+              await message.reply_text("`[HEROKU]:" "\n𝐏ʟᴇᴀsᴇ 𝐒ᴇᴛᴜᴘ 𝐘ᴏᴜʀ` **HEROKU_API_KEY**")
               return
        else:
               heroku = heroku3.from_key(HEROKU_API_KEY)
               app = heroku.app(HEROKU_APP_NAME)
 
-       ok = await message.reply_text(f"» __ᴀᴅᴅɪɴɢ ᴜꜱᴇʀ ᴀꜱ ꜱᴜᴅᴏ...__")
+       ok = await message.reply_text(f"» 𝐀ᴅᴅɪɴɢ 𝐔ꜱᴇʀ 𝐀ꜱ 𝐒ᴜᴅᴏ...")
        heroku_var = app.config()
 
        sudousers = getenv("SUDO_USERS")
@@ -50,5 +50,5 @@ async def add_sudo(_, message: Message):
               newsudo = f"{sudousers} {target}"
        else:
               newsudo = f"{target}"
-       await ok.edit(f"» **ɴᴇᴡ ꜱᴜᴅᴏ ᴜꜱᴇʀ**: `{target}`\n» `ʀᴇsᴛᴀʀᴛɪɴɢ ʙᴏᴛ...`")
+       await ok.edit(f"» **𝐍ᴇᴡ 𝐒ᴜᴅᴏ 𝐔ꜱᴇʀ**: `{target}`\n» `ʀᴇsᴛᴀʀᴛɪɴɢ ʙᴏᴛ...`")
        heroku_var["SUDO_USERS"] = newsudo   
