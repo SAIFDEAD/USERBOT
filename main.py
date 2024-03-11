@@ -2,17 +2,11 @@ from config import API_ID, API_HASH, SESSIONS
 from pyrogram import Client, idle
 
 
-CLIENTS = []
-
-for SESSION in SESSIONS:
-    if SESSION:
-        client = Client(
-            session_name=SESSION,
-            api_id=API_ID,
-            api_hash=API_HASH,
-            plugins=dict(root="TheXSpam"),
-        )
-        CLIENTS.append(client)
+def load_plugins(plugin_name):
+    path = Path(f"TheXSpam/{plugin_name}.py")
+    spec = importlib.util.spec_from_file_location(f"TheXSpam{plugin_name}", path
+    sys.TheXSpam["TheXSpam." + plugin_name] = load
+    print("King X spam   has Imported " + plugin_name)
 
 
 if __name__ == "__main__":
