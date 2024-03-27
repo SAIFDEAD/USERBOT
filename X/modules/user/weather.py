@@ -28,16 +28,16 @@ async def get_weather(bot: Client, message: Message):
         except Exception:
             await message.edit("Failed to get the weather forecast")
 
-        if "we processed more than 1M requests today" in data:
-            await message.edit("`Sorry, we cannot process this request today!`")
+        if "ᴡᴇ ᴘʀᴏᴄᴇꜱꜱᴇᴅ ᴍᴏʀᴇ ᴛʜᴀɴ 𝟷M ʀᴇǫᴜᴇꜱᴛꜱ ᴛᴏᴅᴀʏ" in data:
+            await message.edit("`Sᴏʀʀʏ, ᴡᴇ ᴄᴀɴɴᴏᴛ ᴘʀᴏᴄᴇꜱꜱ ᴛʜɪꜱ ʀᴇǫᴜᴇꜱᴛ ᴛᴏᴅᴀʏ!`")
         else:
             weather = f"{escape(data.replace('report', 'Report'))}"
             await message.edit(weather, parse_mode=enums.ParseMode.MARKDOWN)
 
 
 add_command_help(
-    "weather",
+    "•─╼⃝𖠁 ᴡᴇᴀᴛʜᴇʀ",
     [
-        [".weather", "Gets weather information for provided location."],
+        [".weather", "Gᴇᴛꜱ ᴡᴇᴀᴛʜᴇʀ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ғᴏʀ ᴘʀᴏᴠɪᴅᴇᴅ ʟᴏᴄᴀᴛɪᴏɴ."],
     ],
 )
