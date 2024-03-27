@@ -28,7 +28,7 @@ async def start(app, message):
     reply_markup = InlineKeyboardMarkup([
         [
             InlineKeyboardButton("𝐒𝐮𝐩𝐩𝐨𝐫𝐭", url="https://t.me/Japanese_Userbot_Chat"),
-            InlineKeyboardButton("𝐂𝐡𝐚𝐧𝐧𝐞𝐥", url="https://t.me/Japanese_Useebot"),
+            InlineKeyboardButton("𝐂𝐡𝐚𝐧𝐧𝐞𝐥", url="https://t.me/Japanese_Userbot"),
             InlineKeyboardButton("𝐎𝐰𝐧𝐞𝐫", url="https://t.me/Nobitaa_xd"),
         ],
     ])
