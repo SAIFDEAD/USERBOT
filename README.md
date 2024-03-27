@@ -19,7 +19,7 @@
 <a href="https://github.com/Team-Japanese/Japanese-X-Userbot/network/members"> <img src="https://img.shields.io/github/forks/Team-Japanese/Japanese-X-Userbot?color=black&logo=github&logoColor=black&style=for-the-badge" /></a>
 <a href="https://github.com/Team-Japanese/Japanese-X-Userbot/blob/master/LICENSE"> <img src="https://img.shields.io/badge/License-MIT-blueviolet?style=for-the-badge" alt="License" /> </a>
 <a href="https://github.com/Team-Japanese/Japanese-X-Chatbot"> <img src="https://img.shields.io/github/repo-size/Team-Japanese/Japanese-X-Userbot?color=white&logo=github&logoColor=blue&style=for-the-badge" /></a>
-<a href="https://github.com/aboutnobitaaxd/Team-Japanese/Japanese-X-Userbot/commits/aboutnobitaaxd"> <img src="https://img.shields.io/github/last-commit/Team-Japanese/Japanese-X-Userbot?color=black&logo=github&logoColor=black&style=for-the-badge" /></a>
+<a href="https://github.com/nobitaaaxd/Team-Japanese/Japanese-X-Userbot/commits/aboutnobitaaxd"> <img src="https://img.shields.io/github/last-commit/Team-Japanese/Japanese-X-Userbot?color=black&logo=github&logoColor=black&style=for-the-badge" /></a>
 </p>
 
 
@@ -106,4 +106,4 @@
     ─「 𝑪𝒓𝒆𝒅𝒊𝒕 」─
 </h3>
 
-✧ <b>[𝐍𝐎𝐁𝐈𝐓𝐀_𝐗𝐃](https://github.com/aboutnobitaaxd) & [𝐌𝐈𝐑𝐙𝐀](https://github.com/MirzaElite)
+✧ <b>[𝐍𝐎𝐁𝐈𝐓𝐀_𝐗𝐃](https://github.com/nobitaaaxd) & [𝐌𝐈𝐑𝐙𝐀](https://github.com/MirzaElite)
