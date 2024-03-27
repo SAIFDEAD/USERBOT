@@ -28,12 +28,12 @@ alive_logo = (
     gvarstatus("ALIVE_LOGO") or ""
 )
 emoji = gvarstatus("ALIVE_EMOJI") or "✧"
-alive_text = gvarstatus("ALIVE_TEKS_CUSTOM") or "✧✧ 𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄-𝐗-𝐔𝐒𝐄𝐑𝐁𝐎𝐓 𝐈𝐒 𝐀𝐋𝐈𝐕𝐄 ✧✧✨"
+alive_text = gvarstatus("ALIVE_TEKS_CUSTOM") or "✧✧ 𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄-𝐗-𝐔𝐒𝐄𝐑𝐁𝐎𝐓 𝐈𝐒 𝐀𝐋𝐈𝐕𝐄 ✧✧"
 
 
 @Client.on_message(filters.command(["alive", "awake"], cmd) & filters.me)
 async def alip(client: Client, message: Message):
-    X = await edit_or_reply(message, "😝")
+    X = await edit_or_reply(message, "❤️")
     await asyncio.sleep(2)
     sad = client.send_video if alive_logo.endswith(".mp4") else client.send_photo
     uptime = await get_readable_time((time.time() - StartTime))
