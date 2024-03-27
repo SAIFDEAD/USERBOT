@@ -48,7 +48,7 @@ async def alip(client: Client, message: Message):
         f"{emoji} <b>𝙿𝚈𝚃𝙷𝙾𝙽 𝚅𝙴𝚁𝚂𝙸𝙾𝙽:</b> <code>{python_version()}</code> \n"
         f"{emoji}✧[𝙶𝚁𝙾𝚄𝙿](https://t.me/Japanese_Userbot_Chat)** \n" 
         f"{emoji}✧[𝙲𝙷𝙰𝙽𝙽𝙴𝙻](https://t.me/Japanese_Userbot)** \n"
-        f"{emoji}✧[𝙾𝚆𝙽𝙴𝚁](tg://user?id=6694740726)** \n"
+        
     )
     try:
       await sad(
