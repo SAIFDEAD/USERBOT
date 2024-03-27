@@ -8,7 +8,6 @@ from random import randint
 import aiofiles
 from pyrogram import filters, Client
 from pyrogram.types import Message
-from reportlab.graphics import renderPM
 from svglib.svglib import svg2rlg
 
 from X.helpers.PyroHelpers import ReplyCheck
