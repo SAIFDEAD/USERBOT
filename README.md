@@ -15,11 +15,11 @@
 ![20240201_185316](https://github.com/Japanese-Userbots/Japanese-X-Userbot/assets/156512147/0782c397-c94b-4676-8cf1-89d26257b41a)
 
 <p align="center">
-<a href="https://github.com/Japanese-Userbots/Japanese-X-Userbot/stargazers"><img src="https://img.shields.io/github/stars/Japanese-Userbots/Japanese-X-Userbot?color=black&logo=github&logoColor=black&style=for-the-badge" alt="Stars" /></a>
-<a href="https://github.com/Japanese-Userbots/Japanese-X-Userbot/network/members"> <img src="https://img.shields.io/github/forks/Japanese-Userbots/Japanese-X-Userbot?color=black&logo=github&logoColor=black&style=for-the-badge" /></a>
-<a href="https://github.com/Japanese-Userbots/Japanese-X-Userbot/blob/master/LICENSE"> <img src="https://img.shields.io/badge/License-MIT-blueviolet?style=for-the-badge" alt="License" /> </a>
-<a href="https://github.com/Japanese-Userbots/Japanese-X-Chatbot"> <img src="https://img.shields.io/github/repo-size/Japanese-Userbots/Japanese-X-Userbot?color=white&logo=github&logoColor=blue&style=for-the-badge" /></a>
-<a href="https://github.com/nobitaaxd/Japanese-Userbots/Japanese-X-Userbot/commits/nobitaaxd"> <img src="https://img.shields.io/github/last-commit/Japanese-Userbots/Japanese-X-Userbot?color=black&logo=github&logoColor=black&style=for-the-badge" /></a>
+<a href="https://github.com/Team-Japanese/Japanese-X-Userbot/stargazers"><img src="https://img.shields.io/github/stars/Team-Japanese/Japanese-X-Userbot?color=black&logo=github&logoColor=black&style=for-the-badge" alt="Stars" /></a>
+<a href="https://github.com/Team-Japanese/Japanese-X-Userbot/network/members"> <img src="https://img.shields.io/github/forks/Team-Japanese/Japanese-X-Userbot?color=black&logo=github&logoColor=black&style=for-the-badge" /></a>
+<a href="https://github.com/Team-Japanese/Japanese-X-Userbot/blob/master/LICENSE"> <img src="https://img.shields.io/badge/License-MIT-blueviolet?style=for-the-badge" alt="License" /> </a>
+<a href="https://github.com/Team-Japanese/Japanese-X-Chatbot"> <img src="https://img.shields.io/github/repo-size/Team-Japanese/Japanese-X-Userbot?color=white&logo=github&logoColor=blue&style=for-the-badge" /></a>
+<a href="https://github.com/aboutnobitaaxd/Team-Japanese/Japanese-X-Userbot/commits/aboutnobitaaxd"> <img src="https://img.shields.io/github/last-commit/Team-Japanese/Japanese-X-Userbot?color=black&logo=github&logoColor=black&style=for-the-badge" /></a>
 </p>
 
 
