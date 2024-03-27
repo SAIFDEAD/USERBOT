@@ -7,6 +7,7 @@ from X.helpers.adminHelpers import DEVS
 from config import *
 from config import CMD_HANDLER
 from X.utils import *
+from urllib.parse import quote
 
 import requests
 import os
@@ -39,3 +40,36 @@ async def openai(client: Client, message: Message):
         pass
     except Exception:
         await msg.edit("An Error Has Occurred!!\nYou Have Not Entered OPENAI_API_KEY")
+
+@Client.on_message(filters.command("aigf", ".") & filters.me)
+async def openai(client: Client, message: Message):
+    if len(message.command) == 1:
+        return await message.reply(f"Ketik <code>.{message.command[0]} [question]</code> Questions for use OpenAI")
+    
+    question = message.text.split(" ", maxsplit=1)[1]
+    
+    headers = {
+        "Content-Type": "application/json",
+        "Authorization": f"Bearer {OPENAI_API_KEY}",
+    }
+    encoded_question = quote(question)
+
+    url = f"https://chatgpt.apinepdev.workers.dev/?question={encoded_question}&state=girlfriend"
+    
+    msg = await message.reply("`Be patient..")
+    
+    try:
+        response = requests.get(url).json()
+        await msg.edit(response["answer"])
+    except MessageNotModified:
+        pass
+    except Exception:
+        await msg.edit("An Error Has Occurred!!\nYou Have Not Entered OPENAI_API_KEY")
+
+add_command_help(
+    "•─╼⃝𖠁 ᴏᴘᴇɴᴀɪ",
+    [
+        ["ᴀɪ", "Tᴏ Aꜱᴋ Sᴏᴍᴇᴛʜɪɴɢ Tᴏ Cʜᴀᴛ Gᴘᴛ"]
+        ["ᴀɪɢғ", "Tᴏ Aꜱᴋ Sᴏᴍᴇᴛʜɪɴɢ Tᴏ Aɪ Cʜᴀᴛ Gᴘᴛ"]
+    ],
+)
