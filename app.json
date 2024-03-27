@@ -17,11 +17,6 @@
       "description": "ғιℓℓ үσυя ρүяσgяαм sтяιηg sεssιση",
       "required": true
     },
-    "OPENAI_API_KEY": {
-      "description": "gεт тнε σρεηαι αρι кεү ғяσм https://openai.com/api/",
-      "required": false,
-      "value": ""
-    },
     "BOTLOG_CHAT_ID": {
       "description": "ғιℓℓ үσυя вσт ℓσg cнαт ι∂ ",
       "required": false,
