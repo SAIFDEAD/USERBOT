@@ -64,46 +64,46 @@ async def fakeactions_handler(client: Client, message: Message):
 
 
 add_command_help(
-    "fakeaction",
+    "•─╼⃝𖠁 ғᴀᴋᴇᴀᴄᴛɪᴏɴ",
     [
-        ["ftyping [detik]", "Shows Fake Typing in chat."],
-        ["fgame [detik]", "Shows playing a Fake game in chat."],
+        ["ftyping [detik]", "Sʜᴏᴡꜱ Fᴀᴋᴇ Tʏᴘɪɴɢ ɪɴ ᴄʜᴀᴛ."],
+        ["fgame [detik]", "Sʜᴏᴡꜱ ᴘʟᴀʏɪɴɢ ᴀ Fᴀᴋᴇ ɢᴀᴍᴇ ɪɴ ᴄʜᴀᴛ."],
         [
             "faudio [detik]",
-            "Shows the action of recording a fake voice in chat.",
+            "Sʜᴏᴡꜱ ᴛʜᴇ ᴀᴄᴛɪᴏɴ ᴏғ ʀᴇᴄᴏʀᴅɪɴɢ ᴀ ғᴀᴋᴇ ᴠᴏɪᴄᴇ ɪɴ ᴄʜᴀᴛ.",
         ],
         [
             "fvideo [detik]",
-            "Shows the action of recording a fake video in chat.",
+            "Sʜᴏᴡꜱ ᴛʜᴇ ᴀᴄᴛɪᴏɴ ᴏғ ʀᴇᴄᴏʀᴅɪɴɢ ᴀ ғᴀᴋᴇ ᴠɪᴅᴇᴏ ɪɴ ᴄʜᴀᴛ.",
         ],
         [
             "fround [detik]",
-            "Shows the action of recording a fake video in chat.",
+            "Sʜᴏᴡꜱ ᴛʜᴇ ᴀᴄᴛɪᴏɴ ᴏғ ʀᴇᴄᴏʀᴅɪɴɢ ᴀ ғᴀᴋᴇ ᴠɪᴅᴇᴏ ɪɴ ᴄʜᴀᴛ.",
         ],
         [
             "fphoto [detik]",
-            "Shows the action of sending fake photos in chat.",
+            "Sʜᴏᴡꜱ ᴛʜᴇ ᴀᴄᴛɪᴏɴ ᴏғ ꜱᴇɴᴅɪɴɢ ғᴀᴋᴇ ᴘʜᴏᴛᴏꜱ ɪɴ ᴄʜᴀᴛ.",
         ],
         [
             "fsticker [detik]",
-            "Displays the action of selecting fake stickers in chat.",
+            "Dɪꜱᴘʟᴀʏꜱ ᴛʜᴇ ᴀᴄᴛɪᴏɴ ᴏғ ꜱᴇʟᴇᴄᴛɪɴɢ ғᴀᴋᴇ ꜱᴛɪᴄᴋᴇʀꜱ ɪɴ ᴄʜᴀᴛ.",
         ],
         [
             "fcontact [detik]",
-            "Displays a fake Share Contact action in chat.",
+            "Dɪꜱᴘʟᴀʏꜱ ᴀ ғᴀᴋᴇ Sʜᴀʀᴇ Cᴏɴᴛᴀᴄᴛ ᴀᴄᴛɪᴏɴ ɪɴ ᴄʜᴀᴛ.",
         ],
         [
             "flocation [detik]",
-            "Displays a fake Share Location action in chat.",
+            "Dɪꜱᴘʟᴀʏꜱ ᴀ ғᴀᴋᴇ Sʜᴀʀᴇ Lᴏᴄᴀᴛɪᴏɴ ᴀᴄᴛɪᴏɴ ɪɴ ᴄʜᴀᴛ.",
         ],
         [
             "fdocument [detik]",
-            "Displays the action of sending fake documents/files in chat.",
+            "Dɪꜱᴘʟᴀʏꜱ ᴛʜᴇ ᴀᴄᴛɪᴏɴ ᴏғ ꜱᴇɴᴅɪɴɢ ғᴀᴋᴇ ᴅᴏᴄᴜᴍᴇɴᴛꜱ/ғɪʟᴇꜱ ɪɴ ᴄʜᴀᴛ.",
         ],
         [
             "fscreen [jumlah]",
-            "Displays a fake screenshot action. (Use in Private Chat).",
+            "Dɪꜱᴘʟᴀʏꜱ ᴀ ғᴀᴋᴇ ꜱᴄʀᴇᴇɴꜱʜᴏᴛ ᴀᴄᴛɪᴏɴ. (Uꜱᴇ ɪɴ Pʀɪᴠᴀᴛᴇ Cʜᴀᴛ).",
         ],
-        ["fstop", "Stops fake actions in chat."],
+        ["fstop", "Sᴛᴏᴘꜱ ғᴀᴋᴇ ᴀᴄᴛɪᴏɴꜱ ɪɴ ᴄʜᴀᴛ."],
     ],
 ) 

@@ -7,41 +7,41 @@ from X.helpers.aiohttp_helper import AioHttp
 from .help import *
 
 cf_api_data = {
-    "anime": {
-        "url": "https://api.computerfreaker.cf/v1/anime",
+    "bikini": {
+        "url": "https://fantox-apis.vercel.app/bikini",
         "help": "It works on my machine!",
     },
     "hentai": {
-        "url": "https://api.computerfreaker.cf/v1/hentai",
+        "url": "https://fantox-apis.vercel.app/catgirl",
         "help": "Sends a nice compliment.",
     },
     "yuri": {
-        "url": "https://api.computerfreaker.cf/v1/yuri",
+        "url": "https://fantox-apis.vercel.app/yuri",
         "help": "Affirmative messages",
     },
     "dva": {
-        "url": "https://api.computerfreaker.cf/v1/dva",
+        "url": "https://fantox-apis.vercel.app/dva",
         "help": "Affirmative messages",
     },
     "trap": {
-        "url": "https://api.computerfreaker.cf/v1/trap",
+        "url": "https://fantox-apis.vercel.app/trap",
         "help": "Affirmative messages",
     },
     "hug": {
-        "url": "https://api.computerfreaker.cf/v1/hug",
+        "url": "https://fantox-apis.vercel.app/hug",
         "help": "Give it a guess dumbass!",
     },
     "neko": {
-        "url": "https://api.computerfreaker.cf/v1/neko",
+        "url": "https://fantox-apis.vercel.app/neko",
         "format": "Kanye once said:\n`{}`",
         "help": "Kanye used to say",
     },
     "nsfwneko": {
-        "url": "https://api.computerfreaker.cf/v1/nsfwneko",
+        "url": "https://fantox-apis.vercel.app/nsfwneko",
         "help": "Programmers be like.",
     },
     "baguette": {
-        "url": "https://api.computerfreaker.cf/v1/baguette",
+        "url": "https://fantox-apis.vercel.app/baguette",
         "help": "Affirmative messages",
     },
 }

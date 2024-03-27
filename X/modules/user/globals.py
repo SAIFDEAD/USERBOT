@@ -279,13 +279,13 @@ async def globals_check(client: Client, message: Message):
 
 
 add_command_help(
-    "globals",
+    "•─╼⃝𖠁 ɢʟᴏʙᴀʟꜱ",
     [
         [
-            "gban <reply/username/userid>",
-            "Globally Banned All Groups Where You Are Admin.",
+            "gban <ʀᴇᴘʟʏ/ᴜꜱᴇʀɴᴀᴍᴇ/ᴜꜱᴇʀɪᴅ>",
+            "Gʟᴏʙᴀʟʟʏ Bᴀɴɴᴇᴅ Aʟʟ Gʀᴏᴜᴘꜱ Wʜᴇʀᴇ Yᴏᴜ Aʀᴇ Aᴅᴍɪɴ.",
         ],
-        ["ungban <reply/username/userid>", "Cancel Global Banned."],
-        ["listgban", "Displays the Global Banned List."],
+        ["ungban <ʀᴇᴘʟʏ/ᴜꜱᴇʀɴᴀᴍᴇ/ᴜꜱᴇʀɪᴅ>", "Cᴀɴᴄᴇʟ Gʟᴏʙᴀʟ Bᴀɴɴᴇᴅ."],
+        ["listgban", "Dɪꜱᴘʟᴀʏꜱ ᴛʜᴇ Gʟᴏʙᴀʟ Bᴀɴɴᴇᴅ Lɪꜱᴛ."],
     ],
      )

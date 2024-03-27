@@ -64,11 +64,11 @@ async def gs(client: Client, message: Message):
 
 
 add_command_help(
-    "google",
+    "•─╼⃝𖠁 ɢᴏᴏɢʟᴇ",
     [
         [
             "google",
-            "Featch Details on Google.",
+            "Fᴇᴀᴛᴄʜ Dᴇᴛᴀɪʟꜱ ᴏɴ Gᴏᴏɢʟᴇ.",
         ],
     ],
 ) 
