@@ -91,9 +91,9 @@ async def fonts(client: Client, message: Message):
 
 
 add_command_help(
-    "fonts",
+    "Fᴏɴᴛꜱ",
     [
-        [f"font [reply to message]", "Create text with different font styles"],
-        [f"lf", "View the Fonts List."],
+        [f"font [ʀᴇᴘʟʏ ᴛᴏ ᴍᴇꜱꜱᴀɢᴇ]", "Cʀᴇᴀᴛᴇ ᴛᴇxᴛ ᴡɪᴛʜ ᴅɪғғᴇʀᴇɴᴛ ғᴏɴᴛ ꜱᴛʏʟᴇꜱ"],
+        [f"lf", "Vɪᴇᴡ ᴛʜᴇ Fᴏɴᴛꜱ Lɪꜱᴛ."],
     ],
 ) 
