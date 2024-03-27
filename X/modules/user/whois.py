@@ -102,19 +102,19 @@ async def chatinfo_handler(client: Client, message: Message):
         dc_id = f"{chat.dc_id}" if chat.dc_id else "-"
         out_str = f"""<b>CHAT INFORMATION:</b>
 
-🆔 <b>Chat ID:</b> <code>{chat.id}</code>
-👥 <b>Title:</b> {chat.title}
-👥 <b>Username:</b> {username}
-📩 <b>Type:</b> <code>{type}</code>
+🆔 <b>Cʜᴀᴛ ID:</b> <code>{chat.id}</code>
+👥 <b>Tɪᴛʟᴇ:</b> {chat.title}
+👥 <b>Uꜱᴇʀɴᴀᴍᴇ:</b> {username}
+📩 <b>Tʏᴘᴇ:</b> <code>{type}</code>
 🏛️ <b>DC ID:</b> <code>{dc_id}</code>
-🗣️ <b>Is Scam:</b> <code>{chat.is_scam}</code>
-🎭 <b>Is Fake:</b> <code>{chat.is_fake}</code>
-✅ <b>Verified:</b> <code>{chat.is_verified}</code>
-🚫 <b>Restricted:</b> <code>{chat.is_restricted}</code>
-🔰 <b>Protected:</b> <code>{chat.has_protected_content}</code>
+🗣️ <b>Iꜱ Sᴄᴀᴍ:</b> <code>{chat.is_scam}</code>
+🎭 <b>Iꜱ Fᴀᴋᴇ:</b> <code>{chat.is_fake}</code>
+✅ <b>Vᴇʀɪғɪᴇᴅ:</b> <code>{chat.is_verified}</code>
+🚫 <b>Rᴇꜱᴛʀɪᴄᴛᴇᴅ:</b> <code>{chat.is_restricted}</code>
+🔰 <b>Pʀᴏᴛᴇᴄᴛᴇᴅ:</b> <code>{chat.has_protected_content}</code>
 
-🚻 <b>Total members:</b> <code>{chat.members_count}</code>
-📝 <b>Description:</b>
+🚻 <b>Tᴏᴛᴀʟ ᴍᴇᴍʙᴇʀꜱ:</b> <code>{chat.members_count}</code>
+📝 <b>Dᴇꜱᴄʀɪᴘᴛɪᴏɴ:</b>
 <code>{description}</code>
 """
         photo_id = chat.photo.big_file_id if chat.photo else None
@@ -137,15 +137,15 @@ async def chatinfo_handler(client: Client, message: Message):
 
 
 add_command_help(
-    "info",
+    "•─╼⃝𖠁 ɪɴғᴏ",
     [
         [
-            "info <username/userid/reply>",
-            "get telegram user info with complete description.",
+            "info <ᴜꜱᴇʀɴᴀᴍᴇ/ᴜꜱᴇʀɪᴅ/ʀᴇᴘʟʏ>",
+            "ɢᴇᴛ ᴛᴇʟᴇɢʀᴀᴍ ᴜꜱᴇʀ ɪɴғᴏ ᴡɪᴛʜ ᴄᴏᴍᴘʟᴇᴛᴇ ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ.",
         ],
         [
-            "chatinfo <username/chatid/reply>",
-            "get group info with complete description.",
+            "chatinfo <ᴜꜱᴇʀɴᴀᴍᴇ/ᴄʜᴀᴛɪᴅ/ʀᴇᴘʟʏ>",
+            "ɢᴇᴛ ɢʀᴏᴜᴘ ɪɴғᴏ ᴡɪᴛʜ ᴄᴏᴍᴘʟᴇᴛᴇ ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ.",
         ],
     ],
                   )
