@@ -40,8 +40,8 @@ async def urban_dictionary(bot, message):
 
 
 add_command_help(
-    "dictionary",
+    "•─╼⃝𖠁 ᴅɪᴄᴛɪᴏɴᴀʀʏ",
     [
-        [".ubran | .ud", "Define the word you send or reply to."],
+        [".ubran | .ud", "Dᴇғɪɴᴇ ᴛʜᴇ ᴡᴏʀᴅ ʏᴏᴜ ꜱᴇɴᴅ ᴏʀ ʀᴇᴘʟʏ ᴛᴏ."],
     ],
-      )
+        )
