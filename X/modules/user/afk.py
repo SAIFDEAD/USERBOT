@@ -21,7 +21,7 @@ async def afk(client: Client, message: Message):
     if len(message.text.split()) >= 2:
         set_afk(True, message.text.split(None, 1)[1])
         await message.edit(
-            "❏ {} <b>Already AFK!</b>\n└ <b>Because:</b> <code>{}</code>".format(
+            "❏ {} <b>Aʟʀᴇᴀᴅʏ AFK!</b>\n└ <b>Bᴇᴄᴀᴜꜱᴇ:</b> <code>{}</code>".format(
                 mention_markdown(message.from_user.id, message.from_user.first_name),
                 message.text.split(None, 1)[1],
             )
@@ -29,7 +29,7 @@ async def afk(client: Client, message: Message):
     else:
         set_afk(True, "")
         await message.edit(
-            "✘ {} <b>Already AFK</b> ✘".format(
+            "✘ {} <b>Aʟʀᴇᴀᴅʏ AFK</b> ✘".format(
                 mention_markdown(message.from_user.id, message.from_user.first_name)
             )
         )
@@ -54,13 +54,13 @@ async def afk_mentioned(client: Client, message: Message):
         AFK_RESTIRECT[cid] = int(time.time()) + DELAY_TIME
         if get["reason"]:
             await message.reply(
-                "❏ {} <b>Currently AFK!</b>\n└ <b>Because:</b> <code>{}</code>".format(
+                "❏ {} <b>Cᴜʀʀᴇɴᴛʟʏ AFK!</b>\n└ <b>Bᴇᴄᴀᴜꜱᴇ:</b> <code>{}</code>".format(
                     client.me.mention, get["reason"]
                 )
             )
         else:
             await message.reply(
-                f"<b>Sorry</b> {client.me.first_name} <b>Currently AFK!</b>"
+                f"<b>Sᴏʀʀʏ</b> {client.me.first_name} <b>Currently AFK!</b>"
             )
 
         _, message_type = get_message_type(message)
@@ -85,7 +85,7 @@ async def afk_mentioned(client: Client, message: Message):
         try:
             await client.send_message(
                 BOTLOG_CHATID,
-                "<b>#MENTION\n • From :</b> {}\n • <b>Group :</b> <code>{}</code>\n • <b>Message :</b> <code>{}</code>".format(
+                "<b>#MENTION\n • Fʀᴏᴍ :</b> {}\n • <b>Gʀᴏᴜᴘ :</b> <code>{}</code>\n • <b>Mᴇꜱꜱᴀɢᴇ :</b> <code>{}</code>".format(
                     message.from_user.mention,
                     message.chat.title,
                     text[:3500],
@@ -102,10 +102,10 @@ async def no_longer_afk(client: Client, message: Message):
     if get and get["afk"]:
         set_afk(False, "")
         try:
-            await client.send_message(BOTLOG_CHATID, "You are no longer AFK!")
+            await client.send_message(BOTLOG_CHATID, "Yᴏᴜ ᴀʀᴇ ɴᴏ ʟᴏɴɢᴇʀ AFK!")
         except BaseException:
             pass
-        text = "<b>Total {} Mention Moment Currently AFK<b>\n".format(len(MENTIONED))
+        text = "<b>Tᴏᴛᴀʟ {} Mᴇɴᴛɪᴏɴ Mᴏᴍᴇɴᴛ Cᴜʀʀᴇɴᴛʟʏ AFK<b>\n".format(len(MENTIONED))
         for x in MENTIONED:
             msg_text = x["text"]
             if len(msg_text) >= 11:
