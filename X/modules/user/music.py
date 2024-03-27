@@ -51,14 +51,14 @@ async def send_music(bot: Client, message: Message):
             # delete the message from Saved Messages
             await bot.delete_messages("me", saved.id)
         except TimeoutError:
-            await message.edit("That didn't work out")
+            await message.edit("Tʜᴀᴛ ᴅɪᴅɴ'ᴛ ᴡᴏʀᴋ ᴏᴜᴛ")
             await asyncio.sleep(2)
         await message.delete()
     except Exception as e:
         print(e)
-        await message.edit("`Failed to find song`")
+        await message.edit("`Fᴀɪʟᴇᴅ ᴛᴏ ғɪɴᴅ ꜱᴏɴɢ`")
         await asyncio.sleep(2)
         await message.delete()
 
 
-add_command_help("music", [[".m `or` .music", "Search songs and send."]])
+add_command_help("•─╼⃝𖠁 ᴍᴜꜱɪᴄ", [[".m ᴏʀ .music", "Sᴇᴀʀᴄʜ ꜱᴏɴɢꜱ ᴀɴᴅ ꜱᴇɴᴅ."]])
