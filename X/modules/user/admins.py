@@ -282,38 +282,38 @@ async def demote(client: Client, message: Message):
 
 
 add_command_help(
-    "admin",
+    "─╼⃝𖠁ᴀᴅᴍɪɴ",
     [
-        [f"{cmd}ban <reply/username/userid> <reason>", "Banned members from the group."],
+        [f"{cmd}ban <ʀᴇᴘʟʏ/ᴜꜱᴇʀɴᴀᴍᴇ/ᴜꜱᴇʀɪᴅ> <ʀᴇᴀꜱᴏɴ>", "Bᴀɴɴᴇᴅ ᴍᴇᴍʙᴇʀꜱ ғʀᴏᴍ ᴛʜᴇ ɢʀᴏᴜᴘ."],
         [
-            f"{cmd}unban <reply/username/userid> <alasan>",
-            "Unbanned members of the group.",
+            f"{cmd}unban <ʀᴇᴘʟʏ/ᴜꜱᴇʀɴᴀᴍᴇ/ᴜꜱᴇʀɪᴅ> <ᴀʟᴀꜱᴀɴ>",
+            "Uɴʙᴀɴɴᴇᴅ ᴍᴇᴍʙᴇʀꜱ ᴏғ ᴛʜᴇ ɢʀᴏᴜᴘ.",
         ],
-        [f"{cmd}kick <reply/username/userid>", "Remove a user from a group."],
+        [f"{cmd}kick <ʀᴇᴘʟʏ/ᴜꜱᴇʀɴᴀᴍᴇ/ᴜꜱᴇʀɪᴅ>", "Rᴇᴍᴏᴠᴇ ᴀ ᴜꜱᴇʀ ғʀᴏᴍ ᴀ ɢʀᴏᴜᴘ."],
         [
             f"{cmd}promote or {cmd}fullpromote",
-            "Promote members as admin or cofounder.",
+            "Pʀᴏᴍᴏᴛᴇ ᴍᴇᴍʙᴇʀꜱ ᴀꜱ ᴀᴅᴍɪɴ ᴏʀ ᴄᴏғᴏᴜɴᴅᴇʀ.",
         ],
-        [f"{cmd}demote", "Reducing admin as a member."],
+        [f"{cmd}demote", "Rᴇᴅᴜᴄɪɴɢ ᴀᴅᴍɪɴ ᴀꜱ ᴀ ᴍᴇᴍʙᴇʀ."],
         [
-            f"{cmd}mute <reply/username/userid>",
-            "Mute a member from a Group.",
-        ],
-        [
-            f"{cmd}unmute <reply/username/userid>",
-            "Unmute members of the Group.",
+            f"{cmd}mute <ʀᴇᴘʟʏ/ᴜꜱᴇʀɴᴀᴍᴇ/ᴜꜱᴇʀɪᴅ>",
+            "Mᴜᴛᴇ ᴀ ᴍᴇᴍʙᴇʀ ғʀᴏᴍ ᴀ Gʀᴏᴜᴘ.",
         ],
         [
-            f"{cmd}pin <reply>",
-            "To pin a message in a group.",
+            f"{cmd}unmute <ʀᴇᴘʟʏ/ᴜꜱᴇʀɴᴀᴍᴇ/ᴜꜱᴇʀɪᴅ>",
+            "Uɴᴍᴜᴛᴇ ᴍᴇᴍʙᴇʀꜱ ᴏғ ᴛʜᴇ Gʀᴏᴜᴘ.",
         ],
         [
-            f"{cmd}unpin <reply>",
-            "To unpin a message in a group.",
+            f"{cmd}pin <ʀᴇᴘʟʏ>",
+            "Tᴏ ᴘɪɴ ᴀ ᴍᴇꜱꜱᴀɢᴇ ɪɴ ᴀ ɢʀᴏᴜᴘ.",
         ],
         [
-            f"{cmd}setgpic <reply to the photo>",
-            "To change the group profile photo",
+            f"{cmd}unpin <ʀᴇᴘʟʏ>",
+            "Tᴏ ᴜɴᴘɪɴ ᴀ ᴍᴇꜱꜱᴀɢᴇ ɪɴ ᴀ ɢʀᴏᴜᴘ.",
+        ],
+        [
+            f"{cmd}setgpic <ʀᴇᴘʟʏ ᴛᴏ ᴛʜᴇ ᴘʜᴏᴛᴏ>",
+            "Tᴏ ᴄʜᴀɴɢᴇ ᴛʜᴇ ɢʀᴏᴜᴘ ᴘʀᴏғɪʟᴇ ᴘʜᴏᴛᴏ",
         ],
     ],
 ) 
