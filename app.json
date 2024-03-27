@@ -1,0 +1,58 @@
+{
+  "name": "𝑱𝒂𝒑𝒂𝒏𝒆𝒔𝒆-𝑿-𝑼𝒔𝒆𝒓𝒃𝒐𝒕",
+  "description": "[𝑱𝒂𝒑𝒂𝒏𝒆𝒔𝒆-𝑿-𝑼𝒔𝒆𝒓𝒃𝒐𝒕] ωσяℓ∂ ℓαяgεsт αη∂ ғαsтεsт υsεявσт. ρσωεяε∂ вү 𝑱𝒂𝒑𝒂𝒏𝒆𝒔𝒆-𝑿-𝑼𝒔𝒆𝒓𝒃𝒐𝒕.",
+    "logo": "https://graph.org/file/ec99cb6dba229bd984537.jpg",
+
+  "stack": "heroku-22",
+  "env": {
+    "BOT_TOKEN": {
+      "description": "gεт тнιs ғяσм вσтғαтнεя",
+      "required": true
+    },
+    "OWNER_ID": {
+      "description": "ᴘᴀsᴛᴇ ʏᴏᴜʀ ᴛᴇʟᴇɢʀᴀᴍ ɪᴅ ʜᴇʀᴇ",
+      "required": true
+    },
+    "STRING_SESSION1": {
+      "description": "ғιℓℓ үσυя ρүяσgяαм sтяιηg sεssιση",
+      "required": true
+    },
+    "OPENAI_API_KEY": {
+      "description": "gεт тнε σρεηαι αρι кεү ғяσм https://openai.com/api/",
+      "required": false,
+      "value": ""
+    },
+    "BOTLOG_CHAT_ID": {
+      "description": "ғιℓℓ үσυя вσт ℓσg cнαт ι∂ ",
+      "required": false,
+      "value": "-100"
+    },
+    "HEROKU_API_KEY": {
+      "description": "ғιℓℓ үσυя нεяσкυ αρι кεү gεт тнιs ғяσм » https://dashboard.heroku.com/account",
+      "required": false
+    },
+    "HEROKU_APP_NAME": {
+      "description": "ғιℓℓ үσυя нεяσкυ αρρ ηαмε",
+      "required": false
+    }
+  },
+  "addons": [
+    {
+      "plan": "heroku-postgresql"
+    }
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    },
+    {
+      "url": "https://github.com/interconnectit/heroku-buildpack-ffmpeg"
+    }
+  ],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "basic"
+    }
+  }
+}
