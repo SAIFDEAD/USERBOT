@@ -154,11 +154,11 @@ async def gcast_cmd(client: Client, message: Message):
     )
 
 add_command_help(
-    "fake",
+    "•─╼⃝𖠁 fake",
     [
-        [f"giben <reply/username/userid>", "Fake Global Banning."],
-        [f"gimut <reply/username/userid>", "Fake Global Mute."],
-        [f"gikik <reply/username/userid>", "Fake Global Kick."],
-        [f"gikes <reply/username/userid>", "Fake Global broadcast."],
+        [f"giben <ʀᴇᴘʟʏ/ᴜꜱᴇʀɴᴀᴍᴇ/ᴜꜱᴇʀɪᴅ>", "Fake Global Banning."],
+        [f"gimut <ʀᴇᴘʟʏ/ᴜꜱᴇʀɴᴀᴍᴇ/ᴜꜱᴇʀɪᴅ>", "Fake Global Mute."],
+        [f"gikik <ʀᴇᴘʟʏ/ᴜꜱᴇʀɴᴀᴍᴇ/ᴜꜱᴇʀɪᴅ>", "Fake Global Kick."],
+        [f"gikes <ʀᴇᴘʟʏ/ᴜꜱᴇʀɴᴀᴍᴇ/ᴜꜱᴇʀɪᴅ>", "Fake Global broadcast."],
     ],
   )
