@@ -191,7 +191,7 @@ async def get_list_bots(client: Client, message: Message):
 
 
 add_command_help(
-    "ᴛᴀɢ",
+    "•─╼⃝𖠁 ᴛᴀɢ",
     [
         [f"{cmd}admins", "Gᴇᴛ Cʜᴀᴛꜱ ᴀᴅᴍɪɴ ʟɪꜱᴛ ."],
         [f"{cmd}kickdel", "Tᴏ ᴋɪᴄᴋ ᴅᴇʟᴇᴛᴇᴅ Aᴄᴄᴏᴜɴᴛ ."],
