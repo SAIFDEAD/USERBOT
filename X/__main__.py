@@ -8,7 +8,7 @@ from X import BOTLOG_CHATID, LOGGER, LOOP, aiosession, app, bots, ids, bot1
 from X.helpers import join
 from X.helpers.misc import create_botlog, heroku
 
-BOT_VER = "1.0.0"
+BOT_VER = "3.0.0"
 CMD_HANDLER = ["." "?" "!" "*"]
 MSG_ON = """
 ✧✧ **𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄-𝐗-𝐔𝐒𝐄𝐑𝐁𝐎𝐓 𝐈𝐒 𝐀𝐋𝐈𝐕𝐄** ✧✧
