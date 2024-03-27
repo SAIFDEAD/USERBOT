@@ -65,16 +65,16 @@ async def invite_link(client: Client, message: Message):
 
 
 add_command_help(
-    "invite",
+    "•─╼⃝𖠁 ɪɴᴠɪᴛᴇ",
     [
         [
             "invitelink",
-            "To get an invite link to your chat group. [Need Admin]",
+            "Tᴏ ɢᴇᴛ ᴀɴ ɪɴᴠɪᴛᴇ ʟɪɴᴋ ᴛᴏ ʏᴏᴜʀ ᴄʜᴀᴛ ɢʀᴏᴜᴘ. [Nᴇᴇᴅ Aᴅᴍɪɴ]",
         ],
-        ["invite @username", "To Invite Members to your group."],
+        ["invite @username", "Tᴏ Iɴᴠɪᴛᴇ Mᴇᴍʙᴇʀꜱ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ."],
         [
             "inviteall @usernamegc",
-            "To Invite Members from another group chat to your group chat,(NOTES For ID 6/5, don't try this feature or you'll cry).",
+            "Tᴏ Iɴᴠɪᴛᴇ Mᴇᴍʙᴇʀꜱ ғʀᴏᴍ ᴀɴᴏᴛʜᴇʀ ɢʀᴏᴜᴘ ᴄʜᴀᴛ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴄʜᴀᴛ,,(NOTES Fᴏʀ ID 𝟼/𝟻, ᴅᴏɴ'ᴛ ᴛʀʏ ᴛʜɪꜱ ғᴇᴀᴛᴜʀᴇ ᴏʀ ʏᴏᴜ'ʟʟ ᴄʀʏ).",
         ],
     ],
       )
