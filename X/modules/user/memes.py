@@ -49,9 +49,9 @@ async def custom_tweet(client: Client, message: Message):
 
 
 add_command_help(
-    "memes",
+    "•─╼⃝𖠁 ᴍᴇᴍᴇꜱ",
     [
-        ["trump", "make a Quote by Trump."],
-        ["ctweet", "Twitte by Ur values."],
+        ["trump", "ᴍᴀᴋᴇ ᴀ Qᴜᴏᴛᴇ ʙʏ Tʀᴜᴍᴘ."],
+        ["ctweet", "Tᴡɪᴛᴛᴇ ʙʏ Uʀ ᴠᴀʟᴜᴇꜱ."],
     ],
-) 
+)

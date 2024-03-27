@@ -31,7 +31,7 @@ async def get_weather(bot: Client, message: Message):
         if "we processed more than 1M requests today" in data:
             await message.edit("`Sorry, we cannot process this request today!`")
         else:
-            weather = f"<code>{escape(data.replace('report', 'Report'))}</code>"
+            weather = f"{escape(data.replace('report', 'Report'))}"
             await message.edit(weather, parse_mode=enums.ParseMode.MARKDOWN)
 
 

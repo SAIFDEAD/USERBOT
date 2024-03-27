@@ -130,12 +130,12 @@ async def locktypes(client: Client, message: Message):
 
 
 add_command_help(
-    "locks",
+    "•─╼⃝𖠁 ʟᴏᴄᴋꜱ",
     [
-        ["lock <all or lock type>", "Lock permissions on a group."],
+        ["lock <ᴀʟʟ ᴏʀ ʟᴏᴄᴋ ᴛʏᴘᴇ>", "Lᴏᴄᴋ ᴘᴇʀᴍɪꜱꜱɪᴏɴꜱ ᴏɴ ᴀ ɢʀᴏᴜᴘ."],
         [
-            "unlock <all or unlock type>",
-            "Unlocked permissions in the\\unsupported Locks / Unlocks group: `msg` | `media` | `stickers` | `polls` | `info`  | `invite` | `webprev` | `pin` | `all`.",
+            "unlock <ᴀʟʟ ᴏʀ ᴜɴʟᴏᴄᴋ ᴛʏᴘᴇ>",
+            "Uɴʟᴏᴄᴋᴇᴅ ᴘᴇʀᴍɪꜱꜱɪᴏɴꜱ ɪɴ ᴛʜᴇ\\ᴜɴꜱᴜᴘᴘᴏʀᴛᴇᴅ Lᴏᴄᴋꜱ / Uɴʟᴏᴄᴋꜱ ɢʀᴏᴜᴘ: `msg` | `media` | `stickers` | `polls` | `info`  | `invite` | `webprev` | `pin` | `all`.",
         ],
     ],
 )

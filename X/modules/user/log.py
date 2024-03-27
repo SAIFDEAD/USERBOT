@@ -149,23 +149,23 @@ async def set_gruplog(client: Client, message: Message):
 
 
 add_command_help(
-    "log",
+    "•─╼⃝𖠁 ʟᴏɢ",
     [
         [
             "log",
-            "To enable Chat Log from that chat/group.",
+            "Tᴏ ᴇɴᴀʙʟᴇ Cʜᴀᴛ Lᴏɢ ғʀᴏᴍ ᴛʜᴀᴛ ᴄʜᴀᴛ/ɢʀᴏᴜᴘ.",
         ],
         [
             "nolog",
-            "To disable Chat Logs from that chat/group.",
+            "Tᴏ ᴅɪꜱᴀʙʟᴇ Cʜᴀᴛ Lᴏɢꜱ ғʀᴏᴍ ᴛʜᴀᴛ ᴄʜᴀᴛ/ɢʀᴏᴜᴘ.",
         ],
         [
-            "pmlog on/off",
-            "To enable or disable private message logs that will be forwarded to the log group.",
+            "pmlog ᴏɴ/ᴏғғ",
+            "Tᴏ ᴇɴᴀʙʟᴇ ᴏʀ ᴅɪꜱᴀʙʟᴇ ᴘʀɪᴠᴀᴛᴇ ᴍᴇꜱꜱᴀɢᴇ ʟᴏɢꜱ ᴛʜᴀᴛ ᴡɪʟʟ ʙᴇ ғᴏʀᴡᴀʀᴅᴇᴅ ᴛᴏ ᴛʜᴇ ʟᴏɢ ɢʀᴏᴜᴘ.",
         ],
         [
-            "gruplog on/off",
-            "To enable or disable group tags, which will go to the log group.",
+            "gruplog ᴏɴ/ᴏғғ",
+            "Tᴏ ᴇɴᴀʙʟᴇ ᴏʀ ᴅɪꜱᴀʙʟᴇ ɢʀᴏᴜᴘ ᴛᴀɢꜱ, ᴡʜɪᴄʜ ᴡɪʟʟ ɢᴏ ᴛᴏ ᴛʜᴇ ʟᴏɢ ɢʀᴏᴜᴘ.",
         ],
     ],
-) 
+)

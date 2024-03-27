@@ -71,15 +71,15 @@ async def kickmeallch(client: Client, message: Message):
 
 
 add_command_help(
-    "joinleave",
+    "•─╼⃝𖠁 ɪᴏɪɴʟᴇᴀᴠᴇ",
     [
         [
             "kickme",
-            "Leave the group by displaying a message has left this group, bye!!.",
+            "Lᴇᴀᴠᴇ ᴛʜᴇ ɢʀᴏᴜᴘ ʙʏ ᴅɪꜱᴘʟᴀʏɪɴɢ ᴀ ᴍᴇꜱꜱᴀɢᴇ ʜᴀꜱ ʟᴇғᴛ ᴛʜɪꜱ ɢʀᴏᴜᴘ, ʙʏᴇ!!.",
         ],
-        ["leaveallgc", "Exit all telegram groups you have joined."],
-        ["leaveallch", "Exit all Telegram channels that you have joined."],
-        ["join <UsernameGC>", "To Join the Chat Via username."],
-        ["leave <UsernameGC>", "To leave a group Via username."],
+        ["leaveallgc", "Exɪᴛ ᴀʟʟ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘꜱ ʏᴏᴜ ʜᴀᴠᴇ ɪᴏɪɴᴇᴅ."],
+        ["leaveallch", "Exɪᴛ ᴀʟʟ Tᴇʟᴇɢʀᴀᴍ ᴄʜᴀɴɴᴇʟꜱ ᴛʜᴀᴛ ʏᴏᴜ ʜᴀᴠᴇ ɪᴏɪɴᴇᴅ."],
+        ["join ", "Tᴏ Jᴏɪɴ ᴛʜᴇ Cʜᴀᴛ Vɪᴀ ᴜꜱᴇʀɴᴀᴍᴇ."],
+        ["leave ", "Tᴏ ʟᴇᴀᴠᴇ ᴀ ɢʀᴏᴜᴘ Vɪᴀ ᴜꜱᴇʀɴᴀᴍᴇ."],
     ],
-) 
+)

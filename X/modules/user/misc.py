@@ -166,39 +166,39 @@ async def sosmed(client: Client, message: Message):
 
 
 add_command_help(
-    "misc",
+    "•─╼⃝𖠁 ᴍɪꜱᴄ",
     [
-        ["limit", "Check Limit telegram from @SpamBot."],
+        ["limit", "Cʜᴇᴄᴋ Lɪᴍɪᴛ ᴛᴇʟᴇɢʀᴀᴍ ғʀᴏᴍ @SpamBot."],
         [
-            "dm <username> <text>",
-            "To send chat using userbot.",
+            "dm <ᴜꜱᴇʀɴᴀᴍᴇ> <ᴛᴇxᴛ>",
+            "Tᴏ ꜱᴇɴᴅ ᴄʜᴀᴛ ᴜꜱɪɴɢ ᴜꜱᴇʀʙᴏᴛ.",
         ],
-        ["duck", "To get a link from DuckDuckGo."],
+        ["duck", "Tᴏ ɢᴇᴛ ᴀ ʟɪɴᴋ ғʀᴏᴍ DᴜᴄᴋDᴜᴄᴋGᴏ."],
         [
             "open",
-            "To view the contents of the file into text that is sent as a message telegram.",
+            "Tᴏ ᴠɪᴇᴡ ᴛʜᴇ ᴄᴏɴᴛᴇɴᴛꜱ ᴏғ ᴛʜᴇ ғɪʟᴇ ɪɴᴛᴏ ᴛᴇxᴛ ᴛʜᴀᴛ ɪꜱ ꜱᴇɴᴛ ᴀꜱ ᴀ ᴍᴇꜱꜱᴀɢᴇ ᴛᴇʟᴇɢʀᴀᴍ.",
         ],
     ],
 )
 
 
 add_command_help(
-    "webshot",
+    "•─╼⃝𖠁 ᴡᴇʙꜱʜᴏᴛ",
     [
         [
-            f"webshot <link> `or` {cmd}ss <link>",
-            "To screenshot a given web page.",
+            f"webshot <ʟɪɴᴋ> ᴏʀ {cmd}ꜱꜱ <ʟɪɴᴋ>",
+            "Tᴏ ꜱᴄʀᴇᴇɴꜱʜᴏᴛ ᴀ ɢɪᴠᴇɴ ᴡᴇʙ ᴘᴀɢᴇ.",
         ],
     ],
 )
 
 
 add_command_help(
-    "sosmed",
+    "•─╼⃝𖠁 ꜱᴏꜱᴍᴇᴅ",
     [
         [
-            f"sosmed <link>",
-            "To Download Media From Facebook / Tiktok / Instagram / Twitter / YouTube.",
+            f"sosmed <ʟɪɴᴋ>",
+            "Tᴏ Dᴏᴡɴʟᴏᴀᴅ Mᴇᴅɪᴀ Fʀᴏᴍ Fᴀᴄᴇʙᴏᴏᴋ / Tɪᴋᴛᴏᴋ / Iɴꜱᴛᴀɢʀᴀᴍ / Tᴡɪᴛᴛᴇʀ / YᴏᴜTᴜʙᴇ.",
         ],
     ],
   ) 

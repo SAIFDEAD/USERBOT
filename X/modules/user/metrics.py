@@ -38,12 +38,12 @@ async def word_count(bot: Client, message: Message):
 
 
 add_command_help(
-    "metrics",
+    "•─╼⃝𖠁 ᴍᴇᴛʀɪᴄꜱ",
     [
         [
             ".wordcount",
-            "Finds the 25 most used words in the last 1000 messages in a group or private chat. Use in "
-            "chat you want to find the metric in.",
+            "Fɪɴᴅꜱ ᴛʜᴇ 𝟸𝟻 ᴍᴏꜱᴛ ᴜꜱᴇᴅ ᴡᴏʀᴅꜱ ɪɴ ᴛʜᴇ ʟᴀꜱᴛ 𝟷𝟶𝟶𝟶 ᴍᴇꜱꜱᴀɢᴇꜱ ɪɴ ᴀ ɢʀᴏᴜᴘ ᴏʀ ᴘʀɪᴠᴀᴛᴇ ᴄʜᴀᴛ. Uꜱᴇ ɪɴ "
+            "ᴄʜᴀᴛ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ғɪɴᴅ ᴛʜᴇ ᴍᴇᴛʀɪᴄ ɪɴ.",
         ],
     ],
 )

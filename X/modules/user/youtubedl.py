@@ -232,23 +232,23 @@ Music Downloaded And Uploaded By Japanese X Userbot"""
 
 
 add_command_help(
-    "youtubedl",
+    "•─╼⃝𖠁 ʏᴏᴜᴛᴜʙᴇ ᴅʟ",
     [
-        ["song", "Download Audio From YouTube."],
+        ["song", "Dᴏᴡɴʟᴏᴀᴅ Aᴜᴅɪᴏ Fʀᴏᴍ YᴏᴜTᴜʙᴇ."],
         [
             "video",
-            "Download Video from YouTube ",
+            "Dᴏᴡɴʟᴏᴀᴅ Vɪᴅᴇᴏ ғʀᴏᴍ YᴏᴜTᴜʙᴇ ",
         ],
     ],
 )
 
 add_command_help(
-    "song",
+    "•─╼⃝𖠁 ꜱᴏɴɢ",
     [
-        ["deezer", "Download From Deezer."],
+        ["deezer", "Dᴏᴡɴʟᴏᴀᴅ Fʀᴏᴍ Dᴇᴇᴢᴇʀ."],
         [
             "saavn",
-            "Download From Saavn",
+            "Dᴏᴡɴʟᴏᴀᴅ Fʀᴏᴍ Sᴀᴀᴠɴ",
         ],
     ],
 )

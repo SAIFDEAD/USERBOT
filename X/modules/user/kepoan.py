@@ -82,12 +82,12 @@ async def pencuri(client, message):
   
 
 add_command_help(
-    "maling",
+    "•─╼⃝𖠁 ᴍᴀʟɪɴɢ",
     [
         [
-            "copy <link protected channel.>",
-            "Clone restricted media."],
-        [   "curi <reply message>",
-            "Clone from the protected media or timer message."],
+            "copy <ʟɪɴᴋ ᴘʀᴏᴛᴇᴄᴛᴇᴅ ᴄʜᴀɴɴᴇʟ.>",
+            "Cʟᴏɴᴇ ʀᴇꜱᴛʀɪᴄᴛᴇᴅ ᴍᴇᴅɪᴀ."],
+        [   "curi <ʀᴇᴘʟʏ ᴍᴇꜱꜱᴀɢᴇ>",
+            "Cʟᴏɴᴇ ғʀᴏᴍ ᴛʜᴇ ᴘʀᴏᴛᴇᴄᴛᴇᴅ ᴍᴇᴅɪᴀ ᴏʀ ᴛɪᴍᴇʀ ᴍᴇꜱꜱᴀɢᴇ."],
     ],
 ) 

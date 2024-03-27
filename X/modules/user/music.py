@@ -8,7 +8,6 @@ from .help import *
 
 
 @Client.on_message(filters.command("music", cmd) & filters.me)
-)
 async def send_music(bot: Client, message: Message):
     try:
         cmd = message.command
