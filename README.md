@@ -106,4 +106,4 @@
     ─「 𝑪𝒓𝒆𝒅𝒊𝒕 」─
 </h3>
 
-✧ <b>[𝐍𝐎𝐁𝐈𝐓𝐀_𝐗𝐃](https://github.com/nobitaaaxd) & [𝐌𝐈𝐑𝐙𝐀](https://github.com/MirzaElite) & [𝐁𝐡𝐚𝐝𝐯𝐚 𝐇𝐞𝐫𝐨𝐤𝐮](https://github.com/Bhadvaheroku)
+✧ <b>[𝐍𝐎𝐁𝐈𝐓𝐀_𝐗𝐃](https://github.com/nobitaaaxd) & [𝐌𝐈𝐑𝐙𝐀](https://github.com/MirzaElite) & [𝗧𝗿𝘆𝗧𝗼𝗟𝗶𝘃𝗲𝗔𝗹𝗼𝗻𝗲](https://github.com/TryToLiveAlone)
