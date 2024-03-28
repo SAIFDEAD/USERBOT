@@ -49,11 +49,11 @@ async def sg(client: Client, message: Message):
 
 
 add_command_help(
-    "sangmata",
+    "•─╼⃝𖠁 ꜱᴀɴɢᴍᴀᴛᴀ",
     [
         [
-            f"{cmd}sg <reply/userid/username>",
-            "To get user name history while on Telegram.",
+            f"{cmd}sg <ʀᴇᴘʟʏ/ᴜꜱᴇʀɪᴅ/ᴜꜱᴇʀɴᴀᴍᴇ>",
+            "Tᴏ ɢᴇᴛ ᴜꜱᴇʀ ɴᴀᴍᴇ ʜɪꜱᴛᴏʀʏ ᴡʜɪʟᴇ ᴏɴ Tᴇʟᴇɢʀᴀᴍ.",
         ],
     ],
 ) 
