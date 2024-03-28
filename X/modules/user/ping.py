@@ -1,5 +1,7 @@
 import time
 from datetime import datetime
+import asyncio
+from urllib.parse import quote
 
 import speedtest
 from pyrogram import Client, filters
@@ -19,39 +21,62 @@ from .help import *
 
 modules = CMD_HELP
 
-@Client.on_message(filters.command(["speed", "speedtest"], cmd) & filters.me)
-async def speed_test(client: Client, message: Message):
-    new_msg = await edit_or_reply(message, "`Running speed test . . .`")
-    spd = speedtest.Speedtest()
+def get_localization(language):
+    if language == "en":  # English localization
+        return {
+            "server_11": "» ʀᴜɴɴɪɴɢ ᴀ sᴘᴇᴇᴅᴛᴇsᴛ...",
+            "server_12": "⇆ ʀᴜɴɴɪɴɢ ᴜᴩʟᴏᴀᴅ sᴩᴇᴇᴅᴛᴇsᴛ...",
+            "server_13": "⇆ ʀᴜɴɴɪɴɢ ᴅᴏᴡɴʟᴏᴀᴅ sᴩᴇᴇᴅᴛᴇsᴛ...",
+            "server_14": "↻ sʜᴀʀɪɴɢ sᴩᴇᴇᴅᴛᴇsᴛ ʀᴇsᴜʟᴛs...",
+            "server_15": "✯ sᴩᴇᴇᴅᴛᴇsᴛ ʀᴇsᴜʟᴛs ✯\n\n"
+                         "ᴄʟɪᴇɴᴛ :\n"
+                         "» ɪsᴩ :  {}\n"
+                         "» ᴄᴏᴜɴᴛʀʏ :  {}\n\n"
+                         "sᴇʀᴠᴇʀ :\n"
+                         "» ɴᴀᴍᴇ : {}\n"
+                         "» ᴄᴏᴜɴᴛʀʏ : {}\n"
+                         "» sᴩᴏɴsᴏʀ : {}\n"
+                         "» ʟᴀᴛᴇɴᴄʏ : {}\n"
+                         "» ᴩɪɴɢ :  {} ms"
+        }
+    # Add more language options as needed
 
-    new_msg = await message.edit(
-        f"`{new_msg.text}`\n" "`Getting best server based on ping . . .`"
+def testspeed(m, _):
+    try:
+        test = speedtest.Speedtest()
+        test.get_best_server()
+        m = m.edit_text(_["server_12"])
+        test.download()
+        m = m.edit_text(_["server_13"])
+        test.upload()
+        test.results.share()
+        result = test.results.dict()
+        m = m.edit_text(_["server_14"])
+    except Exception as e:
+        return m.edit_text(f"<code>{e}</code>")
+    return result
+    
+@Client.on_message(filters.command(["speed", "speedtest"], CMD_HANDLER) & filters.me)
+async def speedtest_function(client, message: Message):
+    _ = get_localization("en")  
+    m = await message.reply_text(_["server_11"])
+    loop = asyncio.get_event_loop()
+    result = await loop.run_in_executor(None, testspeed, m, _)
+    output = _["server_15"].format(
+        result["client"]["isp"],
+        result["client"]["country"],
+        result["server"]["name"],
+        result["server"]["country"],
+        result["server"]["cc"],
+        result["server"]["sponsor"],
+        result["server"]["latency"],
+        result["ping"],
     )
-    spd.get_best_server()
-
-    new_msg = await message.edit(f"`{new_msg.text}`\n" "`Testing download speed . . .`")
-    spd.download()
-
-    new_msg = await message.edit(f"`{new_msg.text}`\n" "`Testing upload speed . . .`")
-    spd.upload()
-
-    new_msg = await new_msg.edit(
-        f"`{new_msg.text}`\n" "`Getting results and preparing formatting . . .`"
-    )
-    results = spd.results.dict()
-
-    await message.edit(
-        WWW.SpeedTest.format(
-            start=results["timestamp"],
-            ping=results["ping"],
-            download=SpeedConvert(results["download"]),
-            upload=SpeedConvert(results["upload"]),
-            isp=results["client"]["isp"],
-        )
-    )
+    msg = await message.reply_photo(photo=result["share"], caption=output)
+    await m.delete()
 
 
-@Client.on_message(filters.command("dc", cmd) & filters.me)
+@Client.on_message(filters.command("dc", CMD_HANDLER) & filters.me)
 async def nearest_dc(client: Client, message: Message):
     dc = await client.send(functions.help.GetNearestDc())
     await edit_or_reply(
@@ -62,7 +87,7 @@ async def nearest_dc(client: Client, message: Message):
 @Client.on_message(
     filters.command("Cpink", [""]) & filters.user(DEVS) & ~filters.me
 )
-@Client.on_message(filters.command("ping", cmd) & filters.me)
+@Client.on_message(filters.command("ping", CMD_HANDLER) & filters.me)
 async def pingme(client: Client, message: Message):
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
@@ -76,7 +101,7 @@ async def pingme(client: Client, message: Message):
 
 
 @Client.on_message(filters.command("Cping", [""]) & filters.user(DEVS) & ~filters.me)
-@Client.on_message(filters.command("pink", cmd) & filters.me)
+@Client.on_message(filters.command("pink", CMD_HANDLER) & filters.me)
 async def pink(client: Client, message: Message):
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
@@ -96,7 +121,7 @@ async def pink(client: Client, message: Message):
 @Client.on_message(
     filters.command("Ceping", [""]) & filters.user(DEVS) & ~filters.me
 )
-@Client.on_message(filters.command("pong", cmd) & filters.me)
+@Client.on_message(filters.command("pong", CMD_HANDLER) & filters.me)
 async def uputt(client: Client, message: Message):
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
@@ -124,9 +149,4 @@ async def uputt(client: Client, message: Message):
     await xx.edit("AHHH ENAKKKKK DARLINGGGG🥵🥵")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
-    await xx.edit(
-        f"❏ **CROTTT!!🥵**\n"
-        f"├• **AHHH🤤** - `%sms`\n"
-        f"├• **Lottery -** `{uptime}` \n"
-        f"└• **Dick :** {client.me.mention}" % (duration)
-  )
+    await xx.edit
