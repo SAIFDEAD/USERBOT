@@ -39,15 +39,15 @@ async def quotly(client: Client, message: Message):
 
 
 add_command_help(
-    "quotly",
+    "•─╼⃝𖠁 ǫᴜᴏᴛʟʏ",
     [
         [
             f"q or quotly",
-            "Make messages into stickers with random backgrounds.",
+            "Mᴀᴋᴇ ᴍᴇꜱꜱᴀɢᴇꜱ ɪɴᴛᴏ ꜱᴛɪᴄᴋᴇʀꜱ ᴡɪᴛʜ ʀᴀɴᴅᴏᴍ ʙᴀᴄᴋɢʀᴏᴜɴᴅꜱ.",
         ],
         [
             f"q <color> or quotly <color>",
-            "Make messages into stickers with the given custom background color.",
+            "Mᴀᴋᴇ ᴍᴇꜱꜱᴀɢᴇꜱ ɪɴᴛᴏ ꜱᴛɪᴄᴋᴇʀꜱ ᴡɪᴛʜ ᴛʜᴇ ɢɪᴠᴇɴ ᴄᴜꜱᴛᴏᴍ ʙᴀᴄᴋɢʀᴏᴜɴᴅ ᴄᴏʟᴏʀ.",
         ],
     ],
 ) 
