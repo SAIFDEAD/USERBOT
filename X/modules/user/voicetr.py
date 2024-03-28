@@ -63,7 +63,7 @@ async def voicelang(client: Client, message: Message):
 
 
 add_command_help(
-    "voice",
+    "•─╼⃝𖠁 voice",
     [
         [f"voice or {cmd}tts [text/reply]", "Convert text to voice by google."],
         [
