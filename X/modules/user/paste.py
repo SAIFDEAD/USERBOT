@@ -53,8 +53,8 @@ async def paste_func(client: Client, message: Message):
 
 
 add_command_help(
-    "paste",
+    "•─╼⃝𖠁 ᴘᴀꜱᴛᴇ",
     [
-        ["paste <reply>", "To save text to the service pastebin"],
+        ["paste <ʀᴇᴘʟʏ>", "Tᴏ ꜱᴀᴠᴇ ᴛᴇxᴛ ᴛᴏ ᴛʜᴇ ꜱᴇʀᴠɪᴄᴇ ᴘᴀꜱᴛᴇʙɪɴ"],
     ],
       ) 
