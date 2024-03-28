@@ -67,7 +67,7 @@ async def logs_ubot(client: Client, message: Message):
 
 
 add_command_help(
-    "system",
+    "•─╼⃝𖠁 system",
     [
         ["restart", "To restart userbot."],
         ["shutdown", "To turn off userbot."],
