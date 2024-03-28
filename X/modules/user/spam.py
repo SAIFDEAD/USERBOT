@@ -114,12 +114,12 @@ async def spam_stick(client: Client, message: Message):
 
 
 add_command_help(
-    "spam",
+    "•─╼⃝𖠁 ꜱᴘᴀᴍ",
     [
-        ["spam <amount spam> <text>", "Spamming texts in chat!!"],
+        ["spam <amount spam> <text>", "Sᴘᴀᴍᴍɪɴɢ ᴛᴇxᴛꜱ ɪɴ ᴄʜᴀᴛ!!"],
         [
             "delayspam <second> <spam count> <text>",
-            "Sending spam texts with a specified delay period!",
+            "Sᴇɴᴅɪɴɢ ꜱᴘᴀᴍ ᴛᴇxᴛꜱ ᴡɪᴛʜ ᴀ ꜱᴘᴇᴄɪғɪᴇᴅ ᴅᴇʟᴀʏ ᴘᴇʀɪᴏᴅ!",
         ],
     ],
   )
