@@ -66,9 +66,8 @@ async def openai(client: Client, message: Message):
         await msg.edit("An Error Has Occurred!!\nYou Have Not Entered OPENAI_API_KEY")
 
 add_command_help(
-    "•─╼⃝𖠁 ᴏᴘᴇɴᴀɪ",
+    "openai",
     [
-        ["ᴀɪ", "Tᴏ Aꜱᴋ Sᴏᴍᴇᴛʜɪɴɢ Tᴏ Cʜᴀᴛ Gᴘᴛ"]
-        ["ᴀɪɢғ", "Tᴏ Aꜱᴋ Sᴏᴍᴇᴛʜɪɴɢ Tᴏ Aɪ Cʜᴀᴛ Gᴘᴛ"]
+        ["ai", "To Ask Something To Google"]
     ],
-)
+) 
