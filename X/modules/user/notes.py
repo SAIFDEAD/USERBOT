@@ -62,15 +62,15 @@ async def panggil_notes(client, message):
     await msg_o.copy(message.chat.id, reply_to_message_id=message.id)
 
 add_command_help(
-    "notes",
+    "•─╼⃝𖠁 ɴᴏᴛᴇꜱ",
     [
-        ["save [text/reply]",
-            "Save messages to Groups. (can use stickers)"],
-        ["get [nama]",
-            "Take note to saved"],
+        ["save [ᴛᴇxᴛ/ʀᴇᴘʟʏ]",
+            "Sᴀᴠᴇ ᴍᴇꜱꜱᴀɢᴇꜱ ᴛᴏ Gʀᴏᴜᴘꜱ. (ᴄᴀɴ ᴜꜱᴇ ꜱᴛɪᴄᴋᴇʀꜱ)"],
+        ["get [ɴᴀᴍᴀ]",
+            "Tᴀᴋᴇ ɴᴏᴛᴇ ᴛᴏ ꜱᴀᴠᴇᴅ"],
         ["notes",
-            "See Notes List"],
-        ["delnote [nama]",
-            "Delete a note name"],
+            "Sᴇᴇ Nᴏᴛᴇꜱ Lɪꜱᴛ"],
+        ["delnote [ɴᴀᴍᴀ]",
+            "Dᴇʟᴇᴛᴇ ᴀ ɴᴏᴛᴇ ɴᴀᴍᴇ"],
     ],
       )
