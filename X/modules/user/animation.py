@@ -306,33 +306,33 @@ async def gahah(client: Client, message: Message):
 async def gahah(client: Client, message: Message):
     if message.forward_from:
         return
-    await message.edit("❤️❤️")
-    await asyncio.sleep(0.2)
-    await message.edit("🧡🧡")
-    await asyncio.sleep(0.2)
-    await message.edit("💛💛")
-    await asyncio.sleep(0.2)
-    await message.edit("💚💚")
-    await asyncio.sleep(0.2)
-    await message.edit("💙💙")
-    await asyncio.sleep(0.2)
-    await message.edit("💜💜")
-    await asyncio.sleep(0.2)
-    await message.edit("🖤🖤")
-    await asyncio.sleep(0.2)
-    await message.edit("💘💘")
-    await asyncio.sleep(0.2)
+    await message.edit("❤️")
+    await asyncio.sleep(0.5)
+    await message.edit("🧡")
+    await asyncio.sleep(0.5)
+    await message.edit("💛")
+    await asyncio.sleep(0.5)
+    await message.edit("💚")
+    await asyncio.sleep(0.5)
+    await message.edit("💙")
+    await asyncio.sleep(0.5)
+    await message.edit("💜")
+    await asyncio.sleep(0.5)
+    await message.edit("🖤")
+    await asyncio.sleep(0.5)
+    await message.edit("💘")
+    await asyncio.sleep(0.5)
     await message.edit("💝💝")
-    await asyncio.sleep(0.2)
-    await message.edit("❤️❤️")
-    await asyncio.sleep(0.2)
-    await message.edit("🧡🧡")
-    await asyncio.sleep(0.2)
-    await message.edit("💛💛")
-    await asyncio.sleep(0.2)
-    await message.edit("💝💝")
-    await asyncio.sleep(0.2)
-    await message.edit("💜💜")
+    await asyncio.sleep(0.5)
+    await message.edit("❤️")
+    await asyncio.sleep(0.5)
+    await message.edit("🧡")
+    await asyncio.sleep(0.5)
+    await message.edit("💛")
+    await asyncio.sleep(0.5)
+    await message.edit("💝")
+    await asyncio.sleep(0.5)
+    await message.edit("💜")
 
 @Client.on_message(filters.command("wtf", cmd) & filters.me)
 async def gagahkah(client: Client, message: Message):
@@ -1221,6 +1221,7 @@ add_command_help(
         ["drugs", "To display drugs art."],
         ["helicopter", "To display helicopter art."],
         ["thumb", "To display art thumb."],
+        ["theart", "To display random heart."]
         ["run", "For displays art run."],
         ["nolove", "To show art love."],
         ["pat", "To display pat ​​art."],
