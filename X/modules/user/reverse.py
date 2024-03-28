@@ -182,9 +182,9 @@ async def tracemoe_rs(client: Client, message: Message):
 
 
 add_command_help(
-    "reverse",
+    "•─╼⃝𖠁 ʀᴇᴠᴇʀꜱᴇ",
     [
-        ["reverse", "Reply to a image ."],
-        ["areverse", "Reply to a message ."],
+        ["reverse", "Rᴇᴘʟʏ ᴛᴏ ᴀ ɪᴍᴀɢᴇ ."],
+        ["areverse", "Rᴇᴘʟʏ ᴛᴏ ᴀ ᴍᴇꜱꜱᴀɢᴇ ."],
     ],
   ) 
