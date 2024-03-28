@@ -431,7 +431,7 @@ async def stick2png(client: Client, message: Message):
 
 
 add_command_help(
-    "sticker",
+    "•─╼⃝𖠁 sticker",
     [
         [
             f"kang `atau` {cmd}tikel",
@@ -452,7 +452,7 @@ add_command_help(
 
 
 add_command_help(
-    "memify",
+    "•─╼⃝𖠁 memify",
     [
         [
             "mmf Top Text ; Bottom Text",
@@ -463,7 +463,7 @@ add_command_help(
 
 
 add_command_help(
-    "tiny",
+    "•─╼⃝𖠁 tiny",
     [
         [
             "tiny <reply ke Photo/sticker>",
