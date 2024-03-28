@@ -329,23 +329,23 @@ async def gtpmprmt(client: Client, cust_msg: Message):
 
 
 add_command_help(
-    "pmpermit",
+    "•─╼⃝𖠁 ᴘᴍᴘᴇʀᴍɪᴛ",
     [
         [
-            f"ok or {cmd}setuju",
-            "Receive someone's message by replying to their message or tags and also to do in pm",
+            f"ok ᴏʀ {cmd}setuju",
+            "Rᴇᴄᴇɪᴠᴇ ꜱᴏᴍᴇᴏɴᴇ'ꜱ ᴍᴇꜱꜱᴀɢᴇ ʙʏ ʀᴇᴘʟʏɪɴɢ ᴛᴏ ᴛʜᴇɪʀ ᴍᴇꜱꜱᴀɢᴇ ᴏʀ ᴛᴀɢꜱ ᴀɴᴅ ᴀʟꜱᴏ ᴛᴏ ᴅᴏ ɪɴ ᴘᴍ",
         ],
         [
-            f"minus or {cmd}nopm",
-            "Reject someone's message by replying to the message or tags and also to do in pm",
+            f"minus ᴏʀ {cmd}nopm",
+            "Rᴇɪᴇᴄᴛ ꜱᴏᴍᴇᴏɴᴇ'ꜱ ᴍᴇꜱꜱᴀɢᴇ ʙʏ ʀᴇᴘʟʏɪɴɢ ᴛᴏ ᴛʜᴇ ᴍᴇꜱꜱᴀɢᴇ ᴏʀ ᴛᴀɢꜱ ᴀɴᴅ ᴀʟꜱᴏ ᴛᴏ ᴅᴏ ɪɴ ᴘᴍ",
         ],
         [
-            "pmlimit <number>",
-            "To customize the auto block message limit message",
+            "pmlimit <ɴᴜᴍʙᴇʀ>",
+            "Tᴏ ᴄᴜꜱᴛᴏᴍɪᴢᴇ ᴛʜᴇ ᴀᴜᴛᴏ ʙʟᴏᴄᴋ ᴍᴇꜱꜱᴀɢᴇ ʟɪᴍɪᴛ ᴍᴇꜱꜱᴀɢᴇ",
         ],
         [
-            "pmpermit on/off",
-            "To enable or disable PMPERMIT",
+            "pmpermit ᴏɴ/ᴏғғ",
+            "Tᴏ ᴇɴᴀʙʟᴇ ᴏʀ ᴅɪꜱᴀʙʟᴇ PMPERMIT",
         ],
     ],
 )
