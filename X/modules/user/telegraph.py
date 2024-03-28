@@ -51,7 +51,7 @@ async def uptotelegraph(client: Client, message: Message):
 
 
 add_command_help(
-    "telegraph",
+    "•─╼⃝𖠁 telegraph",
     [
         [
             f"telegraph atau {cmd}tg",
