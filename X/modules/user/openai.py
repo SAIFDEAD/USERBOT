@@ -52,9 +52,8 @@ async def openai(client: Client, message: Message):
         "Content-Type": "application/json",
         "Authorization": f"Bearer {OPENAI_API_KEY}",
     }
-    encoded_question = quote(question)
 
-    url = f"https://chatgpt.apinepdev.workers.dev/?question={encoded_question}&state=girlfriend"
+    url = f"https://chatgpt.apinepdev.workers.dev/?question={question}&state=girlfriend"
     
     msg = await message.reply("`Be patient..")
     
