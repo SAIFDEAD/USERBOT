@@ -95,10 +95,10 @@ async def purgeme(client: Client, message: Message):
 
 
 add_command_help(
-    "purge",
+    "•─╼⃝𖠁 ᴘᴜʀɢᴇ",
     [
-        ["del", "Delete a message, reply to a message."],
-        ["purge", "Delete a message, reply to a message."],
-        ["purgeme <number>", "Delete the number of your messages, which you want to delete."],
+        ["del", "Dᴇʟᴇᴛᴇ ᴀ ᴍᴇꜱꜱᴀɢᴇ, ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴍᴇꜱꜱᴀɢᴇ."],
+        ["purge", "Dᴇʟᴇᴛᴇ ᴀ ᴍᴇꜱꜱᴀɢᴇ, ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴍᴇꜱꜱᴀɢᴇ."],
+        ["purgeme <number>", "Dᴇʟᴇᴛᴇ ᴛʜᴇ ɴᴜᴍʙᴇʀ ᴏғ ʏᴏᴜʀ ᴍᴇꜱꜱᴀɢᴇꜱ, ᴡʜɪᴄʜ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴅᴇʟᴇᴛᴇ."],
     ],
           ) 
