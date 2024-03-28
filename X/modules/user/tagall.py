@@ -57,7 +57,7 @@ async def cancel_spam(client: Client, message: Message):
 
 
 add_command_help(
-    "tagall",
+    "•─╼⃝𖠁 tagall",
     [
         [
             "mention [text/reply ke chat]",
