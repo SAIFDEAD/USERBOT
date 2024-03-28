@@ -54,8 +54,8 @@ async def stats(client: Client, message: Message):
 
 
 add_command_help(
-    "stats",
+    "ꜱᴛᴀᴛꜱ",
     [
-        ["stats", "To Check Your Account Status, how Joined Chats."],
+        ["stats", "Tᴏ Cʜᴇᴄᴋ Yᴏᴜʀ Aᴄᴄᴏᴜɴᴛ Sᴛᴀᴛᴜꜱ, ʜᴏᴡ Jᴏɪɴᴇᴅ Cʜᴀᴛꜱ."],
     ],
           )
