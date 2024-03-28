@@ -49,7 +49,7 @@ async def paste(bot: Client, message: Message):
 
 
 add_command_help(
-    "ᴘᴀꜱᴛᴇ",
+    "•─╼⃝𖠁 ᴘᴀꜱᴛᴇ",
     [
         [
             ".paste `or` .bin `or` .neko `or` .nekobin",
