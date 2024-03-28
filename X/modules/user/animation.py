@@ -1221,7 +1221,7 @@ add_command_help(
         ["drugs", "To display drugs art."],
         ["helicopter", "To display helicopter art."],
         ["thumb", "To display art thumb."],
-        ["theart", "To display random heart."]
+        ["theart", "To display random heart."],
         ["run", "For displays art run."],
         ["nolove", "To show art love."],
         ["pat", "To display pat ​​art."],
