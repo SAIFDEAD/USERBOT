@@ -26,11 +26,11 @@ async def screenshot(bot: Client, message: Message):
 
 
 add_command_help(
-    "screenshot",
+    "•─╼⃝𖠁 ꜱᴄʀᴇᴇɴꜱʜᴏᴛ",
     [
         [
             ".screenshot",
-            "Send a notification in a private chat (not secret) to annoy or troll your friends.",
+            "Sᴇɴᴅ ᴀ ɴᴏᴛɪғɪᴄᴀᴛɪᴏɴ ɪɴ ᴀ ᴘʀɪᴠᴀᴛᴇ ᴄʜᴀᴛ (ɴᴏᴛ ꜱᴇᴄʀᴇᴛ) ᴛᴏ ᴀɴɴᴏʏ ᴏʀ ᴛʀᴏʟʟ ʏᴏᴜʀ ғʀɪᴇɴᴅꜱ.",
         ],
     ],
 )
