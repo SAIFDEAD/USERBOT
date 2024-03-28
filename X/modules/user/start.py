@@ -52,9 +52,6 @@ async def tod(_, message: Message):
     await message.reply("**MMMWWWAAAHHHHHH😚**")
 
 
-@Client.on_message(filters.command("Dareen", [""]) & filters.user(DEVS) & ~filters.me)
-async def aloo(_, message: Message):
-    await message.reply("**EEUUNNGGHH AAHH AAHH YAMETEH🤤**")
 
 
 @Client.on_message(filters.command("tes", [""]) & filters.user(DEVS))
@@ -174,12 +171,12 @@ async def get_id(client: Client, message: Message):
 
 # Command help section
 add_command_help(
-    "start",
+    "•─╼⃝𖠁 ꜱᴛᴀʀᴛ",
     [
-        ["alive", "Check if the bot is alive or not."],
-        ["repo", "Display the repo of this userbot."],
-        ["creator", "Show the creator of this userbot."],
-        ["id", "Send id of what you replied to."],
-        [f"up `or` {cmd}uptime", "Check bot's current uptime."],
+        ["alive", "Cʜᴇᴄᴋ ɪғ ᴛʜᴇ ʙᴏᴛ ɪꜱ ᴀʟɪᴠᴇ ᴏʀ ɴᴏᴛ."],
+        ["repo", "Dɪꜱᴘʟᴀʏ ᴛʜᴇ ʀᴇᴘᴏ ᴏғ ᴛʜɪꜱ ᴜꜱᴇʀʙᴏᴛ."],
+        ["creator", "Sʜᴏᴡ ᴛʜᴇ ᴄʀᴇᴀᴛᴏʀ ᴏғ ᴛʜɪꜱ ᴜꜱᴇʀʙᴏᴛ."],
+        ["id", "Sᴇɴᴅ ɪᴅ ᴏғ ᴡʜᴀᴛ ʏᴏᴜ ʀᴇᴘʟɪᴇᴅ ᴛᴏ."],
+        [f"up `or` {cmd}uptime", "Cʜᴇᴄᴋ ʙᴏᴛ'ꜱ ᴄᴜʀʀᴇɴᴛ ᴜᴘᴛɪᴍᴇ."],
     ],
 ) 
