@@ -24,7 +24,7 @@ async def upload_helper(bot: Client, message: Message):
 
 
 add_command_help(
-    "upload",
+    "•─╼⃝𖠁 upload",
     [
         [".upload", "Upload the file to telegram from the given system file path."],
     ],
