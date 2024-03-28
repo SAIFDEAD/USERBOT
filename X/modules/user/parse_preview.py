@@ -69,11 +69,11 @@ async def parse(client: Client, message: Message):
 
 
 add_command_help(
-    "parse",
+    "•─╼⃝𖠁 ᴘᴀʀꜱᴇ",
     [
         [
             "parse",
-            "Parse a web_page(link) preview",
+            "Pᴀʀꜱᴇ ᴀ ᴡᴇʙ_ᴘᴀɢᴇ(ʟɪɴᴋ) ᴘʀᴇᴠɪᴇᴡ",
         ]
     ],
   ) 
