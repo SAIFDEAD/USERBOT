@@ -122,7 +122,7 @@ add_command_help(
 
 
 add_command_help(
-    "ping",
+    "•─╼⃝𖠁 ping",
     [
         ["ping", "To Show Your Bot's Ping."],
         ["pink", "To Show Your Bot's Ping ( The animation is just different )."],
