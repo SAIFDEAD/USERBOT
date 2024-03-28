@@ -29,7 +29,7 @@ async def _(client: Client, message: Message):
 
 
 add_command_help(
-    "translate",
+    "•─╼⃝𖠁 translate",
     [
         [
             "tr <language code> <text/reply>",
