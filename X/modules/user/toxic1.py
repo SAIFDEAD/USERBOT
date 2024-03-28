@@ -61,7 +61,7 @@ async def ngejamet(client: Client, message: Message):
 
 
 add_command_help(
-    "toxci1",
+    "•─╼⃝𖠁 toxci1",
     [
         ["toxicity", "To judge illegitimate children like you"],
         ["idiot", "To Contain an Idiot Kid Like u"],
