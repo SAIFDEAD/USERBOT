@@ -186,6 +186,19 @@ async def hello_world(client: Client, message: Message):
     await asyncio.sleep(0.2)
     await mg.edit("aaahhhhhhhh")
 
+@Client.on_message(filters.command("shoot", prefixes=".") & filters.me)
+async def gunid(client: Client, message: Message):
+    await edit_or_reply(
+        message,
+       "░▐█▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█▄\n"
+       "░███████████████████████....⁍\n"
+       "░▓▓▓▓▓▓▓▓▓▓▓▓██▓▓▓▓▓▓▓▓◤\n"
+       "╬▀░▐▓▓▓▓▓▓▌▀█░░░█▀░\n"
+       "▒░░▓▓▓▓▓▓█▄▄▄▄▄█▀╬░\n"
+       "░░█▓▓▓▓▓▌░▒▒▒▒▒▒▒▒▒\n"
+       "░▐█▓▓▓▓▓░░▒▒▒▒▒▒▒▒▒\n"
+       "░▐██████▌╬░▒▒▒▒▒▒▒▒\n",
+    )
 
 @Client.on_message(filters.command("brain", cmd) & filters.me)
 async def pijtau(client: Client, message: Message):
