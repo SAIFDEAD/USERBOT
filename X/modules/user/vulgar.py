@@ -54,8 +54,8 @@ async def i_am_not_allowed_to_say_this(bot: Client, message: Message):
 
 
 add_command_help(
-    "vulgar",
+    "•─╼⃝𖠁 ᴠᴜʟɢᴀʀ",
     [
-        [".vulgar", "Toggles bad word filtering on and off."],
+        [".vulgar", "Tᴏɢɢʟᴇꜱ ʙᴀᴅ ᴡᴏʀᴅ ғɪʟᴛᴇʀɪɴɢ ᴏɴ ᴀɴᴅ ᴏғғ."],
     ],
 )
