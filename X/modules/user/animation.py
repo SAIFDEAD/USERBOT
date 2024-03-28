@@ -322,7 +322,7 @@ async def gahah(client: Client, message: Message):
     await asyncio.sleep(0.5)
     await message.edit("💘")
     await asyncio.sleep(0.5)
-    await message.edit("💝💝")
+    await message.edit("💝")
     await asyncio.sleep(0.5)
     await message.edit("❤️")
     await asyncio.sleep(0.5)
