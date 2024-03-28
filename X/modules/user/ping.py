@@ -58,22 +58,27 @@ def testspeed(m, _):
     
 @Client.on_message(filters.command(["speed", "speedtest"], CMD_HANDLER) & filters.me)
 async def speedtest_function(client, message: Message):
-    _ = get_localization("en")  
+    _ = get_localization("en")
     m = await message.reply_text(_["server_11"])
     loop = asyncio.get_event_loop()
-    result = await loop.run_in_executor(None, testspeed, m, _)
-    output = _["server_15"].format(
-        result["client"]["isp"],
-        result["client"]["country"],
-        result["server"]["name"],
-        result["server"]["country"],
-        result["server"]["cc"],
-        result["server"]["sponsor"],
-        result["server"]["latency"],
-        result["ping"],
-    )
-    msg = await message.reply_photo(photo=result["share"], caption=output)
-    await m.delete()
+    try:
+        result = await loop.run_in_executor(None, testspeed, m, _)
+        output = _["server_15"].format(
+            result.get("client", {}).get("isp", "N/A"),
+            result.get("client", {}).get("country", "N/A"),
+            result.get("server", {}).get("name", "N/A"),
+            result.get("server", {}).get("country", "N/A"),
+            result.get("server", {}).get("cc", "N/A"),
+            result.get("server", {}).get("sponsor", "N/A"),
+            result.get("server", {}).get("latency", "N/A"),
+            result.get("ping", "N/A"),
+        )
+        msg = await message.reply_photo(photo=result.get("share"), caption=output)
+    except Exception as e:
+        await m.edit_text(f"Error occurred: {e}")
+    finally:
+        await m.delete()
+        
 
 
 @Client.on_message(filters.command("dc", CMD_HANDLER) & filters.me)
