@@ -254,7 +254,7 @@ async def updaterman(client: Client, message: Message):
 
 
 add_command_help(
-    "update",
+    "•─╼⃝𖠁 update",
     [
         ["update", "To see a list of the latest updates from Japanese-X-Userbot."],
         ["update deploy", "To update userbot."],
