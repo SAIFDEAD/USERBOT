@@ -16,7 +16,6 @@ import random
 
 from .help import *
 
-@Client.on_message(filters.command("cask", ".") & filters.user(DEVS) & ~filters.me)
 @Client.on_message(filters.command("ai", ".") & filters.me)
 async def openai(client: Client, message: Message):
     if len(message.command) == 1:
@@ -39,35 +38,11 @@ async def openai(client: Client, message: Message):
     except MessageNotModified:
         pass
     except Exception:
-        await msg.edit("An Error Has Occurred!!\nYou Have Not Entered OPENAI_API_KEY")
-
-@Client.on_message(filters.command("aigf", ".") & filters.me)
-async def openai(client: Client, message: Message):
-    if len(message.command) == 1:
-        return await message.reply(f"Ketik <code>.{message.command[0]} [question]</code> Questions for use OpenAI")
-    
-    question = message.text.split(" ", maxsplit=1)[1]
-    
-    headers = {
-        "Content-Type": "application/json",
-        "Authorization": f"Bearer {OPENAI_API_KEY}",
-    }
-
-    url = f"https://chatgpt.apinepdev.workers.dev/?question={question}&state=girlfriend"
-    
-    msg = await message.reply("`Be patient..")
-    
-    try:
-        response = requests.get(url).json()
-        await msg.edit(response["answer"])
-    except MessageNotModified:
-        pass
-    except Exception:
-        await msg.edit("An Error Has Occurred!!\nYou Have Not Entered OPENAI_API_KEY")
+        await msg.edit("Sᴏʀʀʏ Cʜᴀᴛ Gᴘᴛ ɪs ᴀᴛ ʀᴇsᴛ ᴄᴜʀʀᴇɴᴛʟʏ ᴅᴏ ʏᴏᴜʀ ᴡᴏʀᴋ ʙʏ ʏᴏᴜʀ sᴇʟғ")
 
 add_command_help(
-    "openai",
+    "•─╼⃝𖠁 ᴏᴘᴇɴᴀɪ",
     [
-        ["ai", "To Ask Something To Google"]
+        ["ai", "Tᴏ Aꜱᴋ Sᴏᴍᴇᴛʜɪɴɢ Tᴏ Cʜᴀᴛ Gᴘᴛ"],
     ],
-) 
+)
