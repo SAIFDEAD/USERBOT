@@ -125,16 +125,16 @@ async def view_pfp(client: Client, message: Message):
 
 
 add_command_help(
-    "profile",
+    "•─╼⃝𖠁 ᴘʀᴏғɪʟᴇ",
     [
-        ["block", "To block telegram users"],
-        ["unblock", "To open the user you blocked"],
-        ["setname", "To Change Telegram Name."],
-        ["setbio", "To Change Telegram Bio."],
+        ["block", "Tᴏ ʙʟᴏᴄᴋ ᴛᴇʟᴇɢʀᴀᴍ ᴜꜱᴇʀꜱ"],
+        ["unblock", "Tᴏ ᴜɴʙʟᴏᴄᴋ ᴛᴇʟᴇɢʀᴀᴍ ᴜꜱᴇʀꜱ"],
+        ["setname", "Tᴏ Cʜᴀɴɢᴇ Tᴇʟᴇɢʀᴀᴍ Nᴀᴍᴇ."],
+        ["setbio", "Tᴏ Cʜᴀɴɢᴇ Tᴇʟᴇɢʀᴀᴍ Bɪᴏ."],
         [
             "setpfp",
-            "Reply To Image Type {cmd}setpfp To Change Telegram Profile Photo.",
+            "Rᴇᴘʟʏ Tᴏ Iᴍᴀɢᴇ Tʏᴘᴇ {cmd}ꜱᴇᴛᴘғᴘ Tᴏ Cʜᴀɴɢᴇ Tᴇʟᴇɢʀᴀᴍ Pʀᴏғɪʟᴇ Pʜᴏᴛᴏ.",
         ],
-        ["vpfp", "To see the current user's profile photo."],
+        ["vpfp", "Tᴏ ꜱᴇᴇ ᴛʜᴇ ᴄᴜʀʀᴇɴᴛ ᴜꜱᴇʀ'ꜱ ᴘʀᴏғɪʟᴇ ᴘʜᴏᴛᴏ."],
     ],
   ) 
