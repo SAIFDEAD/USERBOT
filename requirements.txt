@@ -40,3 +40,5 @@ youtube-search-python
 yt-dlp==2024.03.10
 httpx[http2]
 openai
+flask
+flask_restful
