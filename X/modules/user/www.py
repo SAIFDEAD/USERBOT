@@ -110,7 +110,7 @@ async def module_peler(client: Client, message: Message):
 
 
 add_command_help(
-    "speedtest",
+    "•─╼⃝𖠁 speedtest",
     [
         ["dc", "To see your Telegram DC."],
         [
