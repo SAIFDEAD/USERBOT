@@ -7,11 +7,11 @@ class First:
 ✣ **𝐆𝐫𝐨𝐮𝐩 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 :** [𝐉𝐚𝐩𝐚𝐧𝐞𝐬𝐞 𝐔𝐬𝐞𝐫𝐛𝐨𝐭](t.me/Japanese_Userbot_Chat)
 ✣ **𝐂𝐡𝐚𝐧𝐧𝐞𝐥 :** [𝐉𝐚𝐩𝐚𝐧𝐞𝐬𝐞 𝐔𝐬𝐞𝐫𝐛𝐨𝐭](t.me/Japanese_Userbot)
 ✣ **𝐎𝐰𝐧𝐞𝐫  :** [𝐍𝐎𝐁𝐈𝐓𝐀_𝐗𝐃](t.me/Nobitaa_xd)
-✣ **𝐑𝐞𝐩𝐨 :** [Japanese-X-Userbot](https://github.com/Team-Japanese/Japanese-X-Userbot)
+✣ **𝐑𝐞𝐩𝐨 :** [𝐉𝐚𝐩𝐚𝐧𝐞𝐬𝐞-𝐗-𝐔𝐬𝐞𝐫𝐛𝐨𝐭](https://github.com/Team-Japanese/Japanese-X-Userbot)
 
 
 𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐛𝐲 [𝐉𝐚𝐩𝐚𝐧𝐞𝐬𝐞-𝐗-𝐔𝐬𝐞𝐫𝐛𝐨𝐭](https://github.com/Team-Japanese/Japanese-X-Userbot)"""
-    CREATOR = '𝐈 𝐰𝐚𝐬 𝐜𝐫𝐞𝐚𝐭𝐞𝐝 𝐛𝐲 𝐦𝐲 𝐦𝐚𝐬𝐭𝐞𝐫 <a href="https://github.com/Team-Japanese/Japanese-X-Userbot">Man</a> 𝐨𝐧 𝐚 𝐫𝐚𝐢𝐧𝐲 𝐝𝐚𝐲.'
+    CREATOR = '𝐈 𝐰𝐚𝐬 𝐜𝐫𝐞𝐚𝐭𝐞𝐝 𝐛𝐲 𝐦𝐲 𝐦𝐚𝐬𝐭𝐞𝐫 <a href="https://github.com/Team-Japanese/Japanese-X-Userbot">𝐉𝐚𝐩𝐚𝐧𝐞𝐬𝐞-𝐗-𝐔𝐬𝐞𝐫𝐛𝐨𝐭</a> 𝐨𝐧 𝐚 𝐫𝐚𝐢𝐧𝐲 𝐝𝐚𝐲.'
     MSG_ON = """
 🐣 **𝐉𝐚𝐩𝐚𝐧𝐞𝐬𝐞-𝐗-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐀𝐜𝐭𝐢𝐯𝐚𝐭𝐞𝐝 𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥𝐲** 🐣
 ━━
