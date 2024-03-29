@@ -51,11 +51,11 @@ async def uptotelegraph(client: Client, message: Message):
 
 
 add_command_help(
-    "•─╼⃝𖠁 telegraph",
+    "•─╼⃝𖠁 ᴛᴇʟᴇɢʀᴀᴘʜ",
     [
         [
-            f"telegraph atau {cmd}tg",
-            "Reply to a Text Message or Media to upload it to telegraph.",
+            f"telegraph ᴀᴛᴀᴜ {cmd}tg",
+            "Rᴇᴘʟʏ ᴛᴏ ᴀ Tᴇxᴛ Mᴇꜱꜱᴀɢᴇ ᴏʀ Mᴇᴅɪᴀ ᴛᴏ ᴜᴘʟᴏᴀᴅ ɪᴛ ᴛᴏ ᴛᴇʟᴇɢʀᴀᴘʜ.",
         ],
     ],
 ) 
