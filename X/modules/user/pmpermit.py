@@ -4,7 +4,7 @@ from X.powers import get_id
 from config import PMPERMIT_PIC, CMD_HANDLER
 hl = CMD_HANDLER
 pm_watcher = 5
-NOBIGEY = PMPERMIT_PIC
+NOBIPRO = PMPERMIT_PIC
 
 TEXT = """
 **Hᴇʟʟᴏ sɪʀ ᴍʏsᴇʟғ [Jᴀᴘᴀɴᴇsᴇ-X-Usᴇʀʙᴏᴛ](https://github.com/Team-Japanese/Japanese-X-Userbot), ᴏᴡɴᴇʀ » {} Pʀᴏᴛᴇᴄᴛɪᴏɴ **
