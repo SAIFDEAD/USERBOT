@@ -44,8 +44,8 @@ async def unsplash_pictures(bot: Client, message: Message):
 
 
 add_command_help(
-    "•─╼⃝𖠁 unsplash",
+    "•─╼⃝𖠁 ᴜɴꜱᴘʟᴀꜱʜ",
     [
-        [".unsplash __or__ .pic", "Send random pic of keyword first argument."],
+        [".unsplash ᴏʀ .pic", "Sᴇɴᴅ ʀᴀɴᴅᴏᴍ ᴘɪᴄ ᴏғ ᴋᴇʏᴡᴏʀᴅ ғɪʀꜱᴛ ᴀʀɢᴜᴍᴇɴᴛ."],
     ],
 )
