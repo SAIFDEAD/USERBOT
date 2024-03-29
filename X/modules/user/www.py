@@ -110,21 +110,21 @@ async def module_peler(client: Client, message: Message):
 
 
 add_command_help(
-    "•─╼⃝𖠁 speedtest",
+    "•─╼⃝𖠁 ꜱᴘᴇᴇᴅᴛᴇꜱᴛ",
     [
-        ["dc", "To see your Telegram DC."],
+        ["dc", "Tᴏ ꜱᴇᴇ ʏᴏᴜʀ Tᴇʟᴇɢʀᴀᴍ DC."],
         [
             f"speedtest `or` {cmd}speed",
-            "To test your server speed.",
+            "Tᴏ ᴛᴇꜱᴛ ʏᴏᴜʀ ꜱᴇʀᴠᴇʀ ꜱᴘᴇᴇᴅ.",
         ],
     ],
 )
 
 
 add_command_help(
-    "•─╼⃝𖠁 ping",
+    "•─╼⃝𖠁 Pɪɴɢ",
     [
-        ["ping", "To Show Your Bot's Ping."],
-        ["pink", "To Show Your Bot's Ping ( The animation is just different )."],
+        ["ping", "Tᴏ Sʜᴏᴡ Yᴏᴜʀ Bᴏᴛ'ꜱ Pɪɴɢ."],
+        ["pink", "Tᴏ Sʜᴏᴡ Yᴏᴜʀ Bᴏᴛ'ꜱ Pɪɴɢ ( Tʜᴇ ᴀɴɪᴍᴀᴛɪᴏɴ ɪꜱ ɪᴜꜱᴛ ᴅɪғғᴇʀᴇɴᴛ )."],
     ],
   )
