@@ -11,7 +11,7 @@ for i,SESSION in enumerate(SESSIONS):
             session_string=SESSION,
             api_id=API_ID,
             api_hash=API_HASH,
-            plugins=dict(root="STORM.modules"),
+            plugins=dict(root="X.modules"),
         )
         CLIENTS.append(client)
 
