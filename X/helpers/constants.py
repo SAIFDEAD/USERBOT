@@ -6,7 +6,7 @@ class First:
 ✣ **Userbot Version :** `{}`
 ✣ **Group Support :** [Japanese Userbot](t.me/Japanese_Userbot_Chat)
 ✣ **Channel :** [Japanese Userbot](t.me/Japanese_Userbot)
-✣ **Owner Repo :** [NOBITA_XD](t.me/Nobitaa_xd)
+✣ **Owner :** [NOBITA_XD](t.me/Nobitaa_xd)
 ✣ **Repo :** [Japanese-X-Userbot](https://github.com/Team-Japanese/Japanese-X-Userbot)
 
 
