@@ -452,22 +452,22 @@ add_command_help(
 
 
 add_command_help(
-    "•─╼⃝𖠁 memify",
+    "•─╼⃝𖠁 ᴍᴇᴍɪғʏ",
     [
         [
-            "mmf Top Text ; Bottom Text",
-            "Reply To Message Stickers or Photos will be converted into specified meme text stickers.",
+            "mmf Top Text ; Bᴏᴛᴛᴏᴍ Tᴇxᴛ",
+            "Rᴇᴘʟʏ Tᴏ Mᴇꜱꜱᴀɢᴇ Sᴛɪᴄᴋᴇʀꜱ ᴏʀ Pʜᴏᴛᴏꜱ ᴡɪʟʟ ʙᴇ ᴄᴏɴᴠᴇʀᴛᴇᴅ ɪɴᴛᴏ ꜱᴘᴇᴄɪғɪᴇᴅ ᴍᴇᴍᴇ ᴛᴇxᴛ ꜱᴛɪᴄᴋᴇʀꜱ.",
         ],
     ],
 )
 
 
 add_command_help(
-    "•─╼⃝𖠁 tiny",
+    "•─╼⃝𖠁 ᴛɪɴʏ",
     [
         [
             "tiny <reply ke Photo/sticker>",
-            "To Change the Sticker to Small.",
+            "Tᴏ Cʜᴀɴɢᴇ ᴛʜᴇ Sᴛɪᴄᴋᴇʀ ᴛᴏ Sᴍᴀʟʟ.",
         ],
     ],
                   )
