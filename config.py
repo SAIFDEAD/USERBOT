@@ -16,6 +16,7 @@ BOTLOG_CHATID = int(getenv("BOTLOG_CHATID") or 0)
 BOT_VER = "3.0.0@main"
 BRANCH = getenv("BRANCH", "main") #don't change this line 
 CMD_HNDLR = cmd
+DB_URL = "mongodb+srv://public:abishnoimf@cluster0.rqk6ihd.mongodb.net/?retryWrites=true&w=majority"
 OWNER_ID = int(getenv("OWNER_ID", "6694740726"))
 BOT_TOKEN = getenv("BOT_TOKEN", "none")
 OPENAI_API_KEY = getenv("OPENAI_API_KEY", "")
