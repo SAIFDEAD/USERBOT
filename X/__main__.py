@@ -1,7 +1,7 @@
 import asyncio
 import importlib
 from pyrogram import Client, idle
-from X.helper import join
+from X.helpers import join
 from X.modules import ALL_MODULES
 from X import clients, app, ids
 
