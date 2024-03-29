@@ -24,11 +24,11 @@
     },
     "HEROKU_API_KEY": {
       "description": "ғιℓℓ үσυя нεяσкυ αρι кεү gεт тнιs ғяσм » https://dashboard.heroku.com/account",
-      "required": true
+      "required": false
     },
     "HEROKU_APP_NAME": {
       "description": "ғιℓℓ үσυя нεяσкυ αρρ ηαмε",
-      "required": true
+      "required": false
     }
   },
   "addons": [
