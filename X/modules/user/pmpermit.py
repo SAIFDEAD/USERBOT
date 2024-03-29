@@ -87,7 +87,7 @@ async def wtch(client, message):
         await message.reply("ꜱᴘᴀᴍᴍᴇʀ ᴅᴇᴛᴇᴄᴛᴇᴅ ᴀɴᴅ ʙʟᴏᴄᴋᴇᴅ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ.....")
         await reset_warns(message.from_user.id)
         return await client.block_user(message.from_user.id)
-    await message.reply_photo(NOBIGEY, caption=TEXT.format((await client.get_me()).first_name, await limit(), await get_warns(message.from_user.id)))
+    await message.reply_photo(NOBIPRO, caption=TEXT.format((await client.get_me()).first_name, await limit(), await get_warns(message.from_user.id)))
 
 
 add_command_help(
