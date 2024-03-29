@@ -7,8 +7,8 @@ dnspython
 emoji
 gitpython
 google-search==1.1.1
-google==3.0.0
-googlesearch-python== 1.2.3
+google
+googlesearch-python
 gpytranslate
 gtts
 heroku3
@@ -21,7 +21,7 @@ psutil
 psycopg2-binary
 ptable
 pymediainfo
-pyrogram
+pyrogram==2.0.105
 pytgcalls==3.0.0.dev24
 python-dotenv
 pykeyboard
@@ -39,4 +39,9 @@ wget==3.2
 youtube-search-python
 yt-dlp==2024.03.10
 httpx[http2]
-openai
+openai==0.28
+flask
+flask_restful
+random2
+beautifulsoup4
+motor
