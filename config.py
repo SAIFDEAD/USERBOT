@@ -18,7 +18,7 @@ if not BLACKLIST_CHAT:
     BLACKLIST_CHAT = [-1001608701614, -1001675459127, -1001473548283, -1001608701614]
 BLACKLIST_GCAST = {int(x) for x in getenv("BLACKLIST_GCAST", "").split()}
 BOTLOG_CHATID = int(getenv("BOTLOG_CHATID") or 0)
-BOT_VER = "1.1.5@main"
+BOT_VER = "3.0.0@main"
 BRANCH = getenv("BRANCH", "main") #don't change this line 
 CMD_HNDLR = cmd
 OWNER_ID = getenv("OWNER_ID", "")
