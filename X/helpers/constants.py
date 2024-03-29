@@ -1,17 +1,17 @@
 class First:
-    ALIVE = "`Still Working On Fire 🔥`"
+    ALIVE = "`𝐒𝐭𝐢𝐥𝐥 𝐖𝐨𝐫𝐤𝐢𝐧𝐠 𝐎𝐧 𝐅𝐢𝐫𝐞 🔥`"
     REPO = """
-**Hey**, __I am using__ ✨ **Japanese-X-Userbot** ✨
+**𝐇𝐞𝐲**, __𝐈 𝐚𝐦 𝐮𝐬𝐢𝐧𝐠__ ✨ **𝐉𝐚𝐩𝐚𝐧𝐞𝐬𝐞-𝐗-𝐔𝐬𝐞𝐫𝐛𝐨𝐭** ✨
 
-✣ **Userbot Version :** `{}`
-✣ **Group Support :** [Japanese Userbot](t.me/Japanese_Userbot_Chat)
-✣ **Channel :** [Japanese Userbot](t.me/Japanese_Userbot)
-✣ **Owner :** [NOBITA_XD](t.me/Nobitaa_xd)
-✣ **Repo :** [Japanese-X-Userbot](https://github.com/Team-Japanese/Japanese-X-Userbot)
+✣ **𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐕𝐞𝐫𝐬𝐢𝐨𝐧 :** `{}`
+✣ **𝐆𝐫𝐨𝐮𝐩 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 :** [𝐉𝐚𝐩𝐚𝐧𝐞𝐬𝐞 𝐔𝐬𝐞𝐫𝐛𝐨𝐭](t.me/Japanese_Userbot_Chat)
+✣ **𝐂𝐡𝐚𝐧𝐧𝐞𝐥 :** [𝐉𝐚𝐩𝐚𝐧𝐞𝐬𝐞 𝐔𝐬𝐞𝐫𝐛𝐨𝐭](t.me/Japanese_Userbot)
+✣ **𝐎𝐰𝐧𝐞𝐫 𝐑𝐞𝐩𝐨 :** [𝐍𝐎𝐁𝐈𝐓𝐀_𝐗𝐃](t.me/Nobitaa_xd)
+✣ **𝐑𝐞𝐩𝐨 :** [Japanese-X-Userbot](https://github.com/Team-Japanese/Japanese-X-Userbot)
 
 
-Powered by [Japanese-X-Userbot](https://github.com/Japanese-Userbots/Japanese-X-Userbot)"""
-    CREATOR = 'I was created by my master <a href="https://github.com/Japanese-Userbots/Japanese-X-Userbot">Man</a> on a rainy day.'
+𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐛𝐲 [𝐉𝐚𝐩𝐚𝐧𝐞𝐬𝐞-𝐗-𝐔𝐬𝐞𝐫𝐛𝐨𝐭](https://github.com/Team-Japanese/Japanese-X-Userbot)"""
+    CREATOR = '𝐈 𝐰𝐚𝐬 𝐜𝐫𝐞𝐚𝐭𝐞𝐝 𝐛𝐲 𝐦𝐲 𝐦𝐚𝐬𝐭𝐞𝐫 <a href="https://github.com/Team-Japanese/Japanese-X-Userbot">Man</a> 𝐨𝐧 𝐚 𝐫𝐚𝐢𝐧𝐲 𝐝𝐚𝐲.'
     MSG_ON = """
 🐣 **𝐉𝐚𝐩𝐚𝐧𝐞𝐬𝐞-𝐗-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐀𝐜𝐭𝐢𝐯𝐚𝐭𝐞𝐝 𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥𝐲** 🐣
 ━━
