@@ -57,15 +57,15 @@ async def cancel_spam(client: Client, message: Message):
 
 
 add_command_help(
-    "•─╼⃝𖠁 tagall",
+    "•─╼⃝𖠁 ᴛᴀɢᴀʟʟ",
     [
         [
-            "mention [text/reply ke chat]",
-            "For Mentions of all members group",
+            "mention [ᴛᴇxᴛ/ʀᴇᴘʟʏ ᴋᴇ ᴄʜᴀᴛ]",
+            "Fᴏʀ Mᴇɴᴛɪᴏɴꜱ ᴏғ ᴀʟʟ ᴍᴇᴍʙᴇʀꜱ ɢʀᴏᴜᴘ",
         ],
         [
             "cancel",
-            f"To Cancel an Order {cmd}tagall",
+            f"Tᴏ Cᴀɴᴄᴇʟ ᴀɴ Oʀᴅᴇʀ {cmd}tagall",
         ],
     ],
 ) 
