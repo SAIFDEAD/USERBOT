@@ -1,10 +1,10 @@
-from config import API_ID, API_HASH, SESSIONS
+from constants import API_ID, API_HASH, SESSIONS
 from pyrogram import Client, idle
 import sys
 
 CLIENTS = []
 
-for i,SESSION in enumerate(SESSIONS):
+for i, SESSION in enumerate(SESSIONS):
     if SESSION:
         client = Client(
             name=f"X{i}",
@@ -15,9 +15,7 @@ for i,SESSION in enumerate(SESSIONS):
         )
         CLIENTS.append(client)
 
-
 if __name__ == "__main__":
-
     for i, CLIENT in enumerate(CLIENTS):
         try:
             CLIENT.start()
