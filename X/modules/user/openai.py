@@ -28,7 +28,7 @@ async def openai(client: Client, message: Message):
         "Authorization": f"Bearer {OPENAI_API_KEY}",
     }
 
-    url = f"https://chatgpt.apinepdev.workers.dev/?question={question}"
+    url = f"https://api.ajinkya.link/gpt.php?question={question}"
     
     msg = await message.reply("`Be patient..")
     
