@@ -17,7 +17,6 @@ from pytgcalls import GroupCallFactory
 from config import (
     API_HASH,
     API_ID,
-    DB_URL,
     BOTLOG_CHATID,
     SESSIONS,
     SUDO_USERS,
