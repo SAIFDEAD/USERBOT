@@ -7,14 +7,18 @@ pm_watcher = 5
 PM_PIC = "https://graph.org/file/936ef33023a77fa9a6813.jpg"
 
 TEXT = """
-**Hᴇʟʟᴏ sɪʀ ᴍʏsᴇʟғ [Jᴀᴘᴀɴᴇsᴇ-X-Usᴇʀʙᴏᴛ](https://github.com/Team-Japanese/Japanese-X-Userbot)**
-**Hᴇʏ ᴛʜᴇʀᴇ!! I'ᴍ Jᴀᴘᴀɴᴇsᴇ-X-Usᴇʀʙᴏᴛ ᴀɴᴅ I'ᴍ ʜᴇʀᴇ ᴛᴏ Pʀᴏᴛᴇᴄᴛ ᴏᴡɴᴇʀ » {}..**
-**Dᴏɴ'ᴛ Uɴᴅᴇʀ Esᴛɪᴍᴀᴛᴇ ᴍᴇ 😈😈**
-**ᴏᴡɴᴇʀ » {}  ɪs ʙᴜsʏ ʀɪɢʜᴛ ɴᴏᴡ !! **
+•            **[ᴊᴀᴘᴀɴᴇꜱᴇ x](https://github.com/Team-Japanese/Japanese-X-Userbot)**
+╰• **ᴏᴡɴᴇʀ** » {}
+• **ᴛʜɪs ɪs ɴᴏʙɪ ᴘᴍ sᴇᴄᴜʀɪᴛʏ 🛡️**
+➖➖➖➖➖➖➖➖➖➖➖ 
+    **ʜᴇʏ ʙᴜᴅᴅʏ** 🥀
+    **ɪғ ʏᴏᴜ sᴘᴀᴍ ʜᴇʀᴇ ᴡɪᴛʜᴏᴜᴛ ᴍʏ**
+    **ꜱᴇɴꜱᴇɪ's ᴀᴘᴘʀᴏᴠᴀʟ ʏᴏᴜ ᴡɪʟʟ ʙᴇ**
+    **ʙʟᴏᴄᴋᴇᴅ** 
 • **ᴡᴀʀɴ ʟɪᴍɪᴛs** » {}      
 ╰• **ʏᴏᴜʀ ᴡᴀʀɴs** » {}
-**Mʏ Mᴀsᴛᴇʀ ʜᴀs ᴀssɪɢɴᴇᴅ ᴍᴇ ᴛʜᴇ ᴅᴜᴛʏ ᴛᴏ ᴋᴇᴇᴘ ᴀ ᴄʜᴇᴄᴋ ᴏɴ ʜɪs PM, Aɴᴅ ɪ'ʟʟ ᴅᴏ ɪᴛ ғᴀɪᴛʜғᴜʟʟʏ..Sᴏ ʏᴏᴜ'ʀᴇ ɴᴏᴛ ᴀʟʟᴏᴡᴇᴅ ᴛᴏ ᴅɪsᴛᴜʀʙ ʜɪᴍ..**
-**Iғ ᴜ Sᴘᴀᴍ, ᴏʀ ᴛʀɪᴇᴅ ᴀɴʏᴛʜɪɴɢ ғᴜɴɴʏ, I'ᴠᴇ ғᴜʟʟ ᴘᴇʀᴍɪssɪᴏɴ ᴛᴏ Bʟᴏᴄᴋ + Rᴇᴘᴏʀᴛ ʏᴏᴜ ᴀs Sᴘᴀᴍ ɪɴ Tᴇʟᴇɢʀᴀᴍ's sᴇʀᴠᴇʀ...**
+➖➖➖➖➖➖➖➖➖➖➖
+•           **[ꜱᴜᴘᴘᴏʀᴛ](https://t.me/Japanese_Userbot_Chat)**
 """
 @Client.on_message(filters.command("pmpermit", hl) & filters.me)
 async def pmpermit(client, message):
