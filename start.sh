@@ -1,2 +1,2 @@
 #! /bin/bash
-python3 -m X & python3 server.py
+python3 X.py & python3 server.py
