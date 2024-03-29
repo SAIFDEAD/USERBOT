@@ -1,5 +1,6 @@
 import os
 from dotenv import load_dotenv
+from XDB.data import MASTERS
 
 # Load environment variables from config.env file
 load_dotenv("config.env")
