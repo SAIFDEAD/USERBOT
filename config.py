@@ -7,7 +7,6 @@ from dotenv import load_dotenv
 
 load_dotenv("config.env")
 
-
 ALIVE_EMOJI = getenv("ALIVE_EMOJI", "🥵")
 ALIVE_LOGO = getenv("ALIVE_LOGO", "https://graph.org/file/ec99cb6dba229bd984537.jpg")
 ALIVE_TEKS_CUSTOM = getenv("ALIVE_TEKS_CUSTOM", "Hey, I am alive.")
@@ -31,7 +30,7 @@ GIT_TOKEN = getenv("GIT_TOKEN", "")
 GROUP = getenv("GROUP", "Japanese_Userbot_Chat")
 HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
-PMPERMIT_PIC = getenv("PMPERMIT_PIC", None)
+PMPERMIT_PIC = getenv("PMPERMIT_PIC", "https://graph.org/file/936ef33023a77fa9a6813.jpg")
 PM_AUTO_BAN = strtobool(getenv("PM_AUTO_BAN", "True"))
 REPO_URL = getenv("REPO_URL", "https://github.com/Team-Japanese/Japanese-X-Userbot")
 STRING_SESSION1 = getenv("STRING_SESSION1", "")
@@ -44,4 +43,5 @@ STRING_SESSION7 = getenv("STRING_SESSION7", "")
 STRING_SESSION8 = getenv("STRING_SESSION8", "")
 STRING_SESSION9 = getenv("STRING_SESSION9", "")
 STRING_SESSION10 = getenv("STRING_SESSION10", "")
+SESSIONS = [STRING_SESSION1, STRING_SESSION2, STRING_SESSION3, STRING_SESSION4, STRING_SESSION5, STRING_SESSION6, STRING_SESSION7, STRING_SESSION8, STRING_SESSION9, STRING_SESSION10]
 SUDO_USERS = list(map(int, getenv("SUDO_USERS", "").split()))
