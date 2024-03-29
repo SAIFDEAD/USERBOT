@@ -431,22 +431,22 @@ async def stick2png(client: Client, message: Message):
 
 
 add_command_help(
-    "•─╼⃝𖠁 sticker",
+    "•─╼⃝𖠁 ꜱᴛɪᴄᴋᴇʀ",
     [
         [
             f"kang `atau` {cmd}tikel",
-            f"Balas {cmd}kang To Stickers Or Images To Add To Sticker Pack.",
+            f"Balas {cmd}ᴋᴀɴɢ Tᴏ Sᴛɪᴄᴋᴇʀꜱ Oʀ Iᴍᴀɢᴇꜱ Tᴏ Aᴅᴅ Tᴏ Sᴛɪᴄᴋᴇʀ Pᴀᴄᴋ.",
         ],
         [
             f"kang [emoji] `atau` {cmd}tikel [emoji]",
-            f"To Add and custom emoji sticker When Sticker No pack.\n\n`  •  **NOTE:** To create a new sticker pack, use the numbers at the back {cmd}kang\n  •  **CONTOH:** {cmd}kang 2 to create and save to sticker pack to 2`",
+            f"Tᴏ Aᴅᴅ ᴀɴᴅ ᴄᴜꜱᴛᴏᴍ ᴇᴍᴏɪɪ ꜱᴛɪᴄᴋᴇʀ Wʜᴇɴ Sᴛɪᴄᴋᴇʀ Nᴏ ᴘᴀᴄᴋ.\n\n`  •  **NOTE:** Tᴏ ᴄʀᴇᴀᴛᴇ ᴀ ɴᴇᴡ ꜱᴛɪᴄᴋᴇʀ ᴘᴀᴄᴋ, ᴜꜱᴇ ᴛʜᴇ ɴᴜᴍʙᴇʀꜱ ᴀᴛ ᴛʜᴇ ʙᴀᴄᴋ {cmd}kang\n  •  **CONTOH:** {cmd}ᴋᴀɴɢ 𝟸 ᴛᴏ ᴄʀᴇᴀᴛᴇ ᴀɴᴅ ꜱᴀᴠᴇ ᴛᴏ ꜱᴛɪᴄᴋᴇʀ ᴘᴀᴄᴋ ᴛᴏ 𝟸`",
         ],
         [
             f"packinfo `atau` {cmd}stickerinfo",
-            "To Get Information Sticker Pack.",
+            "Tᴏ Gᴇᴛ Iɴғᴏʀᴍᴀᴛɪᴏɴ Sᴛɪᴄᴋᴇʀ Pᴀᴄᴋ.",
         ],
-        ["get", "Reply to the sticker to get a photo sticker."],
-        ["stickers <name sticker>", "To search for stickers Pack."],
+        ["get", "Rᴇᴘʟʏ ᴛᴏ ᴛʜᴇ ꜱᴛɪᴄᴋᴇʀ ᴛᴏ ɢᴇᴛ ᴀ ᴘʜᴏᴛᴏ ꜱᴛɪᴄᴋᴇʀ."],
+        ["stickers <name sticker>", "Tᴏ ꜱᴇᴀʀᴄʜ ғᴏʀ ꜱᴛɪᴄᴋᴇʀꜱ Pᴀᴄᴋ Bᴏᴛᴛᴏᴍ Tᴇxᴛ."],
     ],
 )
 
@@ -457,7 +457,7 @@ add_command_help(
         [
             "mmf Top Text ; Bottom Text",
             "Reply To Message Stickers or Photos will be converted into specified meme text stickers.",
-        ],
+        ]
     ],
 )
 
