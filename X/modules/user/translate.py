@@ -29,11 +29,11 @@ async def _(client: Client, message: Message):
 
 
 add_command_help(
-    "•─╼⃝𖠁 translate",
+    "•─╼⃝𖠁 ᴛʀᴀɴꜱʟᴀᴛᴇ",
     [
         [
-            "tr <language code> <text/reply>",
-            "Translates text to the set language. (Default English code)",
+            "tr <ʟᴀɴɢᴜᴀɢᴇ ᴄᴏᴅᴇ> <ᴛᴇxᴛ/ʀᴇᴘʟʏ>",
+            "Tʀᴀɴꜱʟᴀᴛᴇꜱ ᴛᴇxᴛ ᴛᴏ ᴛʜᴇ ꜱᴇᴛ ʟᴀɴɢᴜᴀɢᴇ. (Dᴇғᴀᴜʟᴛ Eɴɢʟɪꜱʜ ᴄᴏᴅᴇ)",
         ],
     ],
       ) 
