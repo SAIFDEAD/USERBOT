@@ -1,15 +1,16 @@
 from pyrogram import Client, filters
 from X.Database.pm import *
 from X.powers import get_id
-from config import PMPERMIT_PIC, CMD_HANDLER
-NOBIGEY = PMPERMIT_PIC
-hl = CMD_HANDLER
+
+hl = "."
 pm_watcher = 5
+PM_PIC = "https://graph.org/file/936ef33023a77fa9a6813.jpg"
+
 TEXT = """
-**Hᴇʟʟᴏ sɪʀ ᴍʏsᴇʟғ [Jᴀᴘᴀɴᴇsᴇ-X-Usᴇʀʙᴏᴛ](https://github.com/Team-Japanese/Japanese-X-Userbot), ᴏᴡɴᴇʀ » {} Pʀᴏᴛᴇᴄᴛɪᴏɴ **
+**Hᴇʟʟᴏ sɪʀ ᴍʏsᴇʟғ [Jᴀᴘᴀɴᴇsᴇ-X-Usᴇʀʙᴏᴛ](https://github.com/Team-Japanese/Japanese-X-Userbot)**
 **Hᴇʏ ᴛʜᴇʀᴇ!! I'ᴍ Jᴀᴘᴀɴᴇsᴇ-X-Usᴇʀʙᴏᴛ ᴀɴᴅ I'ᴍ ʜᴇʀᴇ ᴛᴏ Pʀᴏᴛᴇᴄᴛ ᴏᴡɴᴇʀ » {}..**
 **Dᴏɴ'ᴛ Uɴᴅᴇʀ Esᴛɪᴍᴀᴛᴇ ᴍᴇ 😈😈**
-**Mʏ ᴏᴡɴᴇʀ » {}  ɪs ʙᴜsʏ ʀɪɢʜᴛ ɴᴏᴡ !! **
+**ᴏᴡɴᴇʀ » {}  ɪs ʙᴜsʏ ʀɪɢʜᴛ ɴᴏᴡ !! **
 • **ᴡᴀʀɴ ʟɪᴍɪᴛs** » {}      
 ╰• **ʏᴏᴜʀ ᴡᴀʀɴs** » {}
 **Mʏ Mᴀsᴛᴇʀ ʜᴀs ᴀssɪɢɴᴇᴅ ᴍᴇ ᴛʜᴇ ᴅᴜᴛʏ ᴛᴏ ᴋᴇᴇᴘ ᴀ ᴄʜᴇᴄᴋ ᴏɴ ʜɪs PM, Aɴᴅ ɪ'ʟʟ ᴅᴏ ɪᴛ ғᴀɪᴛʜғᴜʟʟʏ..Sᴏ ʏᴏᴜ'ʀᴇ ɴᴏᴛ ᴀʟʟᴏᴡᴇᴅ ᴛᴏ ᴅɪsᴛᴜʀʙ ʜɪᴍ..**
@@ -85,4 +86,4 @@ async def wtch(client, message):
         await message.reply("ꜱᴘᴀᴍᴍᴇʀ ᴅᴇᴛᴇᴄᴛᴇᴅ ᴀɴᴅ ʙʟᴏᴄᴋᴇᴅ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ.....")
         await reset_warns(message.from_user.id)
         return await client.block_user(message.from_user.id)
-    await message.reply_photo(NOBIGEY, caption=TEXT.format((await client.get_me()).first_name, await limit(), await get_warns(message.from_user.id)))
+    await message.reply_photo(KEX, caption=TEXT.format((await client.get_me()).first_name, await limit(), await get_warns(message.from_user.id)))
