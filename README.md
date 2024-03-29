@@ -96,6 +96,7 @@
 -  [OnlyMeriz](https://github.com/Onlymeriz) : OnlyMeriz
 -  [Toni](https://github.com/Toni880) : Prime-UserBot
 -  [Tofikdn](https://github.com/tofikdn) : Tede
+-  [Ultroid](https://github.com/TeamUltroid/Ultroid) : Ultroid 
 -  [Ultra X](https://github.com/ULTRA-OP/ULTRA-X) : Ultra-X
 -  [Kazu](https://github.com/ionmusic) : Kazu
 -  [Geez|Ram] : Geez Ram
@@ -106,4 +107,10 @@
     ─「 𝑪𝒓𝒆𝒅𝒊𝒕 」─
 </h3>
 
-✧ <b>[𝐍𝐎𝐁𝐈𝐓𝐀_𝐗𝐃](https://github.com/nobitaaaxd) & [𝐌𝐈𝐑𝐙𝐀](https://github.com/MirzaElite) & [𝗧𝗿𝘆𝗧𝗼𝗟𝗶𝘃𝗲𝗔𝗹𝗼𝗻𝗲](https://github.com/TryToLiveAlone)
+✧ <b>[𝐍𝐎𝐁𝐈𝐓𝐀_𝐗𝐃](https://github.com/nobitaaaxd) 
+
+✧ <b>[𝐌𝐈𝐑𝐙𝐀](https://github.com/MirzaElite) 
+
+✧ <b>[𝗧𝗿𝘆𝗧𝗼𝗟𝗶𝘃𝗲𝗔𝗹𝗼𝗻𝗲](https://github.com/TryToLiveAlone)
+
+✧ <b>[𝐊𝐮𝐧𝐚𝐥](https://github.com/VARC9210)
