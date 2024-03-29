@@ -7,11 +7,11 @@ pm_watcher = 5
 PM_PIC = "https://graph.org/file/936ef33023a77fa9a6813.jpg"
 
 TEXT = """
-•            **[ᴊᴀᴘᴀɴᴇꜱᴇ x](https://github.com/Team-Japanese/Japanese-X-Userbot)**
-╰• **ᴏᴡɴᴇʀ** » {}
-• **ᴛʜɪs ɪs ɴᴏʙɪ ᴘᴍ sᴇᴄᴜʀɪᴛʏ 🛡️**
+•            **[𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄 𝐗 𝐔𝐒𝐄𝐑𝐁𝐎𝐓](https://github.com/Team-Japanese/Japanese-X-Userbot)**
+╰• **MASTER** » {}
+• **ᴛʜɪs ɪs 𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄 𝐗 𝐔𝐒𝐄𝐑𝐁𝐎𝐓 ᴘᴍ sᴇᴄᴜʀɪᴛʏ 🛡️**
 ➖➖➖➖➖➖➖➖➖➖➖ 
-    **ʜᴇʏ ʙᴜᴅᴅʏ** 🥀
+    **ʜᴇʏ SAMURAI** 🥀
     **ɪғ ʏᴏᴜ sᴘᴀᴍ ʜᴇʀᴇ ᴡɪᴛʜᴏᴜᴛ ᴍʏ**
     **ꜱᴇɴꜱᴇɪ's ᴀᴘᴘʀᴏᴠᴀʟ ʏᴏᴜ ᴡɪʟʟ ʙᴇ**
     **ʙʟᴏᴄᴋᴇᴅ** 
