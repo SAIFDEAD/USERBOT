@@ -457,7 +457,7 @@ add_command_help(
         [
             "mmf Top Text ; Bottom Text",
             "Reply To Message Stickers or Photos will be converted into specified meme text stickers.",
-        ]
+        ],
     ],
 )
 
