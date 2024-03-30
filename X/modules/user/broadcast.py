@@ -159,27 +159,27 @@ async def delblacklist(client: Client, message: Message):
 
 
 add_command_help(
-    "broadcast",
+    "•─╼⃝𖠁 ʙʀᴏᴀᴅᴄᴀꜱᴛ",
     [
         [
             "gcast <text/reply>",
-            "Send a Global Broadcast message to all groups you are in. (Can Send Media/Sticker)",
+            "Sᴇɴᴅ ᴀ Gʟᴏʙᴀʟ Bʀᴏᴀᴅᴄᴀꜱᴛ ᴍᴇꜱꜱᴀɢᴇ ᴛᴏ ᴀʟʟ ɢʀᴏᴜᴘꜱ ʏᴏᴜ ᴀʀᴇ ɪɴ. (Cᴀɴ Sᴇɴᴅ Mᴇᴅɪᴀ/Sᴛɪᴄᴋᴇʀ)",
         ],
         [
             "gucast <text/reply>",
-            "Sends Global Broadcast messages to all incoming Private Massage / PCs. (Can Send Media/Sticker)",
+            "Sᴇɴᴅꜱ Gʟᴏʙᴀʟ Bʀᴏᴀᴅᴄᴀꜱᴛ ᴍᴇꜱꜱᴀɢᴇꜱ ᴛᴏ ᴀʟʟ ɪɴᴄᴏᴍɪɴɢ Pʀɪᴠᴀᴛᴇ Mᴀꜱꜱᴀɢᴇ / PCꜱ. (Cᴀɴ Sᴇɴᴅ Mᴇᴅɪᴀ/Sᴛɪᴄᴋᴇʀ)",
         ],
         [
             "blchat",
-            "To check list information blacklist gcast.",
+            "Tᴏ ᴄʜᴇᴄᴋ ʟɪꜱᴛ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ʙʟᴀᴄᴋʟɪꜱᴛ ɢᴄᴀꜱᴛ.",
         ],
         [
             "addbl",
-            "To Add the group to blacklist gcast.",
+            "Tᴏ Aᴅᴅ ᴛʜᴇ ɢʀᴏᴜᴘ ᴛᴏ ʙʟᴀᴄᴋʟɪꜱᴛ ɢᴄᴀꜱᴛ.",
         ],
         [
             "delbl",
-            f"To Delete the group from blacklist gcast.\n\n  •  **Note : **Type command** `{cmd}addblacklist` **dan** `{cmd}delblacklist` **in your group Blacklist.",
+            f"Tᴏ Dᴇʟᴇᴛᴇ ᴛʜᴇ ɢʀᴏᴜᴘ ғʀᴏᴍ ʙʟᴀᴄᴋʟɪꜱᴛ ɢᴄᴀꜱᴛ.\n\n  •  **Note : **Type command** `{cmd}addblacklist` **dan** `{cmd}delblacklist` **ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ Bʟᴀᴄᴋʟɪꜱᴛ.",
         ],
     ],
                   )
