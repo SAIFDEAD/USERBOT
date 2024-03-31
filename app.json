@@ -13,6 +13,10 @@
       "description": "ᴘᴀsᴛᴇ ʏᴏᴜʀ ᴛᴇʟᴇɢʀᴀᴍ ɪᴅ ʜᴇʀᴇ",
       "required": true
     },
+    "OWNER": {
+      "description": "ʏᴏᴜʀ ᴏʀɢɪɴᴀʟ ɴᴀᴍᴇ ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ",
+      "required": true
+    },
     "STRING_SESSION1": {
       "description": "ғιℓℓ үσυя ρүяσgяαм sтяιηg sεssιση",
       "required": true
