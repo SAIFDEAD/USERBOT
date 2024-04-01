@@ -121,43 +121,6 @@ async def _(client: Client, message: Message):
     reply_text = NOBLE[noble]
     await edit_or_reply(message, reply_text)
 
-
-@Client.on_message(filters.command("wink", cmd) & filters.me)
-async def wink(client: Client, message: Message):
-    hmm_s = "https://some-random-api.ml/animu/wink"
-    r = requests.get(url=hmm_s).json()
-    image_s = r["link"]
-    await client.send_video(message.chat.id, image_s)
-    await message.delete()
-
-
-@Client.on_message(filters.command("hug", cmd) & filters.me)
-async def hug(client: Client, message: Message):
-    hmm_s = "https://some-random-api.ml/animu/hug"
-    r = requests.get(url=hmm_s).json()
-    image_s = r["link"]
-    await client.send_video(message.chat.id, image_s)
-    await message.delete()
-
-
-
-
-
-@Client.on_message(filters.command("pikachu", cmd) & filters.me)
-async def pikachu(client: Client, message: Message):
-    hmm_s = "https://some-random-api.ml/img/pikachu"
-    r = requests.get(url=hmm_s).json()
-    image_s = r["link"]
-    await client.send_video(message.chat.id, image_s)
-    if image_s.endswith(".png"):
-        await client.send_photo(message.chat.id, image_s)
-        return
-    if image_s.endswith(".jpg"):
-        await client.send_photo(message.chat.id, image_s)
-        return
-    await message.delete()
-
-
 @Client.on_message(filters.command("hmm", cmd) & filters.me)
 async def hello_world(client: Client, message: Message):
     mg = await edit_or_reply(
