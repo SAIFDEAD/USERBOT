@@ -46,7 +46,7 @@ async def japan_api(bot: Client, message: Message):
         # Combine facts from caption (if available), fetched caption, and developer info
         final_caption = f"ғᴀᴄᴛ ᴀʙᴏᴜᴛ ᴍʏ ᴄᴏᴜɴᴛʀʏ ✨\n\n{caption}\n\n{developer_info}" if caption else developer_info
 
-        # Send photo with customized caption
+        # don't try to take credit otherwise mai services and api dono banf karke bhag jaunga samjhe bsdk walo 
         await bot.send_photo(message.chat.id, content_url, caption=final_caption)
     except Exception as e:
         print(f"Error: {e}")
