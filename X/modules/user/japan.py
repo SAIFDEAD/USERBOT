@@ -23,22 +23,34 @@ for x in cf_apii_data:
 async def japan_api(bot: Client, message: Message):
     cmd = message.command
     api_key = cmd[0]
-    api = cf_apii_data[api_key]
+    api = cf_apii_data.get(api_key)
+
+    if not api:
+        await message.reply("Invalid command")
+        return
 
     try:
         data = await AioHttp().get_json(api["url"])
 
         # Extract URL and Caption from the JSON response
-        content_url = data['url'].replace('\\', '')
+        content_url = data.get('url', '').replace('\\', '')
         caption = data.get('caption', None)
 
-        # Send photo with caption if available
-        if caption:
-            await bot.send_photo(message.chat.id, content_url, caption=caption)
-        else:
-            await bot.send_photo(message.chat.id, content_url)
-    except ClientError as e:
-        print(e)
+        if not content_url:
+            await message.reply("Failed to fetch content")
+            return
+
+        # Add your developer's name and link
+        developer_info = "ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴍʏ [ᴅᴇᴠʟᴏᴘᴇʀ](https://t.me/Japanese_Userbot_Chat)"
+
+        # Combine facts from caption (if available), fetched caption, and developer info
+        final_caption = f"ғᴀᴄᴛ ᴀʙᴏᴜᴛ ᴍʏ ᴄᴏᴜɴᴛʀʏ ✨\n\n{caption}\n\n{developer_info}" if caption else developer_info
+
+        # Send photo with customized caption
+        await bot.send_photo(message.chat.id, content_url, caption=final_caption)
+    except Exception as e:
+        print(f"Error: {e}")
+        await message.reply("An error occurred while processing the request")
 
     await message.delete()
 
@@ -48,4 +60,4 @@ for x in cf_apii_data:
         [
             [f"{x}", cf_apii_data[x]["help"]],
         ],
-    )
+        )
