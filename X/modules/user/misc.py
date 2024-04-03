@@ -21,17 +21,16 @@ async def webshot(client: Client, message):
     try:
         user_link = message.command[1]
         try:
-            # Thum.io API URL with increased delay (5000 milliseconds)
             full_link = f"https://image.thum.io/get/fullpage/{user_link}?delay=5000"
             response = requests.get(full_link)
-            response.raise_for_status()  # Raise error for bad response (4xx or 5xx)
+            response.raise_for_status()  
             ss = response.content
 
-            # Save the image to a temporary file (optional)
+            
             with open("temp_image.jpg", "wb") as f:
                 f.write(ss)
 
-            # Send the image as a file
+            
             await client.send_photo(
                 message.chat.id,
                 "temp_image.jpg",
