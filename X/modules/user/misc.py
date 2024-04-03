@@ -13,6 +13,36 @@ from X.utils import s_paste
 
 from .help import *
 
+import requests
+
+@Client.on_message(filters.command(["webshot", "ws"], cmd) & filters.me)
+async def webshot(client: Client, message):
+    Man = await message.edit("`Processing...`")
+    try:
+        user_link = message.command[1]
+        try:
+            # Thum.io API URL with increased delay (5000 milliseconds)
+            full_link = f"https://image.thum.io/get/fullpage/{user_link}?delay=5000"
+            response = requests.get(full_link)
+            response.raise_for_status()  # Raise error for bad response (4xx or 5xx)
+            ss = response.content
+
+            # Save the image to a temporary file (optional)
+            with open("temp_image.jpg", "wb") as f:
+                f.write(ss)
+
+            # Send the image as a file
+            await client.send_photo(
+                message.chat.id,
+                "temp_image.jpg",
+                caption=f"**Screenshot of the page ⟶** {user_link}",
+            )
+
+            await Man.delete()
+        except Exception as dontload:
+            await Man.edit(f"Error! {dontload}")
+    except Exception as error:
+        await Man.edit(f"**Something went wrong\nLog:{error}...**")
 
 @Client.on_message(filters.command("limit", cmd) & filters.me)
 async def spamban(client: Client, m: Message):
@@ -30,35 +60,6 @@ async def spamban(client: Client, m: Message):
     spambot_msg = response.updates[1].message.id + 1
     status = await client.get_messages(chat_id="SpamBot", message_ids=spambot_msg)
     await wait_msg.edit_text(f"~ {status.text}")
-
-
-@Client.on_message(filters.command(["webshot", "ss"], cmd) & filters.me)
-async def webshot(client: Client, message: Message):
-    Man = await edit_or_reply(message, "`Processing...`")
-    try:
-        user_link = message.command[1]
-        try:
-            full_link = f"https://webshot.deam.io/{user_link}/?width=1920&height=1080?delay=2000?type=png"
-            await client.send_photo(
-                message.chat.id,
-                full_link,
-                caption=f"**Screenshot of the page ⟶** {user_link}",
-            )
-        except Exception as dontload:
-            await message.edit(f"Error! {dontload}\nTrying again create screenshot...")
-            full_link = f"https://mini.s-shot.ru/1920x1080/JPEG/1024/Z100/?{user_link}"
-            await client.send_photo(
-                message.chat.id,
-                full_link,
-                caption=f"**Screenshot of the page ⟶** {user_link}",
-            )
-        await Man.delete()
-    except Exception as error:
-        await Man.delete()
-        await client.send_message(
-            message.chat.id, f"**Something went wrong\nLog:{error}...**"
-        )
-
 
 @Client.on_message(filters.command("type", cmd) & filters.me)
 async def types(client: Client, message: Message):
