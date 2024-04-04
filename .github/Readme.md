@@ -100,6 +100,12 @@
     <img src="https://www.cloudflare.com/static/90073b1e5bd8a0765640a20febb3dc22/mogenius_logo_quer.png" alt="Deploy on Mogenius" width="220px">
     </a>
 
+## 𝑫𝒆𝒑𝒍𝒐𝒚 𝒐𝒏 𝑼𝒇𝒇𝒊𝒛𝒛𝒊
+
+<p align="center">
+    <a href="https://www.uffizzi.com/">
+    <img src="https://i.ibb.co/Y29Kv4X/Screenshot-195.png" alt="Deploy on Uffizzi" width="220px">
+    </a>
 
 # 𝑫𝑰𝑺𝑪𝑳𝑨𝑰𝑴𝑬𝑹
 
