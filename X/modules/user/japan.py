@@ -41,7 +41,7 @@ async def japan_api(bot: Client, message: Message):
             return
 
         # Add your developer's name and link
-        developer_info = "ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴍʏ [ᴅᴇᴠʟᴏᴘᴇʀ](https://t.me/Japanese_Userbot_Chat)"
+        developer_info = "ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴍʏ [ᴅᴇᴠʟᴏᴘᴇʀ](https://t.me/Japanese_Userbot_Support)"
 
         # Combine facts from caption (if available), fetched caption, and developer info
         final_caption = f"ғᴀᴄᴛ ᴀʙᴏᴜᴛ ᴍʏ ᴄᴏᴜɴᴛʀʏ ✨\n\n{caption}\n\n{developer_info}" if caption else developer_info
