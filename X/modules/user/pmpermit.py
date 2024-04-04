@@ -18,7 +18,7 @@ TEXT = """
 • **ᴡᴀʀɴ ʟɪᴍɪᴛs** » {}      
 ╰• **ʏᴏᴜʀ ᴡᴀʀɴs** » {}
 ➖➖➖➖➖➖➖➖➖➖➖
-•           **[ꜱᴜᴘᴘᴏʀᴛ](https://t.me/Japanese_Userbot_Chat)**
+•           **[ꜱᴜᴘᴘᴏʀᴛ](https://t.me/Japanese_Userbot_Support)**
 """
 @Client.on_message(filters.command("pmpermit", hl) & filters.me)
 async def pmpermit(client, message):
