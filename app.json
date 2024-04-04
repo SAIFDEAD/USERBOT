@@ -13,15 +13,23 @@
       "description": "ᴘᴀsᴛᴇ ʏᴏᴜʀ ᴛᴇʟᴇɢʀᴀᴍ ɪᴅ ʜᴇʀᴇ",
       "required": true
     },
+    "BIO": {
+      "description": "ɪᴜꜱᴛ ʏᴏᴜʀ ᴛᴇʟᴇɢʀᴀᴍ ᴀᴄᴄᴏᴜɴᴛ ʙɪᴏ",
+      "required": true
+    },
+    "DATABASE_URL": {
+      "description": "ᴀ ᴍᴏɴɢᴏ ᴅʙ ᴅᴀᴛᴀʙᴀꜱᴇ ᴜʀʟ ᴅᴏɴ'ᴛ ᴋɴᴏᴡ ʜᴏᴡ ᴛᴏ ᴍᴀᴋᴇ ꜱᴇᴇ ʜᴇʀᴇ > https://t.me/Japanese_Userbot_Support",
+      "required": true
+    },
     "OWNER": {
-      "description": "ʏᴏᴜʀ ᴏʀɢɪɴᴀʟ ɴᴀᴍᴇ ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ",
+      "description": "ʏᴏᴜʀ ɴᴀᴍᴇ ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ [ғɪʀꜱᴛ ɴᴀᴍᴇ ᴏɴʟʏ]",
       "required": true
     },
     "STRING_SESSION1": {
       "description": "ғιℓℓ үσυя ρүяσgяαм sтяιηg sεssιση",
       "required": true
     },
-    "BOTLOG_CHAT_ID": {
+    "BOTLOG_CHATID": {
       "description": "ғιℓℓ үσυя вσт ℓσg cнαт ι∂ ",
       "required": false,
       "value": "-100"
@@ -55,4 +63,3 @@
     }
   }
 }
-
