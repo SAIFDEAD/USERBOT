@@ -107,6 +107,15 @@
     <img src="https://i.ibb.co/Y29Kv4X/Screenshot-195.png" alt="Deploy on Uffizzi" width="220px">
     </a>
 
+## 𝑫𝒆𝒑𝒍𝒐𝒚 𝒐𝒏 𝑩𝒐𝒙𝑴𝒊𝒏𝒆𝑾𝒐𝒓𝒍𝒅
+
+
+<p align="center">
+    <a href="https://dash.boxmineworld.com/">
+    <img src="https://graph.org/file/2af0e67f320986702ea24.jpg" alt="Deploy on Boxmineworld" width="220px">
+    </a>
+    <br>
+    
 # 𝑫𝑰𝑺𝑪𝑳𝑨𝑰𝑴𝑬𝑹
 
 
