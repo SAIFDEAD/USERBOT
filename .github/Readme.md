@@ -83,7 +83,15 @@
 <p align="center">
     <a href="https://railway.app/new">
     <p align="center"><a href="https://railway.app/new"> <img src="https://img.shields.io/badge/DEPLOY TO RAILWAY-h?color=black&style=for-the-badge&logo=Railway"></a>
-    
+
+
+## 𝑫𝒆𝒑𝒍𝒐𝒚 𝒐𝒏 𝑶𝒌𝒕𝒆𝒕𝒐
+
+  
+<p align="center">
+    <a href="https://cloud.okteto.com">
+    <img src="https://okteto.com/develop-okteto.svg" alt="Deploy on Okteto" width="220px">
+    </a>
 
 # 𝑫𝑰𝑺𝑪𝑳𝑨𝑰𝑴𝑬𝑹
 
