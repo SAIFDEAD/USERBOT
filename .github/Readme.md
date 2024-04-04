@@ -93,6 +93,14 @@
     <img src="https://okteto.com/develop-okteto.svg" alt="Deploy on Okteto" width="220px">
     </a>
 
+## 𝑫𝒆𝒑𝒍𝒐𝒚 𝒐𝒏 𝑴𝒐𝒈𝒆𝒏𝒊𝒖𝒔
+
+<p align="center">
+    <a href="https://studio.mogenius.com/">
+    <img src="https://www.cloudflare.com/static/90073b1e5bd8a0765640a20febb3dc22/mogenius_logo_quer.png" alt="Deploy on Mogenius" width="220px">
+    </a>
+
+
 # 𝑫𝑰𝑺𝑪𝑳𝑨𝑰𝑴𝑬𝑹
 
 
