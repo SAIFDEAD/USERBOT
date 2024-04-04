@@ -77,6 +77,14 @@
     </a>
 
 
+## 𝑫𝒆𝒑𝒍𝒐𝒚 𝑻𝒐 𝑹𝒂𝒊𝒍𝒘𝒂𝒚
+
+
+<p align="center">
+    <a href="https://railway.app/new">
+    <p align="center"><a href="https://railway.app/new"> <img src="https://img.shields.io/badge/DEPLOY TO RAILWAY-h?color=black&style=for-the-badge&logo=Railway"></a>
+    
+
 # 𝑫𝑰𝑺𝑪𝑳𝑨𝑰𝑴𝑬𝑹
 
 
