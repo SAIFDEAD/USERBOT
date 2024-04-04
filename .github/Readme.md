@@ -52,6 +52,18 @@
 <p align="center"><a href="http://dashboard.heroku.com/new?template=https://github.com/Team-Japanese/Japanese-X-Userbot"> <img src="https://img.shields.io/badge/Deploy%20On%20Heroku-purple?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
 
 
+## 𝑫𝒆𝒑𝒍𝒐𝒚 𝑻𝒐 𝑪𝒐𝒅𝒆𝒔𝒑𝒂𝒄𝒆 
+
+
+</h4>
+
+</p>
+
+<p align="center" >
+    <a href="https://github.com/codespaces/new">
+    <img src="https://img.shields.io/badge/DEPLOY CODESPACE-h?color=black&style=for-the-badge&logo=visualstudiocode" width="220px" height="38.45" alt="Deploy on CodesSpaces" >
+    </a>
+
 
 
 # 𝑫𝑰𝑺𝑪𝑳𝑨𝑰𝑴𝑬𝑹
