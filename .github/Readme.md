@@ -81,8 +81,8 @@
 
 
 <p align="center">
-    <a href="https://railway.app/new">
-    <p align="center"><a href="https://railway.app/new"> <img src="https://img.shields.io/badge/DEPLOY TO RAILWAY-h?color=black&style=for-the-badge&logo=Railway"></a>
+    <a href="https://railway.app/new/template?template=https://github.com/Team-Japanese/Japanese-X-Userbot-Deploy"> <img src="https://railway.app/button.svg"/></a>
+    
 
 
 ## 𝑫𝒆𝒑𝒍𝒐𝒚 𝒐𝒏 𝑶𝒌𝒕𝒆𝒕𝒐
