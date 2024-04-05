@@ -10,7 +10,7 @@
 
 
   
-  <img src="https://telegra.ph/file/14a5eb1c01732e912ee32.jpg">
+  <img src="https://telegra.ph/file/71fcc97ea73c5265d6925.jpg">
 <h1 align="center">𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄-𝐗-𝐔𝐒𝐄𝐑𝐁𝐎𝐓</h1>
 
 ![20240201_185316](https://github.com/Japanese-Userbots/Japanese-X-Userbot/assets/156512147/0782c397-c94b-4676-8cf1-89d26257b41a)
