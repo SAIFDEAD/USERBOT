@@ -63,6 +63,15 @@
 <p align="center">
     <a href="https://railway.app/new/template?template=https://github.com/Team-Japanese/Japanese-X-Userbot-Deploy"> <img src="https://railway.app/button.svg"/></a>
 
+
+## 𝑫𝒆𝒑𝒍𝒐𝒚 𝒐𝒏 𝑶𝒌𝒕𝒆𝒕𝒐
+
+  
+<p align="center">
+    <a href="https://cloud.okteto.com">
+    <img src="https://okteto.com/develop-okteto.svg" alt="Deploy on Okteto" width="220px">
+    </a>
+
     
 ## 𝑫𝒆𝒑𝒍𝒐𝒚 𝑻𝒐 𝑪𝒐𝒅𝒆𝒔𝒑𝒂𝒄𝒆 
 
@@ -90,16 +99,6 @@
 
 
 
-    
-
-
-## 𝑫𝒆𝒑𝒍𝒐𝒚 𝒐𝒏 𝑶𝒌𝒕𝒆𝒕𝒐
-
-  
-<p align="center">
-    <a href="https://cloud.okteto.com">
-    <img src="https://okteto.com/develop-okteto.svg" alt="Deploy on Okteto" width="220px">
-    </a>
 
 ## 𝑫𝒆𝒑𝒍𝒐𝒚 𝒐𝒏 𝑴𝒐𝒈𝒆𝒏𝒊𝒖𝒔
 
