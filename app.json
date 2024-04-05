@@ -1,7 +1,7 @@
 {
-  "name": "𝑱𝒂𝒑𝒂𝒏𝒆𝒔𝒆-𝑿-𝑼𝒔𝒆𝒓𝒃𝒐𝒕",
-  "description": "[𝑱𝒂𝒑𝒂𝒏𝒆𝒔𝒆-𝑿-𝑼𝒔𝒆𝒓𝒃𝒐𝒕] ωσяℓ∂ ℓαяgεsт αη∂ ғαsтεsт υsεявσт. ρσωεяε∂ вү 𝑱𝒂𝒑𝒂𝒏𝒆𝒔𝒆-𝑿-𝑼𝒔𝒆𝒓𝒃𝒐𝒕.",
-    "logo": "https://graph.org/file/ec99cb6dba229bd984537.jpg",
+  "name": "𝐃ɪᴄᴛᴀᴛᴏʀ 𝐔sᴇʀ𝐁ᴏᴛ",
+  "description": "[⚡ 𝐒αιғβσтƨ ⚡] ωσяℓ∂ ℓαяgεsт αη∂ ғαsтεsт υsεявσт. ρσωεяε∂ вү sαιғβσтʓ",
+    "logo": "https://telegra.ph/file/14a5eb1c01732e912ee32.jpg",
 
   "stack": "heroku-22",
   "env": {
@@ -11,7 +11,8 @@
     },
     "OWNER_ID": {
       "description": "ᴘᴀsᴛᴇ ʏᴏᴜʀ ᴛᴇʟᴇɢʀᴀᴍ ɪᴅ ʜᴇʀᴇ",
-      "required": true
+      "required": true,
+      "value": "7117906157"
     },
     "OWNER": {
       "description": "ʏᴏᴜʀ ᴏʀɢɪɴᴀʟ ɴᴀᴍᴇ ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ",
