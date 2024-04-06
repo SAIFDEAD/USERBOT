@@ -23,7 +23,7 @@ async def aexec(code, client: Client, message: Message):
 async def executor(client: Client, message: Message):
     if len(message.command) < 2:
         return await edit_or_reply(
-            message, text="__Nigga Give me some command to execute.__"
+            message, text="Nabibi Give me some command to execute.__"
         )
     try:
         cmd = message.text.split(" ", maxsplit=1)[1]
