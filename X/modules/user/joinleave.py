@@ -15,10 +15,10 @@ async def join(client: Client, message: Message):
     X = message.command[1] if len(message.command) > 1 else message.chat.id
     xxnx = await edit_or_reply(message, "`Processing...`")
     try:
-        await xxnx.edit(f"**Successfully Joined Chat ID** `{X}`")
+        await xxnx.edit(f"**sᴜᴄᴄᴇssғᴜʟʟʏ ᴊᴏɪɴᴇᴅ ᴄʜᴀᴛ ɪᴅ** `{X}`")
         await client.join_chat(X)
     except Exception as ex:
-        await xxnx.edit(f"**ERROR:** \n\n{str(ex)}")
+        await xxnx.edit(f"**ᴇʀʀᴏʀ:** \n\n{str(ex)}")
 
 
 @Client.on_message(filters.command(["leave", "kickme"], cmd) & filters.me)
@@ -26,17 +26,17 @@ async def leave(client: Client, message: Message):
     X = message.command[1] if len(message.command) > 1 else message.chat.id
     xxnx = await edit_or_reply(message, "`Processing...`")
     if message.chat.id in BLACKLIST_CHAT:
-        return await xxnx.edit("**This command is not allowed to be used in this group**")
+        return await xxnx.edit("**ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ɪs ɴᴏᴛ ᴀʟʟᴏᴡᴇᴅ ᴛᴏ ʙᴇ ᴜsᴇᴅ ɪɴ ᴛʜɪs ɢʀᴏᴜᴘ**")
     try:
-        await xxnx.edit_text(f"{client.me.first_name} has left this group, bye!!")
+        await xxnx.edit_text(f"{client.me.first_name} ʜᴀs ʟᴇғᴛ ᴛʜɪs ɢʀᴏᴜᴘ, ʙʏᴇ!!")
         await client.leave_chat(X)
     except Exception as ex:
-        await xxnx.edit_text(f"**ERROR:** \n\n{str(ex)}")
+        await xxnx.edit_text(f"**ᴇʀʀᴏʀ:** \n\n{str(ex)}")
 
 
 @Client.on_message(filters.command(["leaveallgc"], cmd) & filters.me)
 async def kickmeall(client: Client, message: Message):
-    X = await edit_or_reply(message, "`Global Leave from group chats...`")
+    X = await edit_or_reply(message, "`ɢʟᴏʙᴀʟ ʟᴇᴀᴠᴇ ғʀᴏᴍ ɢʀᴏᴜᴘ ᴄʜᴀᴛs...`")
     er = 0
     done = 0
     async for dialog in client.get_dialogs():
@@ -48,13 +48,13 @@ async def kickmeall(client: Client, message: Message):
             except BaseException:
                 er += 1
     await X.edit(
-        f"**Successfully Exit {done} Group, Failed to Exit {er} Group**"
+        f"**sᴜᴄᴄᴇssғᴜʟʟʏ ᴇxɪᴛ {done} ɢʀᴏᴜᴘ, ғᴀɪʟᴇᴅ ᴛᴏ ᴇxɪᴛ {er} Group**"
     )
 
 
 @Client.on_message(filters.command(["leaveallch"], cmd) & filters.me)
 async def kickmeallch(client: Client, message: Message):
-    X = await edit_or_reply(message, "`Global Leave from group chats...`")
+    X = await edit_or_reply(message, "`ɢʟᴏʙᴀʟ ʟᴇᴀᴠᴇ ғʀᴏᴍ ɢʀᴏᴜᴘ ᴄʜᴀᴛs...`")
     er = 0
     done = 0
     async for dialog in client.get_dialogs():
@@ -66,12 +66,12 @@ async def kickmeallch(client: Client, message: Message):
             except BaseException:
                 er += 1
     await X.edit(
-        f"**Successfully Exit {done} Channel, Failed to Exit {er} Channel**"
+        f"**sᴜᴄᴄᴇssғᴜʟʟʏ ᴇxɪᴛ {done} ᴄʜᴀɴɴᴇʟ, ғᴀɪʟᴇᴅ ᴛᴏ ᴇxɪᴛ {er} ᴄʜᴀɴɴᴇʟ**"
     )
 
 
 add_command_help(
-    "•─╼⃝𖠁 ɪᴏɪɴʟᴇᴀᴠᴇ",
+    "➥ 𝐉ᴏɪɴ-𝐋ᴇᴀᴠᴇ",
     [
         [
             "kickme",
