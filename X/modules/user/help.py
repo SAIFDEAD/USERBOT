@@ -38,34 +38,34 @@ async def module_help(client: Client, message: Message):
             print(f"{e}")
             ac = PrettyTable()
             ac.header = False
-            ac.title = "𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄-𝐗-𝐔𝐒𝐄𝐑𝐁𝐎𝐓 𝐏𝐋𝐔𝐆𝐈𝐍𝐒"
+            ac.title = "𝐃ɪᴄᴛᴀᴛᴏʀ 𝐔sᴇʀ𝐁ᴏᴛ 𝐏ʟᴜɢɪɴs"
             ac.align = "l"
             for x in split_list(sorted(CMD_HELP.keys()), 2):
                 ac.add_row([x[0], x[1] if len(x) >= 2 else None])
             xx = await client.send_message(
                 message.chat.id,
-                f"```{str(ac)}```\n• @Japanese_Userbot_Support × @Nobitaa_xd•",
+                f"```{str(ac)}```\n➣ @SAIFALLBOT  ➣ @SAIF_DICTATOR ➣ @DEAD_GRPCHAT",
                 reply_to_message_id=ReplyCheck(message),
             )
             await xx.reply(
-                f"**Usage:** `.help broadcast` **To View Module Information**"
+                f"**ᴜsᴀɢᴇ:** `.ʜᴇʟᴘ ʙʀᴏᴀᴅᴄᴀsᴛ` **ᴛᴏ ᴠɪᴇᴡ ᴍᴏᴅᴜʟᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ**"
             )
             return
 
     if help_arg:
         if help_arg in CMD_HELP:
             commands: dict = CMD_HELP[help_arg]
-            this_command = f"──「 **Help For {str(help_arg).upper()}** 」──\n\n"
+            this_command = f"──「 **𝐇ᴇʟᴘ 𝐅ᴏʀ {str(help_arg).upper()}** 」──\n\n"
             for x in commands:
-                this_command += f"  •  **Command:** `.{str(x)}`\n  •  **Function:** `{str(commands[x])}`\n\n"
-            this_command += "© @Nobitaa_xd"
+                this_command += f"  •  **𝐂ᴏᴍᴍᴀɴᴅ:** `.{str(x)}`\n  •  **𝐅ᴜɴᴄᴛɪᴏɴ:** `{str(commands[x])}`\n\n"
+            this_command += "© @SAIFALLBOT"
             await edit_or_reply(
                 message, this_command, parse_mode=enums.ParseMode.MARKDOWN
             )
         else:
             await edit_or_reply(
                 message,
-                f"`{help_arg}` **Not a Valid Module Name.**",
+                f"`{help_arg}` **ɴᴏᴛ ᴀ ᴠᴀʟɪᴅ ᴍᴏᴅᴜʟᴇ ɴᴀᴍᴇ.**",
             )
 
 
@@ -80,31 +80,31 @@ async def module_helper(client: Client, message: Message):
     elif not message.reply_to_message and len(cmd) == 1:
         ac = PrettyTable()
         ac.header = False
-        ac.title = "𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄-𝐗-𝐔𝐒𝐄𝐑𝐁𝐎𝐓 𝐏𝐋𝐔𝐆𝐈𝐍𝐒"
+        ac.title = "𝐃ɪᴄᴛᴀᴛᴏʀ 𝐔sᴇʀ𝐁ᴏᴛ 𝐏ʟᴜɢɪɴs"
         ac.align = "l"
         for x in split_list(sorted(CMD_HELP.keys()), 2):
             ac.add_row([x[0], x[1] if len(x) >= 2 else None])
         await edit_or_reply(
-            message, f"```{str(ac)}```\n• @Japanese_Userbot_Support × @Nobitaa_xd •"
+            message, f"```{str(ac)}```\n❍ @SAIFALLBOT ❍ @DEAD_GRPCHAT ❍ @SAIF_DICTATOR"
         )
         await message.reply(
-            f"**Usage**:`.help broadcast` **To View Module details**"
+            f"**Ʋƨαɢɛ**:`.нɛℓρ вяσα∂cαƨт` **Ƭσ Ѵιɛω Μσ∂ʋℓɛ ∂ɛтαιℓƨ**"
         )
 
     if help_arg:
         if help_arg in CMD_HELP:
             commands: dict = CMD_HELP[help_arg]
-            this_command = f"──「 **Help For {str(help_arg).upper()}** 」──\n\n"
+            this_command = f"──「 **𝐇ᴇʟᴘ 𝐅ᴏʀ {str(help_arg).upper()}** 」──\n\n"
             for x in commands:
-                this_command += f"  •  **Command:** `.{str(x)}`\n  •  **Function:** `{str(commands[x])}`\n\n"
-            this_command += "© @Nobitaa_xd"
+                this_command += f"  •  **𝐂ᴏᴍᴍᴀɴᴅ:** `.{str(x)}`\n  •  **𝐅ᴜɴᴄᴛɪᴏɴ:** `{str(commands[x])}`\n\n"
+            this_command += "© @SAIFALLBOT"
             await edit_or_reply(
                 message, this_command, parse_mode=enums.ParseMode.MARKDOWN
             )
         else:
             await edit_or_reply(
                 message,
-                f"`{help_arg}` **Not a Valid Module Name.**",
+                f"`{help_arg}` **ɴᴏᴛ ᴀ ᴠᴀʟɪᴅ ᴍᴏᴅᴜʟᴇ ɴᴀᴍᴇ.**",
             )
 
 
