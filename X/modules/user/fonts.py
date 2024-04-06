@@ -72,26 +72,26 @@ async def font_ubot(client: Client, message: Message):
             nan = gen_font(text, _bolditalic)
         await message.reply(nan)
     else:
-        return await message.reply("Reply Text And Fill In Font Name!!!")
+        return await message.reply("ʀᴇᴘʟʏ ᴛᴇxᴛ ᴀɴᴅ ғɪʟʟ ɪɴ ғᴏɴᴛ ɴᴀᴍᴇ!!!")
 
 
 @Client.on_message(filters.me & filters.command(["lf", "listfont"], cmd))
 async def fonts(client: Client, message: Message):
     await message.reply(
         "<b>ᴅᴀғᴛᴀʀ ғᴏɴᴛs</b>\n\n"
-        "<b>• smallcap</b>\n"
-        "<b>• monospace</b>\n"
-        "<b>• outline</b>\n"
-        "<b>• script</b>\n"
-        "<b>• blackbubbles</b>\n"
-        "<b>• bubbles</b>\n"
-        "<b>• bold</b>\n"
-        "<b>• bolditalic</b>\n\n"
+        "<b>• sᴍᴀʟʟᴄᴀᴘ</b>\n"
+        "<b>• ᴍᴏɴᴏsᴘᴀᴄᴇ</b>\n"
+        "<b>• ᴏᴜᴛʟɪɴᴇ</b>\n"
+        "<b>• sᴄʀɪᴘᴛ</b>\n"
+        "<b>• ʙʟᴀᴄᴋʙᴜʙʙʟᴇs</b>\n"
+        "<b>• ʙᴜʙʙʟᴇs</b>\n"
+        "<b>• ʙᴏʟᴅ</b>\n"
+        "<b>• ʙᴏʟᴅɪᴛᴀʟɪᴄ</b>\n\n"
     )
 
 
 add_command_help(
-    "─╼⃝𖠁 Fᴏɴᴛꜱ",
+    "➥ 𝐅ᴏɴᴛꜱ",
     [
         [f"font [ʀᴇᴘʟʏ ᴛᴏ ᴍᴇꜱꜱᴀɢᴇ]", "Cʀᴇᴀᴛᴇ ᴛᴇxᴛ ᴡɪᴛʜ ᴅɪғғᴇʀᴇɴᴛ ғᴏɴᴛ ꜱᴛʏʟᴇꜱ"],
         [f"lf", "Vɪᴇᴡ ᴛʜᴇ Fᴏɴᴛꜱ Lɪꜱᴛ."],
