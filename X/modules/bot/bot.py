@@ -20,7 +20,7 @@ async def _callbacks(_, callback_query: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(buttons),
         )
     elif query == "close":
-        await app.edit_inline_text(callback_query.inline_message_id, "**— CLOSED**")
+        await app.edit_inline_text(callback_query.inline_message_id, "** CLOSED**")
         return
     elif query == "close_help":
         if callback_query.from_user.id not in users:
@@ -58,12 +58,12 @@ async def _callbacks(_, callback_query: CallbackQuery):
 async def on_plug_in_cb(_, callback_query: CallbackQuery):
     modul_name = callback_query.matches[0].group(1)
     commands: dict = CMD_HELP[modul_name]
-    this_command = f"──「 **Help For {str(modul_name).upper()}** 」──\n\n"
+    this_command = f"──「 **𝐇ᴇʟᴘ 𝐅ᴏʀ {str(modul_name).upper()}** 」──\n\n"
     for x in commands:
-        this_command += f"  •  **Command:** `.{str(x)}`\n  •  **Function:** `{str(commands[x])}`\n\n"
-    this_command += "© @Nobitaa_xd"
+        this_command += f"  •  **𝐂ᴏᴍᴍᴀɴᴅ:** `.{str(x)}`\n  •  **𝐅ᴜɴᴄᴛɪᴏɴ:** `{str(commands[x])}`\n\n"
+    this_command += "© @SAIF_DICTATOR"
     bttn = [
-        [InlineKeyboardButton(text="•─╼⃝𖠁 ʀᴇᴛᴜʀɴ 𖠁⃝╾─•", callback_data="reopen")],
+        [InlineKeyboardButton(text="╼⃝𖠁 ʀᴇᴛᴜʀɴ 𖠁⃝╾", callback_data="reopen")],
     ]
     reply_pop_up_alert = (
         this_command
