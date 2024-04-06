@@ -42,43 +42,43 @@ async def unblock_user_func(client: Client, message: Message):
         return await X.edit("If you are stressed, please take medicine immediately.")
     await client.unblock_user(user_id)
     umention = (await client.get_users(user_id)).mention
-    await message.edit(f"**Successfully Unblocked This Dick Boy ✌** {umention}")
+    await message.edit(f"**sᴜᴄᴄᴇssғᴜʟʟʏ ᴜɴʙʟᴏᴄᴋᴇᴅ ᴛʜɪs ᴅɪᴄᴋ ʙᴏʏ ✌** {umention}")
 
 
 @Client.on_message(filters.command(["setname"], cmd) & filters.me)
 async def setname(client: Client, message: Message):
-    X = await edit_or_reply(message, "`Be patient Change name. . .`")
+    X = await edit_or_reply(message, "`ʙᴇ ᴘᴀᴛɪᴇɴᴛ ᴄʜᴀɴɢᴇ ɴᴀᴍᴇ. . .`")
     if len(message.command) == 1:
         return await X.edit(
-            "Provide text to set as your telegram name."
+            "ᴘʀᴏᴠɪᴅᴇ ᴛᴇxᴛ ᴛᴏ sᴇᴛ ᴀs ʏᴏᴜʀ ᴛᴇʟᴇɢʀᴀᴍ ɴᴀᴍᴇ."
         )
     elif len(message.command) > 1:
         name = message.text.split(None, 1)[1]
         try:
             await client.update_profile(first_name=name)
-            await X.edit(f"**Successfully changed your Telegram name to** `{name}`")
+            await X.edit(f"**sᴜᴄᴄᴇssғᴜʟʟʏ ᴄʜᴀɴɢᴇᴅ ʏᴏᴜʀ ᴛᴇʟᴇɢʀᴀᴍ ɴᴀᴍᴇ ᴛᴏ** `{name}`")
         except Exception as e:
-            await X.edit(f"**ERROR:** `{e}`")
+            await X.edit(f"**ᴇʀʀᴏʀ:** `{e}`")
     else:
         return await X.edit(
-            "Provide text to set as your telegram name."
+            "ᴘʀᴏᴠɪᴅᴇ ᴛᴇxᴛ ᴛᴏ sᴇᴛ ᴀs ʏᴏᴜʀ ᴛᴇʟᴇɢʀᴀᴍ ɴᴀᴍᴇ."
         )
 
 
 @Client.on_message(filters.command(["setbio"], cmd) & filters.me)
 async def set_bio(client: Client, message: Message):
-    X = await edit_or_reply(message, "`Processing . . .`")
+    X = await edit_or_reply(message, "`ᴘʀᴏᴄᴇssɪɴɢ . . .`")
     if len(message.command) == 1:
-        return await X.edit("Provide text to set as bio.")
+        return await X.edit("ᴘʀᴏᴠɪᴅᴇ ᴛᴇxᴛ ᴛᴏ sᴇᴛ ᴀs ʙɪᴏ.")
     elif len(message.command) > 1:
         bio = message.text.split(None, 1)[1]
         try:
             await client.update_profile(bio=bio)
-            await X.edit(f"**Successfully Changed your BIO to** `{bio}`")
+            await X.edit(f"**sᴜᴄᴄᴇssғᴜʟʟʏ ᴄʜᴀɴɢᴇᴅ ʏᴏᴜʀ ʙɪᴏ ᴛᴏ** `{bio}`")
         except Exception as e:
-            await X.edit(f"**ERROR:** `{e}`")
+            await X.edit(f"**ᴇʀʀᴏʀ:** `{e}`")
     else:
-        return await X.edit("Provide text to set as bio.")
+        return await X.edit("ᴘʀᴏᴠɪᴅᴇ ᴛᴇxᴛ ᴛᴏ sᴇᴛ ᴀs ʙɪᴏ.")
 
 
 @Client.on_message(filters.me & filters.command(["setpfp"], cmd))
@@ -96,10 +96,10 @@ async def set_pfp(client: Client, message: Message):
         await client.set_profile_photo(profile_photo)
         if os.path.exists(profile_photo):
             os.remove(profile_photo)
-        await message.edit("**Your profile photo has been successfully changed.**")
+        await message.edit("**ʏᴏᴜʀ ᴘʀᴏғɪʟᴇ ᴘʜᴏᴛᴏ ʜᴀs ʙᴇᴇɴ sᴜᴄᴄᴇssғᴜʟʟʏ ᴄʜᴀɴɢᴇᴅ.**")
     else:
         await message.edit(
-            "`Reply to any photo to set as a profile photo`"
+            "`ʀᴇᴘʟʏ ᴛᴏ ᴀɴʏ ᴘʜᴏᴛᴏ ᴛᴏ sᴇᴛ ᴀs ᴀ ᴘʀᴏғɪʟᴇ ᴘʜᴏᴛᴏ`"
         )
         await sleep(3)
         await message.delete()
@@ -113,7 +113,7 @@ async def view_pfp(client: Client, message: Message):
     else:
         user = await client.get_me()
     if not user.photo:
-        await message.edit("Profile photo not found!")
+        await message.edit("ᴘʀᴏғɪʟᴇ ᴘʜᴏᴛᴏ ɴᴏᴛ ғᴏᴜɴᴅ !")
         return
     await client.download_media(user.photo.big_file_id, file_name=profile_photo)
     await client.send_photo(
@@ -125,7 +125,7 @@ async def view_pfp(client: Client, message: Message):
 
 
 add_command_help(
-    "•─╼⃝𖠁 ᴘʀᴏғɪʟᴇ",
+    "➥ 𝐏ʀᴏғɪʟᴇ",
     [
         ["block", "Tᴏ ʙʟᴏᴄᴋ ᴛᴇʟᴇɢʀᴀᴍ ᴜꜱᴇʀꜱ"],
         ["unblock", "Tᴏ ᴜɴʙʟᴏᴄᴋ ᴛᴇʟᴇɢʀᴀᴍ ᴜꜱᴇʀꜱ"],
