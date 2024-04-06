@@ -89,7 +89,7 @@ async def define(bot: Client, message: Message):
         return out
 
     if not input_string:
-        await message.edit("`Plz enter word to search‼️`")
+        await message.edit("`ᴘʟᴢ ᴇɴᴛᴇʀ ᴡᴏʀᴅ ᴛᴏ sᴇᴀʀᴄʜ ‼️`")
     else:
         word = input_string
         r_dec = await AioHttp().get_json(
@@ -103,14 +103,14 @@ async def define(bot: Client, message: Message):
         last_output = out_print(r_dec)
         if last_output:
             await message.edit(
-                "`Search result for   `" + f" {v_word}\n\n" + last_output
+                "`sᴇᴀʀᴄʜ ʀᴇsᴜʟᴛ ғᴏʀ   `" + f" {v_word}\n\n" + last_output
             )
         else:
-            await message.edit("`No result found from the database.`")
+            await message.edit("`ᴍᴀʏ ᴍᴇ ᴛᴜɴᴇ ɢʟᴛ ʟɪᴋʜᴀ ʜᴏ ᴘᴀᴅʜᴀɴᴀ ʟɪᴋʜɴᴀ ᴀᴀᴛᴀ ɴᴀʜɪ ᴛᴇʀᴇ ᴋᴏ.`")
 
 
 add_command_help(
-    "•─╼⃝𖠁 ᴅɪᴄᴛɪᴏɴᴀʀʏ",
+    "➥ 𝐃ɪᴄᴛɪᴏɴᴀʀʏ",
     [
         [".define | .dict", "Dᴇғɪɴᴇ ᴛʜᴇ ᴡᴏʀᴅ ʏᴏᴜ ꜱᴇɴᴅ ᴏʀ ʀᴇᴘʟʏ ᴛᴏ."],
     ],
