@@ -42,7 +42,7 @@ async def carbon_func(client: Client, message: Message):
         client.send_photo(
             message.chat.id,
             carbon,
-            caption=f"**Carbonised by** {client.me.mention}",
+            caption=f"**Сαявσиιƨɛ∂ вʏ** {client.me.mention}",
             reply_to_message_id=ReplyCheck(message),
         ),
     )
@@ -50,7 +50,7 @@ async def carbon_func(client: Client, message: Message):
 
 
 add_command_help(
-    "•─╼⃝𖠁 ᴄᴀʀʙᴏɴ",
+    "➥ 𝐂ᴀʀʙᴏɴ",
     [
         ["carbon <ʀᴇᴘʟʏ>", "Tᴇxᴛ ᴄᴀʀʙᴏɴɪᴢᴀᴛɪᴏɴ ᴡɪᴛʜ ᴅᴇғᴀᴜʟᴛ ꜱᴇᴛᴛɪɴɢꜱ."],
     ],
