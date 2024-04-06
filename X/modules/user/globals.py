@@ -46,7 +46,7 @@ async def gban_user(client: Client, message: Message):
         return await X.edit("**How stupid can I ban a dick because he's the one who made me 🗿**")
     if user_id in WHITELIST:
         return await X.edit(
-            "**You can't fuck him because he's an admin @Japanese_Userbot 😡**"
+            "**You can't fuck him because he's an admin @DEAD_GRPCHAT 😡**"
         )
     if user_id:
         try:
@@ -133,10 +133,10 @@ async def ungban_user(client: Client, message: Message):
 @Client.on_message(filters.command("listgban", cmd) & filters.me)
 async def gbanlist(client: Client, message: Message):
     users = sql.gbanned_users()
-    Kazu = await edit_or_reply(message, "`Processing...`")
+    Kazu = await edit_or_reply(message, "`ᴘʀᴏᴄᴇssɪɴɢ...`")
     if not users:
-        return await X.edit("No User Has Been Banned Yet")
-    gban_list = "**GBanned Users:**\n"
+        return await X.edit("ɴᴏ ᴜsᴇʀ ʜᴀs ʙᴇᴇɴ ʙᴀɴɴᴇᴅ ʏᴇᴛ")
+    gban_list = "**ɢʙᴀɴɴᴇᴅ ᴜsᴇʀs:**\n"
     count = 0
     for i in users:
         count += 1
@@ -148,37 +148,37 @@ async def gbanlist(client: Client, message: Message):
 async def gmute_user(client: Client, message: Message):
     args = await extract_user(message)
     reply = message.reply_to_message
-    X = await edit_or_reply(message, "`Processing...`")
+    X = await edit_or_reply(message, "`ᴘʀᴏᴄᴇssɪɴɢ...`")
     if args:
         try:
             user = await client.get_users(args)
         except Exception:
-            await X.edit(f"`Please specify a valid user!`")
+            await X.edit(f"`ᴘʟᴇᴀsᴇ sᴘᴇᴄɪғʏ ᴀ ᴠᴀʟɪᴅ ᴜsᴇʀ!`")
             return
     elif reply:
         user_id = reply.from_user.id
         user = await client.get_users(user_id)
     else:
-        await X.edit(f"`Please specify a valid user!`")
+        await X.edit(f"`ᴘʟᴇᴀsᴇ sᴘᴇᴄɪғʏ ᴀ ᴠᴀʟɪᴅ ᴜsᴇʀ!`")
         return
     if user.id == client.me.id:
-        return await X.edit("**Why mute yourself Pepek**")
+        return await X.edit("**ᴡʜʏ ᴍᴜᴛᴇ ʏᴏᴜʀsᴇʟғ ᴘᴇᴘᴇᴋ**")
     if user.id in DEVS:
-        return await X.edit("**I can't mute my dick because he made me 🗿**")
+        return await X.edit("**ɪ ᴄᴀɴ'ᴛ ᴍᴜᴛᴇ ᴍʏ ᴅɪᴄᴋ ʙᴇᴄᴀᴜsᴇ ʜᴇ ᴍᴀᴅᴇ ᴍᴇ 🗿**")
     if user.id in WHITELIST:
         return await X.edit(
-            "**Where Can Dogs Gmute Admin @Japanese_Userbot 😡**"
+            "**ᴡʜᴇʀᴇ ᴄᴀɴ ᴅᴏɢs ɢᴍᴜᴛᴇ ᴀᴅᴍɪɴ @SAIFALLBOT 😡**"
         )
     try:
         replied_user = reply.from_user
         if replied_user.is_self:
-            return await X.edit("`Calm down anybob, you can't gmute yourself.`")
+            return await X.edit("`ᴄᴀʟᴍ ᴅᴏᴡɴ ᴀɴʏʙᴏᴅʏ, ʏᴏᴜ ᴄᴀɴ'ᴛ ɢᴍᴜᴛᴇ ʏᴏᴜʀsᴇʟғ.`")
     except BaseException:
         pass
 
     try:
         if sql2.is_gmuted(user.id):
-            return await X.edit("`User already gmuted`")
+            return await X.edit("`ᴜsᴇʀ ᴀʟʀᴇᴀᴅʏ ɢᴍᴜᴛᴇᴅ`")
         sql2.gmute(user.id)
         await X.edit(f"[{user.first_name}](tg://user?id={user.id}) globally gmuted!")
         try:
@@ -188,7 +188,7 @@ async def gmute_user(client: Client, message: Message):
         except BaseException:
             pass
     except Exception as e:
-        await X.edit(f"**ERROR:** `{e}`")
+        await X.edit(f"**ᴇʀʀᴏʀ:** `{e}`")
         return
 
 
@@ -196,24 +196,24 @@ async def gmute_user(client: Client, message: Message):
 async def ungmute_user(client: Client, message: Message):
     args = await extract_user(message)
     reply = message.reply_to_message
-    X = await edit_or_reply(message, "`Processing...`")
+    X = await edit_or_reply(message, "`ᴘʀᴏᴄᴇssɪɴɢ...`")
     if args:
         try:
             user = await client.get_users(args)
         except Exception:
-            await X.edit(f"`Please specify a valid user!`")
+            await X.edit(f"`ᴘʟᴇᴀsᴇ sᴘᴇᴄɪғʏ ᴀ ᴠᴀʟɪᴅ ᴜsᴇʀ!`")
             return
     elif reply:
         user_id = reply.from_user.id
         user = await client.get_users(user_id)
     else:
-        await X.edit(f"`Please specify a valid user!`")
+        await X.edit(f"`ᴘʟᴇᴀsᴇ sᴘᴇᴄɪғʏ ᴀ ᴠᴀʟɪᴅ ᴜsᴇʀ!`")
         return
 
     try:
         replied_user = reply.from_user
         if replied_user.is_self:
-            return await Man.edit("`Calm down anybob, you can't ungmute yourself.`")
+            return await Man.edit("`ᴄᴀʟᴍ ᴅᴏᴡɴ ᴀɴʏʙᴏʙ, ʏᴏᴜ ᴄᴀɴ'ᴛ ᴜɴɢᴍᴜᴛᴇ ʏᴏᴜʀsᴇʟғ.`")
     except BaseException:
         pass
 
@@ -231,17 +231,17 @@ async def ungmute_user(client: Client, message: Message):
             f"[{user.first_name}](tg://user?id={user.id}) globally ungmuted!"
         )
     except Exception as e:
-        await X.edit(f"**ERROR:** `{e}`")
+        await X.edit(f"**ᴇʀʀᴏʀ:** `{e}`")
         return
 
 
 @Client.on_message(filters.command("listgmute", cmd) & filters.me)
 async def gmutelist(client: Client, message: Message):
     users = sql2.gmuted_users()
-    X = await edit_or_reply(message, "`Processing...`")
+    X = await edit_or_reply(message, "`ᴘʀᴏᴄᴇssɪɴɢ...`")
     if not users:
-        return await X.edit("No Hair Has Been Muted Yet")
-    gmute_list = "**GMuted Users:**\n"
+        return await X.edit("ɴᴏ ᴜsᴇʀ ʜᴀs ʙᴇᴇɴ ᴍᴜᴛᴇᴅ ʏᴇᴛ")
+    gmute_list = "**𝐆𝐌𝐮𝐭𝐞𝐝 𝐔𝐬𝐞𝐫𝐬:**\n"
     count = 0
     for i in users:
         count += 1
@@ -279,7 +279,7 @@ async def globals_check(client: Client, message: Message):
 
 
 add_command_help(
-    "•─╼⃝𖠁 ɢʟᴏʙᴀʟꜱ",
+    "➥ 𝐆ʟᴏʙᴀʟꜱ",
     [
         [
             "gban <ʀᴇᴘʟʏ/ᴜꜱᴇʀɴᴀᴍᴇ/ᴜꜱᴇʀɪᴅ>",
