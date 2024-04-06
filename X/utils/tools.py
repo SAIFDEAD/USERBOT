@@ -7,13 +7,13 @@ from typing import Tuple
 from PIL import Image, ImageDraw, ImageFont
 
 absen = [
-    "**Coming bro** 😁",
-    "**Present sister** 😉",
-    "**Be there, please** 😁",
-    "**Present handsome** 🥵",
-    "**Present bro** 😎",
-    "**Absence later**"
-    "**I'm here, sorry I'm late** 🥺",
+    "**Сɸʍιƞϑ βʀɸ** 😁",
+    "**♇ʀεƨεƞτ ƨιƨτεʀ** 😉",
+    "**βɛ тнɛяɛ, ρℓɛαƨɛ** 😁",
+    "**Ƥяɛƨɛит нαи∂ƨσмɛ** 🥵",
+    "**Ƥяɛƨɛит вяσ** 😎",
+    "**𝗔вƨɛиcɛ ℓαтɛя**"
+    "**Ɩ'м нɛяɛ, ƨσяяʏ Ɩ'м ℓαтɛ** 🥺",
 ]
 
 
