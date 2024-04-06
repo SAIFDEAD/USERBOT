@@ -41,7 +41,7 @@ async def japan_api(bot: Client, message: Message):
             return
 
         # Add your developer's name and link
-        developer_info = "ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴍʏ [ᴅᴇᴠʟᴏᴘᴇʀ](https://t.me/Japanese_Userbot_Support)"
+        developer_info = "ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴍʏ [ᴅᴇᴠʟᴏᴘᴇʀ](https://t.me/SAIF_DICTATOR)"
 
         # Combine facts from caption (if available), fetched caption, and developer info
         final_caption = f"ғᴀᴄᴛ ᴀʙᴏᴜᴛ ᴍʏ ᴄᴏᴜɴᴛʀʏ ✨\n\n{caption}\n\n{developer_info}" if caption else developer_info
@@ -56,7 +56,7 @@ async def japan_api(bot: Client, message: Message):
 
 for x in cf_apii_data:
     add_command_help(
-        "•─╼⃝𖠁 Mʏ Cᴏᴜɴᴛʀʏ",
+        "➥ 𝐌ʏ 𝐂ᴏᴜɴᴛʀʏ",
         [
             [f"{x}", cf_apii_data[x]["help"]],
         ],
