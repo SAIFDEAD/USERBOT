@@ -11,7 +11,7 @@ from .help import *
 
 @Client.on_message(filters.command(["stats", "status"], cmd) & filters.me)
 async def stats(client: Client, message: Message):
-    Man = await edit_or_reply(message, "`Collecting stats...`")
+    Man = await edit_or_reply(message, "`ᴄᴏʟʟᴇᴄᴛɪɴɢ sᴛᴀᴛs...`")
     start = datetime.now()
     u = 0
     g = 0
@@ -41,20 +41,20 @@ async def stats(client: Client, message: Message):
     end = datetime.now()
     ms = (end - start).seconds
     await Man.edit_text(
-        """`Your Stats Obtained in {} seconds`
-`You have {} Private Messages.`
-`You are in {} Groups.`
-`You are in {} Super Groups.`
-`You Are in {} Channels.`
-`You Are Admin in {} Chats.`
-`Bots = {}`""".format(
+        """`ʏᴏᴜʀ sᴛᴀᴛs ᴏʙᴛᴀɪɴᴇᴅ ɪɴ {} sᴇᴄᴏɴᴅs`
+`ʏᴏᴜ ʜᴀᴠᴇ {} ᴘʀɪᴠᴀᴛᴇ ᴍᴇssᴀɢᴇs.`
+`ʏᴏᴜ ᴀʀᴇ ɪɴ {} ɢʀᴏᴜᴘs.`
+`ʏᴏᴜ ᴀʀᴇ ɪɴ {} sᴜᴘᴇʀ ɢʀᴏᴜᴘs.`
+`ʏᴏᴜ ᴀʀᴇ ɪɴ {} ᴄʜᴀɴɴᴇʟs.`
+`ʏᴏᴜ ᴀʀᴇ ᴀᴅᴍɪɴ ɪɴ {} ᴄʜᴀᴛs.`
+`ʙᴏᴛs = {}`""".format(
             ms, u, g, sg, c, a_chat, b
         )
     )
 
 
 add_command_help(
-    "•─╼⃝𖠁 ꜱᴛᴀᴛꜱ",
+    "➥ 𝐒ᴛᴀᴛꜱ",
     [
         ["stats", "Tᴏ Cʜᴇᴄᴋ Yᴏᴜʀ Aᴄᴄᴏᴜɴᴛ Sᴛᴀᴛᴜꜱ, ʜᴏᴡ Jᴏɪɴᴇᴅ Cʜᴀᴛꜱ."],
     ],
