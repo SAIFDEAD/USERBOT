@@ -25,14 +25,14 @@ async def urban_dictionary(bot, message):
         definition = response["list"][0]["definition"]
         example = response["list"][0]["example"]
         resp = (
-            f"**Text: {replace_text(word)}**\n"
-            f"**Meaning:**\n`{replace_text(definition)}`\n\n"
-            f"**Example:**\n`{replace_text(example)}` "
+            f"**ᴛᴇxᴛ: {replace_text(word)}**\n"
+            f"**ᴍᴇᴀɴɪɴɢ:**\n`{replace_text(definition)}`\n\n"
+            f"**ᴇxᴀᴍᴘʟᴇ:**\n`{replace_text(example)}` "
         )
         await message.edit(resp)
         return
     except Exception as e:
-        await message.edit("`The Urban Dictionary API could not be reached`")
+        await message.edit("`ᴛʜᴇ ᴜʀʙᴀɴ ᴅɪᴄᴛɪᴏɴᴀʀʏ ᴀᴘɪ ᴄᴏᴜʟᴅ ɴᴏᴛ ʙᴇ ʀᴇᴀᴄʜᴇᴅ`")
         print(e)
         await sleep(3)
         await message.delete()
@@ -40,7 +40,7 @@ async def urban_dictionary(bot, message):
 
 
 add_command_help(
-    "•─╼⃝𖠁 ᴅɪᴄᴛɪᴏɴᴀʀʏ",
+    "➥ 𝐃ɪᴄᴛɪᴏɴᴀʀʏ",
     [
         [".ubran | .ud", "Dᴇғɪɴᴇ ᴛʜᴇ ᴡᴏʀᴅ ʏᴏᴜ ꜱᴇɴᴅ ᴏʀ ʀᴇᴘʟʏ ᴛᴏ."],
     ],
