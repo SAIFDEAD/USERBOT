@@ -21,19 +21,19 @@ def increment_spam_count():
 
 
 def spam_allowed():
-    return SPAM_COUNT[0] < 50
+    return SPAM_COUNT[0] < 100
 
 
 @Client.on_message(filters.me & filters.command(["dspam", "delayspam"], cmd))
 async def delayspam(client: Client, message: Message):
     if message.chat.id in BLACKLIST_CHAT:
         return await edit_or_reply(
-            message, "**This command is not allowed to be used in this group**"
+            message, "**ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ɪs ɴᴏᴛ ᴀʟʟᴏᴡᴇᴅ ᴛᴏ ʙᴇ ᴜsᴇᴅ ɪɴ ᴛʜɪs ɢʀᴏᴜᴘ**"
         )
     delayspam = await extract_args(message)
     arr = delayspam.split()
     if len(arr) < 3 or not arr[0].isdigit() or not arr[1].isdigit():
-        await message.edit("`Something seems missing / wrong.`")
+        await message.edit("`sᴏᴍᴇᴛʜɪɴɢ sᴇᴇᴍs ᴍɪssɪɴɢ / ᴡʀᴏɴɢ.`")
         return
     delay = int(arr[0])
     count = int(arr[1])
@@ -54,7 +54,7 @@ async def delayspam(client: Client, message: Message):
             break
 
     await client.send_message(
-        BOTLOG_CHATID, "**#DELAYSPAM**\nDelaySpam was executed successfully"
+        BOTLOG_CHATID, "**#ᴅᴇʟᴀʏsᴘᴀᴍ**\nDelaySpam ᴡᴀs ᴇxᴇᴄᴜᴛᴇᴅ sᴜᴄᴄᴇssғᴜʟʟʏ !!"
     )
 
 
@@ -86,12 +86,12 @@ async def sspam(client: Client, message: Message):
 async def spam_stick(client: Client, message: Message):
     if not message.reply_to_message:
         await edit_or_reply(
-            message, "**reply to a sticker with amount you want to spam**"
+            message, "**ʀᴇᴘʟʏ ᴛᴏ ᴀ sᴛɪᴄᴋᴇʀ ᴡɪᴛʜ ᴀᴍᴏᴜɴᴛ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ sᴘᴀᴍ**"
         )
         return
     if not message.reply_to_message.sticker:
         await edit_or_reply(
-            message, "**reply to a sticker with amount you want to spam**"
+            message, "**ʀᴇᴘʟʏ ᴛᴏ ᴀ sᴛɪᴄᴋᴇʀ ᴡɪᴛʜ ᴀᴍᴏᴜɴᴛ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ sᴘᴀᴍ**"
         )
         return
     else:
@@ -114,7 +114,7 @@ async def spam_stick(client: Client, message: Message):
 
 
 add_command_help(
-    "•─╼⃝𖠁 ꜱᴘᴀᴍ",
+    "➥ 𝐒ᴘᴀᴍ",
     [
         ["spam <ᴀᴍᴏᴜɴᴛ ꜱᴘᴀᴍ> <ᴛᴇxᴛ>", "Sᴘᴀᴍᴍɪɴɢ ᴛᴇxᴛꜱ ɪɴ ᴄʜᴀᴛ!!"],
         [
