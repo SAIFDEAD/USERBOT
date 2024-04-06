@@ -46,4 +46,4 @@ async def s_paste(message, extension="txt"):
             "raw": f"{siteurl}{response['payload']['id']}/raw",
             "bin": "Spacebin",
         }
-    return {"error": "Unable to reach spacebin."}
+    return {"error": "Ʋиαвℓɛ τɸ ʀεαϲհ ƨραϲεβιƞ."}
