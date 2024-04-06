@@ -12,10 +12,15 @@ BOT_VER = "3.0.0"
 CMD_HANDLER = ["." "?" "!" "*"]
 MSG_ON = """
 ✧✧ **𝐃ɪᴄᴛᴀᴛᴏʀ 𝐔sᴇʀ𝐁ᴏᴛ 𝐈s 𝐀ʟɪᴠᴇ** ✧✧
-╼┅━━━━━━━━━━╍━━━━━━━━━━┅╾
-✧✧ **𝐃ɪᴄᴛᴀᴛᴏʀ 𝐕ᴇʀsɪᴏɴ 🥀 ** `{}`
-✧✧ **𝐓ʏᴘᴇ** **.alive** **𝐓ᴏ 𝐂ʜᴇᴄᴋ 𝐀ʟɪᴠᴇ 𝐎ғ 𝐃ɪᴄᴛᴀᴛᴏʀ 𝐔sᴇʀ𝐁ᴏᴛ**
-╼┅━━━━━━━━━━╍━━━━━━━━━━┅╾
+▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭
+
+➥ **𝐃ɪᴄᴛᴀᴛᴏʀ 𝐕ᴇʀsɪᴏɴ 🥀 ** `{}`
+➥ **𝐓ʏᴘᴇ** **.alive** **𝐓ᴏ 𝐂ʜᴇᴄᴋ 𝐀ʟɪᴠᴇ 𝐎ғ 𝐃ɪᴄᴛᴀᴛᴏʀ 𝐔sᴇʀ𝐁ᴏᴛ**
+▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭
+➥ 𝐎ᴡɴᴇʀ :- @SAIF_DICTATOR
+➥ 𝐆ʀᴘ :- @DEAD_GRPCHAT
+➥ 𝐂ʜᴀɴ :- @SAIFALLBOT
+▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭
 """
 
 
@@ -34,7 +39,7 @@ async def main():
                 await bot.send_message(BOTLOG_CHATID, MSG_ON.format(BOT_VER, CMD_HANDLER))
             except BaseException:
                 pass
-            print(f"𝐒𝐭𝐚𝐫𝐭𝐞𝐝 𝐚𝐬 {ex.first_name} | {ex.id} ")
+            print(f"𝐘ᴏᴜʀ 𝐃ɪᴄᴛᴀᴛᴏʀ 𝐔sᴇʀ𝐁ᴏᴛ 𝐒ᴛᴀʀᴛᴇᴅ 𝐀s{ex.first_name} | {ex.id} ")
             ids.append(ex.id)
         except Exception as e:
             print(f"{e}")
@@ -45,7 +50,7 @@ async def main():
 
 
 if __name__ == "__main__":
-    LOGGER("X").info("𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄-𝐗-𝐔𝐒𝐄𝐑𝐁𝐎𝐓 𝐈𝐬 𝐀𝐜𝐭𝐢𝐯𝐞✨")
+    LOGGER("X").info("𝐷𝛪𝐶𝛵𝛥𝛵𝛩𝛤 𝑈𝑆𝛴𝛤𝛣𝛩𝛵 𝛪𝑆 𝑆𝛹𝛥𝛤𝛵𝛴𝐷 ✨")
     install()
     heroku()
     LOOP.run_until_complete(main())
