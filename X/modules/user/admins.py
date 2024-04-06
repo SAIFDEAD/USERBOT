@@ -28,7 +28,7 @@ async def set_chat_photo(client: Client, message: Message):
     can_change_admin = X.can_change_info
     can_change_member = message.chat.permissions.can_change_info
     if not (can_change_admin or can_change_member):
-        await message.edit_text("You don't have enough permission")
+        await message.edit_text("ʏᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴇɴᴏᴜɢʜ ᴘᴇʀᴍɪssɪᴏɴ")
     if message.reply_to_message:
         if message.reply_to_message.photo:
             await client.set_chat_photo(
@@ -36,7 +36,7 @@ async def set_chat_photo(client: Client, message: Message):
             )
             return
     else:
-        await message.edit_text("Reply to a photo to set it !")
+        await message.edit_text("ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴘʜᴏᴛᴏ ᴛᴏ sᴇᴛ ɪᴛ !")
 
 
 @Client.on_message(
@@ -48,15 +48,15 @@ async def member_ban(client: Client, message: Message):
     Man = await edit_or_reply(message, "`Currently Process...`")
     bot = (await client.get_chat_member(message.chat.id, client.me.id)).privileges
     if not bot.can_restrict_members:
-        return await Man.edit("Ask Admin First")
+        return await Man.edit("ᴀsᴋ ᴀᴅᴍɪɴ ғɪʀsᴛ")
     if not user_id:
-        return await Man.edit("Cannot find User.")
+        return await Man.edit("ᴄᴀɴɴᴏᴛ ғɪɴᴅ ᴜsᴇʀ.")
     if user_id == client.me.id:
-        return await Man.edit("Examples of stupid kids, fuck you!")
+        return await Man.edit("ᴇxᴀᴍᴘʟᴇs ᴏғ sᴛᴜᴘɪᴅ ᴋɪᴅs, ғᴜᴄᴋ ʏᴏᴜ!")
     if user_id in DEVS:
-        return await Man.edit("Sorry, That's my developer!")
+        return await Man.edit("sᴏʀʀʏ, ᴛʜᴀᴛ's ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀ!")
     if user_id in (await list_admins(client, message.chat.id)):
-        return await Man.edit("I can't ban an admin, You know the rules, so do i.")
+        return await Man.edit("ɪ ᴄᴀɴ'ᴛ ʙᴀɴ ᴀɴ ᴀᴅᴍɪɴ.")
     try:
         mention = (await client.get_users(user_id)).mention
     except IndexError:
@@ -66,13 +66,13 @@ async def member_ban(client: Client, message: Message):
             else "Anon"
         )
     msg = (
-        f"**Victim Banned:** {mention}\n"
-        f"**In Ban By:** {message.from_user.mention if message.from_user else 'Anon'}\n"
+        f"**ᴠɪᴄᴛɪᴍ ʙᴀɴɴᴇᴅ:** {mention}\n"
+        f"**ɪɴ ʙᴀɴ ʙʏ:** {message.from_user.mention if message.from_user else 'Anon'}\n"
     )
     if message.command[0][0] == "d":
         await message.reply_to_message.delete()
     if reason:
-        msg += f"**Reason:** {reason}"
+        msg += f"**𝐑ᴇᴀsᴏɴ:** {reason}"
     await message.chat.ban_member(user_id)
     await Man.edit(msg)
 
@@ -84,9 +84,9 @@ async def member_unban(client: Client, message: Message):
     Man = await edit_or_reply(message, "`In progresss...`")
     bot = (await client.get_chat_member(message.chat.id, client.me.id)).privileges
     if not bot.can_restrict_members:
-        return await Man.edit("Ask Admin First!")
+        return await Man.edit("ᴀsᴋ ᴀᴅᴍɪɴ ғɪʀsᴛ !")
     if reply and reply.sender_chat and reply.sender_chat != message.chat.id:
-        return await Man.edit("It's a channel, where can you ban it, okay?!")
+        return await Man.edit("ɪᴛ's ᴀ ᴄʜᴀɴɴᴇʟ !")
 
     if len(message.command) == 2:
         user = message.text.split(None, 1)[1]
@@ -94,11 +94,11 @@ async def member_unban(client: Client, message: Message):
         user = message.reply_to_message.from_user.id
     else:
         return await Man.edit(
-            "Username where is the fool?!."
+            "ᴜsᴇʀɴᴀᴍᴇ ᴡʜᴇʀᴇ ɪs ᴛʜᴇ ғᴏᴏʟ ?!."
         )
     await message.chat.unban_member(user)
     umention = (await client.get_users(user)).mention
-    await Man.edit(f"Unbanned! {umention}")
+    await Man.edit(f"ᴜɴʙᴀɴɴᴇᴅ! {umention}")
 
 
 @Client.on_message(
@@ -107,16 +107,16 @@ async def member_unban(client: Client, message: Message):
 @Client.on_message(filters.command(["pin", "unpin"], cmd) & filters.me)
 async def pin_message(client: Client, message):
     if not message.reply_to_message:
-        return await edit_or_reply(message, "Reply to a message to pin/unpin it.")
-    X = await edit_or_reply(message, "`Processing...`")
+        return await edit_or_reply(message, "ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴍᴇssᴀɢᴇ ᴛᴏ ᴘɪɴ/ᴜɴᴘɪɴ ɪᴛ.")
+    X = await edit_or_reply(message, "`ᴘʀᴏᴄᴇssɪɴɢ...`")
     bot = (await client.get_chat_member(message.chat.id, client.me.id)).privileges
     if not bot.can_pin_messages:
-        return await X.edit("I don't have enough permissions")
+        return await X.edit("ɪ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴇɴᴏᴜɢʜ ᴘᴇʀᴍɪssɪᴏɴs")
     r = message.reply_to_message
-    if message.command[0][0] == "u":
+    if message.command[0][0] == "ᴜ":
         await r.unpin()
         return await X.edit(
-            f"**Unpinned [this]({r.link}) message.**",
+            f"**ᴜɴᴘɪɴɴᴇᴅ [this]({r.link}) message.**",
             disable_web_page_preview=True,
         )
     await r.pin(disable_notification=True)
@@ -130,25 +130,25 @@ async def pin_message(client: Client, message):
 @Client.on_message(filters.command("mute", cmd) & filters.me)
 async def mute(client: Client, message: Message):
     user_id, reason = await extract_user_and_reason(message)
-    Man = await edit_or_reply(message, "`Processing...`")
+    Man = await edit_or_reply(message, "`ᴘʀᴏᴄᴇssɪɴɢ...`")
     bot = (await client.get_chat_member(message.chat.id, client.me.id)).privileges
     if not bot.can_restrict_members:
-        return await Man.edit("Ask Admin First")
+        return await Man.edit("ᴀsᴋ ᴀᴅᴍɪɴ ғɪʀsᴛ")
     if not user_id:
-        return await Man.edit("User not found.")
+        return await Man.edit("ᴜsᴇʀ ɴᴏᴛ ғᴏᴜɴᴅ.")
     if user_id == client.me.id:
-        return await Man.edit("Where Can a Dog!.")
+        return await Man.edit("ᴡʜᴇʀᴇ ᴄᴀɴ ᴀ ᴅᴏɢ !.")
     if user_id in DEVS:
-        return await Man.edit("Can't Get Rid of Stupid Developers!")
+        return await Man.edit("sᴏʀʀʏ, ᴛʜɪs ɪs ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀs!")
     if user_id in (await list_admins(client, message.chat.id)):
-        return await Man.edit("I can't mute an admin, You know the rules, so do i.")
+        return await Man.edit("ɪ ᴄᴀɴ'ᴛ ᴍᴜᴛᴇ ᴀɴ ᴀᴅᴍɪɴ. ")
     mention = (await client.get_users(user_id)).mention
     msg = (
-        f"**Muted User:** {mention}\n"
-        f"**Muted By:** {message.from_user.mention if message.from_user else 'Anon'}\n"
+        f"**ᴍᴜᴛᴇᴅ ᴜsᴇʀ:** {mention}\n"
+        f"**ᴍᴜᴛᴇᴅ ʙʏ:** {message.from_user.mention if message.from_user else 'Anon'}\n"
     )
     if reason:
-        msg += f"**Reason:** {reason}"
+        msg += f"**ʀᴇᴀsᴏɴ:** {reason}"
     await message.chat.restrict_member(user_id, permissions=ChatPermissions())
     await Man.edit(msg)
 
@@ -278,11 +278,11 @@ async def demote(client: Client, message: Message):
         ),
     )
     umention = (await client.get_users(user_id)).mention
-    await X.edit(f"Demoted! {umention}")
+    await X.edit(f"𝐃𝐞𝐦𝐨𝐭𝐞𝐝! {umention}")
 
 
 add_command_help(
-    "─╼⃝𖠁ᴀᴅᴍɪɴ",
+    "➥ 𝐀ᴅᴍɪɴ",
     [
         [f"{cmd}ban <ʀᴇᴘʟʏ/ᴜꜱᴇʀɴᴀᴍᴇ/ᴜꜱᴇʀɪᴅ> <ʀᴇᴀꜱᴏɴ>", "Bᴀɴɴᴇᴅ ᴍᴇᴍʙᴇʀꜱ ғʀᴏᴍ ᴛʜᴇ ɢʀᴏᴜᴘ."],
         [
