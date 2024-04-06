@@ -52,26 +52,26 @@ async def get_readable_time(seconds: int) -> str:
 async def alive_function(message: Message, answers):
     uptime = await get_readable_time((time.time() - StartTime))
     msg = f"""
-<b> — Hi, I'm Alive.</b>
+<b> — ʜɪ, ɪ'ᴍ ᴀʟɪᴠᴇ 🔥</b>
 
-<b> • 𝙼𝚈 𝙼𝙰𝚂𝚃𝙴𝚁 :</b> {message.from_user.mention}
-<b> • 𝙼𝙾𝙳𝚄𝙻𝙴𝚂 :</b> <code>{len(CMD_HELP)} Modules</code>
-<b> • 𝙿𝚈𝚃𝙷𝙾𝙽 𝚅𝙴𝚁𝚂𝙸𝙾𝙽:</b> <code>{pyver.split()[0]}</code>
-<b> • 𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼 𝚅𝙴𝚁𝚂𝙸𝙾𝙽 :</b> <code>{pyrover}</code>
-<b> • 𝙱𝙾𝚃 𝚄𝙿𝚃𝙸𝙼𝙴 :</b> <code>{uptime}</code>
+<b> ➥ 𝗠𝚈 𝗠𝙰𝚂𝚃𝙴𝚁 :</b> {message.from_user.mention}
+<b> ➥ 𝗠𝙾𝙳𝚄𝙻𝙴𝚂 :</b> <code>{len(CMD_HELP)} Modules</code>
+<b> ➥ 𝗣𝚈𝚃𝙷𝙾𝙽 𝗩𝙴𝚁𝚂𝙸𝙾𝙽:</b> <code>{pyver.split()[0]}</code>
+<b> ➥ 𝗣𝚈𝚁𝙾𝙶𝚁𝙰𝙼 𝗩𝙴𝚁𝚂𝙸𝙾𝙽 :</b> <code>{pyrover}</code>
+<b> ➥ 𝗕𝙾𝚃 𝗨𝙿𝚃𝙸𝙼𝙴 :</b> <code>{uptime}</code>
 
-<b> — 𝙱𝙾𝚃 𝚅𝙴𝚁𝚂𝙸𝙾𝙽 : 1.0</b>
+<b> ➣ 𝗗𝙸𝙲𝚃𝙰𝚃𝙾𝚁 𝗩𝙴𝚁𝚂𝙸𝙾𝙽 : 1.0</b>
 """
     answers.append(
         InlineQueryResultArticle(
             title="alipp",
             description="Check Bot's Stats",
-            thumb_url="https://graph.org/file/83978974fe5be2da118d7.jpg",
+            thumb_url="https://telegra.ph/file/14a5eb1c01732e912ee32.jpg",
             input_message_content=InputTextMessageContent(
                 msg, parse_mode=ParseMode.HTML, disable_web_page_preview=True
             ),
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton("──「 ʜᴇʟᴘ 」──", callback_data="helper")]]
+                [[InlineKeyboardButton("──「 𝐇ᴇʟᴘ 」──", callback_data="helper")]]
             ),
         )
     )
@@ -84,30 +84,30 @@ async def pingme(client: Client, message: Message):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await message.reply_text(
-        f"❏ **PONG!!🏓**\n"
-        f"├• **Pinger** - `%sms`\n"
-        f"├• **Uptime -** `{uptime}` \n"
-        f"└• **Owner :** {client.me.mention}" % (duration)
+        f"➥ ** 𝐃ɪᴄᴛᴀᴛᴏʀ 𝐔sᴇʀ𝐁ᴏᴛ **\n"
+        f"├• **𝐏ɪɴɢᴇʀ** - `%sms`\n"
+        f"├• **𝐔ᴘᴛɪᴍᴇ -** `{uptime}` \n"
+        f"└• **𝐎ᴡɴᴇʀ :** {client.me.mention}" % (duration)
     )
 
 async def peler_function(message: Message, answers):
     msg = (
-        f"Japanese-X-Userbot \n"
-        "ㅤㅤStatus : Ubot Active \n"
-        f"ㅤㅤㅤㅤModules:</b> <code>{len(modules)} Modules</code> \n"
-        f"ㅤㅤㅤㅤBot Version: {BOT_VER} \n"
-        f"ㅤㅤㅤㅤBranch: {branch} \n\n"
+        f"𝐃ɪᴄᴛᴀᴛᴏʀ 𝐔sᴇʀ𝐁ᴏᴛ \n"
+        "ㅤㅤ𝐒тαтʋƨ : 𝐔вσт 𝐀cтιʏɛ \n"
+        f"ㅤㅤㅤㅤ𝐌σ∂ʋℓɛƨ:</b> <code>{len(modules)} Modules</code> \n"
+        f"ㅤㅤㅤㅤ𝐁σт 𝐕ɛяƨισи: {BOT_VER} \n"
+        f"ㅤㅤㅤㅤ𝐁яαиcн: {branch} \n\n"
     )
     answers.append(
         InlineQueryResultArticle(
             title="alive",
-            description="Check Bot's Stats",
-            thumb_url="https://graph.org/file/0ed7be5cf4fdbf052afa9.jpg",
+            description="Ɔнɛcκ βσт'ƨ Ƨтαтƨ",
+            thumb_url="https://telegra.ph/file/71fcc97ea73c5265d6925.jpg",
             input_message_content=InputTextMessageContent(
                 msg, parse_mode=ParseMode.HTML, disable_web_page_preview=True
             ),
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="ᴄʜᴀɴɴᴇʟ", url="https://t.me/Japanese_Userbot"), InlineKeyboardButton(text="ᴏᴡɴᴇʀ", url="https://t.me/Nobitaa_xd")], [InlineKeyboardButton(text="ᴍᴇɴᴜ", callback_data="reopen")]]
+                [[InlineKeyboardButton(text="𝐂ʜᴀɴɴᴇʟ", url="https://t.me/SAIFALLBOT"), InlineKeyboardButton(text="𝐃ɪᴄᴛᴀᴛᴏʀ", url="https://t.me/SAIF_DICTATOR")], [InlineKeyboardButton(text="𝐌ᴇɴᴜ", callback_data="reopen")]]
             ),
         )
     )
@@ -119,8 +119,8 @@ async def help_function(answers):
     answers.append(
         InlineQueryResultArticle(
             title="Help Article!",
-            description="Check Command List & Help",
-            thumb_url="https://graph.org/file/0ed7be5cf4fdbf052afa9.jpg",
+            description="ᴄʜᴇᴄᴋ ᴄᴏᴍᴍᴀɴᴅ ʟɪsᴛ & ʜᴇʟᴘ",
+            thumb_url="https://telegra.ph/file/14a5eb1c01732e912ee32.jpg",
             input_message_content=InputTextMessageContent(
                 Data.text_help_menu.format(len(CMD_HELP))
             ),
