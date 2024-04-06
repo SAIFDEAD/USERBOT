@@ -16,15 +16,15 @@ async def inviteee(client: Client, message: Message):
     mg = await edit_or_reply(message, "`Adding Users!`")
     user_s_to_add = message.text.split(" ", 1)[1]
     if not user_s_to_add:
-        await mg.edit("`Give Me Users To Add! Check Help Menu For More Info!`")
+        await mg.edit("`ɢɪᴠᴇ ᴍᴇ ᴜsᴇʀs ᴛᴏ ᴀᴅᴅ! ᴄʜᴇᴄᴋ ʜᴇʟᴘ ᴍᴇɴᴜ ғᴏʀ ᴍᴏʀᴇ ɪɴғᴏ!`")
         return
     user_list = user_s_to_add.split(" ")
     try:
         await client.add_chat_members(message.chat.id, user_list, forward_limit=100)
     except BaseException as e:
-        await mg.edit(f"`Unable To Add Users! \nTraceBack : {e}`")
+        await mg.edit(f"`ᴜɴᴀʙʟᴇ ᴛᴏ ᴀᴅᴅ ᴜsᴇʀs! \nTraceBack : {e}`")
         return
-    await mg.edit(f"`Sucessfully Added {len(user_list)} To This Group / Channel!`")
+    await mg.edit(f"`sᴜᴄᴇssғᴜʟʟʏ ᴀᴅᴅᴇᴅ {len(user_list)} ᴛᴏ ᴛʜɪs ɢʀᴏᴜᴘ / ᴄʜᴀɴɴᴇʟ !`")
 
 
 @Client.on_message(filters.command(["inviteall"], cmd) & filters.me)
@@ -65,7 +65,7 @@ async def invite_link(client: Client, message: Message):
 
 
 add_command_help(
-    "•─╼⃝𖠁 ɪɴᴠɪᴛᴇ",
+    "➥ 𝐈ɴᴠɪᴛᴇ",
     [
         [
             "invitelink",
