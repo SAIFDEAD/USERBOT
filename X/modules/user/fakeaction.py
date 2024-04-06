@@ -58,13 +58,13 @@ async def fakeactions_handler(client: Client, message: Message):
     except Exception as e:
         return await client.send_message(
             message.chat.id,
-            f"**ERROR:** `{e}`",
+            f"**ᴇʀʀᴏʀ:** `{e}`",
             reply_to_message_id=ReplyCheck(message),
         )
 
 
 add_command_help(
-    "•─╼⃝𖠁 ғᴀᴋᴇᴀᴄᴛɪᴏɴ",
+    "➥ 𝐅ᴀᴋᴇᴀᴄᴛɪᴏɴ",
     [
         ["ftyping [detik]", "Sʜᴏᴡꜱ Fᴀᴋᴇ Tʏᴘɪɴɢ ɪɴ ᴄʜᴀᴛ."],
         ["fgame [detik]", "Sʜᴏᴡꜱ ᴘʟᴀʏɪɴɢ ᴀ Fᴀᴋᴇ ɢᴀᴍᴇ ɪɴ ᴄʜᴀᴛ."],
