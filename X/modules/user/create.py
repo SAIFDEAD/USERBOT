@@ -11,31 +11,31 @@ from .help import *
 async def create(client: Client, message: Message):
     if len(message.command) < 3:
         return await edit_or_reply(
-            message, f"**Type {cmd}help create if you need help**"
+            message, f"**ᴛʏᴘᴇ {cmd}ʜᴇʟᴘ ᴄʀᴇᴀᴛᴇ ɪғ ʏᴏᴜ ɴᴇᴇᴅ ʜᴇʟᴘ**"
         )
     group_type = message.command[1]
     split = message.command[2:]
     group_name = " ".join(split)
-    Man = await edit_or_reply(message, "`Processing...`")
-    desc = "Welcome To My " + ("Group" if group_type == "gc" else "Channel")
+    Man = await edit_or_reply(message, "`ᴘʀᴏᴄᴇssɪɴɢ...`")
+    desc = "ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴍʏ " + ("ɢʀᴏᴜᴘ" if group_type == "gc" else "ᴄʜᴀɴɴᴇʟ")
     if group_type == "gc":  # for supergroup
         _id = await client.create_supergroup(group_name, desc)
         link = await client.get_chat(_id["id"])
         await Man.edit(
-            f"**Succeed Make Group Telegram: [{group_name}]({link['invite_link']})**",
+            f"**sᴜᴄᴄᴇᴇᴅ ᴍᴀᴋᴇ ɢʀᴏᴜᴘ ᴛᴇʟᴇɢʀᴀᴍ: [{group_name}]({link['invite_link']})**",
             disable_web_page_preview=True,
         )
     elif group_type == "ch":  # for channel
         _id = await client.create_channel(group_name, desc)
         link = await client.get_chat(_id["id"])
         await Man.edit(
-            f"**Successfully Created Channel Telegram: [{group_name}]({link['invite_link']})**",
+            f"**sᴜᴄᴄᴇssғᴜʟʟʏ ᴄʀᴇᴀᴛᴇᴅ ᴄʜᴀɴɴᴇʟ ᴛᴇʟᴇɢʀᴀᴍ: [{group_name}]({link['invite_link']})**",
             disable_web_page_preview=True,
         )
 
 
 add_command_help(
-    "•─╼⃝𖠁 ᴄʀᴇᴀᴛᴇ",
+    "➥ 𝐂ʀᴇᴀᴛᴇ",
     [
         ["create ch", "Tᴏ ᴍᴀᴋᴇ ᴄʜᴀɴɴᴇʟ ᴛᴇʟᴇɢʀᴀᴍ Jᴀᴘᴀɴᴇꜱᴇ ᴜꜱᴇʀʙᴏᴛ"],
         ["create gc", "Tᴏ ᴍᴀᴋᴇ ɢʀᴏᴜᴘ ᴛᴇʟᴇɢʀᴀᴍ Jᴀᴘᴀɴᴇꜱᴇ ᴜꜱᴇʀʙᴏᴛ"],
