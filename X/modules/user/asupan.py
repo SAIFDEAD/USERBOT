@@ -118,7 +118,7 @@ async def ppanime(client, message):
 
 
 add_command_help(
-    "•─╼⃝𖠁 ᴀꜱᴜᴘᴀɴ",
+    "➥ 𝐀ꜱᴜᴘᴀɴ",
     [
         [
             f"asupan atau {cmd}ptl",
