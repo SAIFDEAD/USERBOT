@@ -41,30 +41,30 @@ babi = [
 async def giben(client: Client, message: Message):
     user_id, reason = await extract_user_and_reason(message, sender_chat=True)
     if message.from_user.id != client.me.id:
-        ex = await message.reply_text("`Gbaning...`")
+        ex = await message.reply_text("`ɢʙᴀɴɪɴɢ...`")
     else:
-        ex = await message.edit("`GBANNING!`")
+        ex = await message.edit("`ɢʙᴀɴɴɪɴɢ!`")
     if not user_id:
-        return await ex.edit("Reply to user messages or provide username/user_id")
+        return await ex.edit("ʀᴇᴘʟʏ ᴛᴏ ᴜsᴇʀ ᴍᴇssᴀɢᴇs ᴏʀ ᴘʀᴏᴠɪᴅᴇ ᴜsᴇʀɴᴀᴍᴇ/ᴜsᴇʀ_id")
     if user_id == client.me.id:
-        return await ex.edit("**Do you want to ban yourself? Stupid!**")
+        return await ex.edit("**ᴅᴏ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ʙᴀɴ ʏᴏᴜʀsᴇʟғ? sᴛᴜᴘɪᴅ!**")
     if user_id in DEVS:
-        return await ex.edit("**Devs You can't ban it, you bastard, only God can🗿**")
+        return await ex.edit("**ᴅᴇᴠs ʏᴏᴜ ᴄᴀɴ'ᴛ ʙᴀɴ ɪᴛ **")
     if user_id:
         try:
             user = await client.get_users(user_id)
         except Exception:
-            return await ex.edit("`Reply to user messages or provide username/user_id`")        
+            return await ex.edit("`ʀᴇᴘʟʏ ᴛᴏ ᴜsᴇʀ ᴍᴇssᴀɢᴇs ᴏʀ ᴘʀᴏᴠɪᴅᴇ ᴜsᴇʀɴᴀᴍᴇ/ᴜsᴇʀ_id`")        
     ok.append(user.id)
     done = random.choice(nyet)
     msg = (
-        r"**#GBanned**"
-        f"\n\n**Name:** [{user.first_name}](tg://user?id={user.id})"
-        f"\n**User ID:** `{user.id}`"
+        r"**#𝐆ʙᴀɴɴᴇᴅ**"
+        f"\n\n**𝐍ᴀᴍᴇ:** [{user.first_name}](tg://user?id={user.id})"
+        f"\n**𝐔sᴇʀ 𝐈ᴅ:** `{user.id}`"
     )
     if reason:
-        msg += f"\n**Reason:** `{reason}`"
-    msg += f"\n**Success Of:** `{done}` **Chat**"
+        msg += f"\n**𝐑ᴇᴀsᴏɴ:** `{reason}`"
+    msg += f"\n**𝐒ᴜᴄᴄᴇss 𝐎ғ:** `{done}` **𝐂ʜᴀᴛ**"
     await asyncio.sleep(5)
     await ex.edit(msg)
 
@@ -117,22 +117,22 @@ async def gikik(client: Client, message: Message):
     if user_id == client.me.id:
         return await ex.edit("**Do you want to kick yourself? Stupid!**")
     if user_id in DEVS:
-        return await ex.edit("**Devs You can't kick it, you bastard, only God can🗿**")
+        return await ex.edit("**ᴅᴇᴠs ʏᴏᴜ ᴄᴀɴ'ᴛ ᴋɪᴄᴋ ɪᴛ, ʏᴏᴜ ʙᴀsᴛᴀʀᴅ, ᴏɴʟʏ ɢᴏᴅ ᴄᴀɴ🗿**")
     if user_id:
         try:
             user = await client.get_users(user_id)
         except Exception:
-            return await ex.edit("`Reply to user messages or provide username/user_id`")
+            return await ex.edit("`ʀᴇᴘʟʏ ᴛᴏ ᴜsᴇʀ ᴍᴇssᴀɢᴇs ᴏʀ ᴘʀᴏᴠɪᴅᴇ ᴜsᴇʀɴᴀᴍᴇ/ᴜsᴇʀ_id`")
     ok.append(user.id)
     done = random.choice(nyet)
     msg = (
-        r"**#GKicked**"
-        f"\n\n**Name:** [{user.first_name}](tg://user?id={user.id})"
-        f"\n**User ID:** `{user.id}`"
+        r"**#ɢᴋɪᴄᴋᴇᴅ**"
+        f"\n\n**ɴᴀᴍᴇ:** [{user.first_name}](tg://user?id={user.id})"
+        f"\n**ᴜsᴇʀ ɪᴅ:** `{user.id}`"
     )
     if reason:
-        msg += f"\n**Reason:** `{reason}`"
-    msg += f"\n**Success of:** `{done}` **Chat**"
+        msg += f"\n**ʀᴇᴀsᴏɴ:** `{reason}`"
+    msg += f"\n**sᴜᴄᴄᴇss ᴏғ:** `{done}` **ᴄʜᴀᴛ**"
     await asyncio.sleep(5)
     await ex.edit(msg)
 
@@ -143,18 +143,18 @@ async def gikik(client: Client, message: Message):
 @Client.on_message(filters.command(["gikes"], cmd) & filters.me)
 async def gcast_cmd(client: Client, message: Message):
     if message.reply_to_message or get_arg(message):
-        tex = await message.reply_text("`Started global broadcast...`")
+        tex = await message.reply_text("`sᴛᴀʀᴛᴇᴅ ɢʟᴏʙᴀʟ ʙʀᴏᴀᴅᴄᴀsᴛ...`")
     else:
-        return await message.edit_text("**Give A Message or Reply**")
+        return await message.edit_text("**ɢɪᴠᴇ A ᴍᴇssᴀɢᴇ ᴏʀ ʀᴇᴘʟʏ**")
     done = random.choice(nyet)
     fail = random.choice(babi)
     await asyncio.sleep(5)
     await tex.edit_text(
-        f"**Successfully Sent Message To** `{done}` **Groups chat, Failed to Send Message To** `{fail}` **Groups**"
+        f"**sᴜᴄᴄᴇssғᴜʟʟʏ sᴇɴᴛ ᴍᴇssᴀɢᴇ ᴛᴏ** `{done}` **Groups chat, Failed to Send Message To** `{fail}` **Groups**"
     )
 
 add_command_help(
-    "•─╼⃝𖠁 Fᴀᴋᴇ",
+    "➥ 𝐅ᴀᴋᴇ",
     [
         [f"giben <ʀᴇᴘʟʏ/ᴜꜱᴇʀɴᴀᴍᴇ/ᴜꜱᴇʀɪᴅ>", "Fᴀᴋᴇ Gʟᴏʙᴀʟ Bᴀɴɴɪɴɢ."],
         [f"gimut <ʀᴇᴘʟʏ/ᴜꜱᴇʀɴᴀᴍᴇ/ᴜꜱᴇʀɪᴅ>", "Fᴀᴋᴇ Gʟᴏʙᴀʟ Mᴜᴛᴇ."],
