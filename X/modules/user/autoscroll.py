@@ -25,7 +25,7 @@ async def add_to_auto_read(bot: Client, message: Message):
 
 
 add_command_help(
-    "•─╼⃝𖠁 ᴀᴜᴛᴏꜱᴄʀᴏʟʟ",
+    "➥ 𝐀ᴜᴛᴏꜱᴄʀᴏʟʟ",
     [
         [
             ".autoscroll",
