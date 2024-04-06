@@ -273,3 +273,6 @@ def get_args(message: Message):
         return message
     return list(filter(lambda x: len(x) > 0, split))
 
+
+# SAIFDEAD
+
