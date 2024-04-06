@@ -32,7 +32,7 @@ async def adminlist(client: Client, message: Message):
         except:
             name = a.user.first_name
         if nama is None:
-            name = "☠️ 𝐃𝐞𝐥𝐞𝐭𝐞𝐝 𝐚𝐜𝐜𝐨𝐮𝐧𝐭"
+            name = "☠️ 𝙳𝙴𝙻𝙴𝚃𝙴𝙳 𝙰𝙲𝙲𝙾𝚄𝙽𝚃"
         if a.status == enums.ChatMemberStatus.ADMINISTRATOR:
             if a.user.is_bot:
                 badmin.append(mention_markdown(a.user.id, name))
@@ -44,28 +44,28 @@ async def adminlist(client: Client, message: Message):
     badmin.sort()
     totaladmins = len(creator) + len(admin) + len(badmin)
     teks = "**Admins in {}**\n".format(grup.title)
-    teks += "╒═══「 𝐂𝐫𝐞𝐚𝐭𝐨𝐫 」\n"
+    teks += "「 𝐂𝚁𝙴𝙰𝚃𝙰𝚁 」\n"
     for x in creator:
         teks += "│ • {}\n".format(x)
         if len(teks) >= 4096:
             await message.reply(message.chat.id, teks, reply_to_message_id=replyid)
             teks = ""
             toolong = True
-    teks += "╞══「 {} 𝐇𝐮𝐦𝐚𝐧 𝐀𝐝𝐦𝐢𝐧𝐢𝐬𝐭𝐫𝐚𝐭𝐨𝐫 」\n".format(len(admin))
+    teks += "「 {} 𝐇𝚄𝙼𝙰𝙽 𝐀𝙳𝙼𝙸𝙽𝙸𝚂𝚃𝚁𝙰𝚃𝙾𝚁\n".format(len(admin))
     for x in admin:
         teks += "│ • {}\n".format(x)
         if len(teks) >= 4096:
             await message.reply(message.chat.id, teks, reply_to_message_id=replyid)
             teks = ""
             toolong = True
-    teks += "╞══「 {} 𝐁𝐨𝐭 𝐀𝐝𝐦𝐢𝐧𝐢𝐬𝐭𝐫𝐚𝐭𝐨𝐫 」\n".format(len(badmin))
+    teks += "「 {} 𝐁𝙾𝚃 𝐀𝙳𝙼𝙸𝙽𝙸𝚂𝚃𝚁𝙰𝚃𝙾𝚁 」\n".format(len(badmin))
     for x in badmin:
         teks += "│ • {}\n".format(x)
         if len(teks) >= 4096:
             await message.reply(message.chat.id, teks, reply_to_message_id=replyid)
             teks = ""
             toolong = True
-    teks += "╘══「 𝐓𝐨𝐭𝐚𝐥 {} 𝐀𝐝𝐦𝐢𝐧𝐬 」".format(totaladmins)
+    teks += "「 𝐓𝙾𝚃𝙰𝙻 {} 𝐀𝙳𝙼𝙸𝙽𝚂 」".format(totaladmins)
     if toolong:
         await message.reply(message.chat.id, teks, reply_to_message_id=replyid)
     else:
@@ -74,14 +74,14 @@ async def adminlist(client: Client, message: Message):
 
 @Client.on_message(filters.command(["kickdel", "zombies"], cmd) & filters.me)
 async def kickdel_cmd(client: Client, message: Message):
-    Man = await edit_or_reply(message, "<b>𝐊𝐢𝐜𝐤𝐢𝐧𝐠 𝐝𝐞𝐥𝐞𝐭𝐞𝐝 𝐚𝐜𝐜𝐨𝐮𝐧𝐭𝐬...</b>")
+    Man = await edit_or_reply(message, "<b>𝐊𝙸𝙲𝙺𝙸𝙽𝙶 𝙳𝙻𝙴𝚃𝙴𝙳 𝙰𝙲𝙲𝙾𝚄𝙽𝚃...</b>")
     # noinspection PyTypeChecker
     values = [
         await message.chat.ban_member(user.user.id, int(time()) + 31)
         for member in await message.chat.get_members()
         if member.user.is_deleted
     ]
-    await Man.edit(f"<b>𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥𝐲 𝐤𝐢𝐜𝐤𝐞𝐝 {len(values)} 𝐝𝐞𝐥𝐞𝐭𝐞𝐝 𝐚𝐜𝐜𝐨𝐮𝐧𝐭(s)</b>")
+    await Man.edit(f"<b>𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥𝐲 𝐤𝐢𝐜𝐤𝐞𝐝 {len(values)} 𝙳𝙴𝙻𝙴𝚃𝙴𝙳 𝙰𝙲𝙲𝙾𝚄𝙽𝚃(s)</b>")
 
 
 @Client.on_message(
@@ -180,10 +180,10 @@ async def get_list_bots(client: Client, message: Message):
         if a.user.is_bot:
             bots.append(mention_markdown(a.user.id, nama))
     teks = "**𝐀𝐥𝐥 𝐛𝐨𝐭𝐬 𝐢𝐧 𝐠𝐫𝐨𝐮𝐩 {}**\n".format(grup.title)
-    teks += "╒═══「 𝐁𝐨𝐭𝐬 」\n"
+    teks += "「 𝐁ᴏᴛs」\n"
     for x in bots:
         teks += "│ • {}\n".format(x)
-    teks += "╘══「 𝐓𝐨𝐭𝐚𝐥 {} 𝐁𝐨𝐭𝐬 」".format(len(bots))
+    teks += "「 𝐓ᴏᴛᴀʟ {} 𝐁ᴏᴛs 」".format(len(bots))
     if replyid:
         await client.send_message(message.chat.id, teks, reply_to_message_id=replyid)
     else:
@@ -191,7 +191,7 @@ async def get_list_bots(client: Client, message: Message):
 
 
 add_command_help(
-    "•─╼⃝𖠁 ᴛᴀɢ",
+    "➥ 𝐓ᴀɢ",
     [
         [f"{cmd}admins", "Gᴇᴛ Cʜᴀᴛꜱ ᴀᴅᴍɪɴ ʟɪꜱᴛ ."],
         [f"{cmd}kickdel", "Tᴏ ᴋɪᴄᴋ ᴅᴇʟᴇᴛᴇᴅ Aᴄᴄᴏᴜɴᴛ ."],
