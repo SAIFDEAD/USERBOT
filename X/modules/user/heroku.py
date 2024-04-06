@@ -258,12 +258,12 @@ async def usage_dynos(client, message):
     AppMinutes = math.floor(AppQuotaUsed % 60)
     await asyncio.sleep(1.5)
     text = f"""
-✥ **Information Dyno Heroku :**
+✥ **Ɩиғσямαтισи Ɖʏиσ Ħɛяσκʋ :**
 ╔════════════════════╗
- ➠ **Usage Dyno** `{HEROKU_APP_NAME}` :
-     •  `{AppHours}`**Jam**  `{AppMinutes}`**Minute |**  [`{AppPercentage}`**%**]
- ➠ **Remaining dyno quota for this month** :
-     •  `{hours}`**Jam**  `{minutes}`**Minute |**  [`{percentage}`**%**]
+ ➠ **ᴜsᴀɢᴇ ᴅʏɴᴏ** `{HEROKU_APP_NAME}` :
+     •  `{AppHours}`**ᴊᴀᴍ**  `{AppMinutes}`**ᴍɪɴᴜᴛᴇ |**  [`{AppPercentage}`**%**]
+ ➠ **ʀᴇᴍᴀɪɴɪɴɢ ᴅʏɴᴏ ǫᴜᴏᴛᴀ ғᴏʀ ᴛʜɪs ᴍᴏɴᴛʜ** :
+     •  `{hours}`**ᴊᴀᴍ**  `{minutes}`**ᴍɪɴᴜᴛᴇ |**  [`{percentage}`**%**]
 ╚════════════════════╝
-✥ **Left over Dyno Heroku** `{day}` **Another Day**"""
+✥ **ʟᴇғᴛ ᴏᴠᴇʀ ᴅʏɴᴏ ʜᴇʀᴏᴋᴜ** `{day}` **ᴀɴᴏᴛʜᴇʀ ᴅᴀʏ**"""
     return await dyno.edit(text)
