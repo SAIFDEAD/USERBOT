@@ -49,7 +49,7 @@ async def custom_tweet(client: Client, message: Message):
 
 
 add_command_help(
-    "•─╼⃝𖠁 ᴍᴇᴍᴇꜱ",
+    "➥ 𝐌ᴇᴍᴇꜱ",
     [
         ["trump", "ᴍᴀᴋᴇ ᴀ Qᴜᴏᴛᴇ ʙʏ Tʀᴜᴍᴘ."],
         ["ctweet", "Tᴡɪᴛᴛᴇ ʙʏ Uʀ ᴠᴀʟᴜᴇꜱ."],
