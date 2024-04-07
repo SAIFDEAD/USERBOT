@@ -15,7 +15,7 @@ async def give_bully(bot: Client, message: Message):
     async with aiohttp.ClientSession() as session:
         async with session.get(URL) as request:
             if request.status == 404:
-                return await message.edit("`no reaction for you :c")
+                return await message.edit("`ɴᴏ ʀᴇᴀᴄᴛɪᴏɴ ғᴏʀ ʏᴏᴜ :c")
             result = await request.json()
             url = result.get("url", None)
             
@@ -43,7 +43,7 @@ async def give_cuddle(bot: Client, message: Message):
     async with aiohttp.ClientSession() as session:
         async with session.get(URL) as request:
             if request.status == 404:
-                return await message.edit("`no reaction for you :c")
+                return await message.edit("`ɴᴏ ʀᴇᴀᴄᴛɪᴏɴ ғᴏʀ ʏᴏᴜ :c")
             result = await request.json()
             url = result.get("url", None)
             
@@ -738,7 +738,7 @@ async def give_cringe(bot: Client, message: Message):
             )
 
 add_command_help(
-    "•─╼⃝𖠁 ʀᴇᴀᴄᴛɪᴏɴ",
+    "➥ 𝐑ᴇᴀᴄᴛɪᴏɴ",
     [
        ["pat", "Gɪᴠᴇ ᴘᴀᴛꜱ."],
        ["bully", "Gɪᴠᴇ ʙᴜʟʟʏ ᴀɴɪᴍᴀᴛɪᴏɴ."],
