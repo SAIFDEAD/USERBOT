@@ -19,7 +19,7 @@ from .help import *
 @Client.on_message(filters.command("ai", ".") & filters.me)
 async def openai(client: Client, message: Message):
     if len(message.command) == 1:
-        return await message.reply(f"Ketik <code>.{message.command[0]} [question]</code> Questions for use OpenAI")
+        return await message.reply(f"𝐊𝐞𝐭𝐢𝐤 <code>.{message.command[0]} [ǫᴜᴇsᴛɪᴏɴ]</code> ǫᴜᴇsᴛɪᴏɴs ғᴏʀ ᴜsᴇ ᴏᴘᴇɴᴀɪ")
     
     question = message.text.split(" ", maxsplit=1)[1]
     
@@ -41,7 +41,7 @@ async def openai(client: Client, message: Message):
         await msg.edit("Sᴏʀʀʏ Cʜᴀᴛ Gᴘᴛ ɪs ᴀᴛ ʀᴇsᴛ ᴄᴜʀʀᴇɴᴛʟʏ ᴅᴏ ʏᴏᴜʀ ᴡᴏʀᴋ ʙʏ ʏᴏᴜʀ sᴇʟғ")
 
 add_command_help(
-    "•─╼⃝𖠁 ᴏᴘᴇɴᴀɪ",
+    "➥ 𝐎ᴘᴇɴᴀɪ",
     [
         ["ai", "Tᴏ Aꜱᴋ Sᴏᴍᴇᴛʜɪɴɢ Tᴏ Cʜᴀᴛ Gᴘᴛ"],
     ],
