@@ -44,11 +44,11 @@ async def simpan_note(client, message):
     msg_id = anu.id
     await client.send_message(client.me.id,
         f"#NOTE\nKEYWORD: {keyword}"
-        "\n\nThe following messages are saved as reply data for chats, please DO NOT delete them !!",
+        "\n\nThe ғᴏʟʟᴏᴡɪɴɢ ᴍᴇssᴀɢᴇs ᴀʀᴇ sᴀᴠᴇᴅ ᴀs ʀᴇᴘʟʏ ᴅᴀᴛᴀ ғᴏʀ ᴄʜᴀᴛs, ᴘʟᴇᴀsᴇ ᴅᴏ ɴᴏᴛ ᴅᴇʟᴇᴛᴇ ᴛʜᴇᴍ !!",
     )
     await sleep(1)
     add_note(str(user_id), keyword, msg_id)
-    await message.reply(f"Saved successfully note {keyword}")
+    await message.reply(f"sᴀᴠᴇᴅ sᴜᴄᴄᴇssғᴜʟʟʏ ɴᴏᴛᴇ {keyword}")
 
 
 @Client.on_message(filters.command("get", cmd) & filters.me)
@@ -62,7 +62,7 @@ async def panggil_notes(client, message):
     await msg_o.copy(message.chat.id, reply_to_message_id=message.id)
 
 add_command_help(
-    "•─╼⃝𖠁 ɴᴏᴛᴇꜱ",
+    "➥ 𝐍ᴏᴛᴇꜱ",
     [
         ["save [ᴛᴇxᴛ/ʀᴇᴘʟʏ]",
             "Sᴀᴠᴇ ᴍᴇꜱꜱᴀɢᴇꜱ ᴛᴏ Gʀᴏᴜᴘꜱ. (ᴄᴀɴ ᴜꜱᴇ ꜱᴛɪᴄᴋᴇʀꜱ)"],
