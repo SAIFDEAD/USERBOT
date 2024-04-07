@@ -32,12 +32,12 @@ async def del_msg(client: Client, message: Message):
 )
 @Client.on_message(filters.command("purge", cmd) & filters.me)
 async def purge(client: Client, message: Message):
-    X = await edit_or_reply(message, "`Starting To Purge Messages!`")
+    X = await edit_or_reply(message, "`sᴛᴀʀᴛɪɴɢ ᴛᴏ ᴘᴜʀɢᴇ ᴍᴇssᴀɢᴇs!`")
     msg = message.reply_to_message
     if msg:
         itermsg = list(range(msg.id, message.id))
     else:
-        await X.edit("`Reply To Message To Purge!`")
+        await X.edit("`ʀᴇᴘʟʏ ᴛᴏ ᴍᴇssᴀɢᴇ ᴛᴏ ᴘᴜʀɢᴇ !`")
         return
     count = 0
 
@@ -50,11 +50,11 @@ async def purge(client: Client, message: Message):
         except FloodWait as e:
             await asyncio.sleep(e.x)
         except Exception as e:
-            await X.edit(f"**ERROR:** `{e}`")
+            await X.edit(f"**ᴇʀʀᴏʀ:** `{e}`")
             return
 
     done = await X.edit(
-        f"**Fast Purge Completed!**\n**Successfully Delete** `{str(count)}` **Message.**"
+        f"**ғᴀsᴛ ᴘᴜʀɢᴇ ᴄᴏᴍᴘʟᴇᴛᴇᴅ!**\n**sᴜᴄᴄᴇssғᴜʟʟʏ ᴅᴇʟᴇᴛᴇ** `{str(count)}` **ᴍᴇssᴀɢᴇ.**"
     )
     await asyncio.sleep(2)
     await done.delete()
@@ -69,10 +69,10 @@ async def purgeme(client: Client, message: Message):
         return await message.delete()
     n = message.text.split(None, 1)[1].strip()
     if not n.isnumeric():
-        return await edit_or_reply(message, "Please enter a number")
+        return await edit_or_reply(message, "ᴘʟᴇᴀsᴇ ᴇɴᴛᴇʀ ᴀ ɴᴜᴍʙᴇʀ")
     n = int(n)
     if n < 1:
-        return await edit_or_reply(message, "Enter the number of messages you want to delete!")
+        return await edit_or_reply(message, "ᴇɴᴛᴇʀ ᴛʜᴇ ɴᴜᴍʙᴇʀ ᴏғ ᴍᴇssᴀɢᴇs ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴅᴇʟᴇᴛᴇ !")
     chat_id = message.chat.id
     message_ids = [
         m.id
@@ -83,7 +83,7 @@ async def purgeme(client: Client, message: Message):
         )
     ]
     if not message_ids:
-        return await edit_or_reply(message, "Can't find message.")
+        return await edit_or_reply(message, "ᴄᴀɴ'ᴛ ғɪɴᴅ ᴍᴇssᴀɢᴇ.")
     to_delete = [message_ids[i : i + 99] for i in range(0, len(message_ids), 99)]
     for hundred_messages_or_less in to_delete:
         await client.delete_messages(
@@ -95,7 +95,7 @@ async def purgeme(client: Client, message: Message):
 
 
 add_command_help(
-    "•─╼⃝𖠁 ᴘᴜʀɢᴇ",
+    "➥ 𝐏ᴜʀɢᴇ",
     [
         ["del", "Dᴇʟᴇᴛᴇ ᴀ ᴍᴇꜱꜱᴀɢᴇ, ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴍᴇꜱꜱᴀɢᴇ."],
         ["purge", "Dᴇʟᴇᴛᴇ ᴀ ᴍᴇꜱꜱᴀɢᴇ, ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴍᴇꜱꜱᴀɢᴇ."],
