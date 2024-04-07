@@ -20,7 +20,7 @@ async def send_music(bot: Client, message: Message):
                     message.reply_to_message.text or message.reply_to_message.caption
             )
         elif not message.reply_to_message and len(cmd) == 1:
-            await message.edit("Give a song name")
+            await message.edit("ɢɪᴠᴇ ᴀ sᴏɴɢ ɴᴀᴍᴇ")
             await asyncio.sleep(2)
             await message.delete()
             return
@@ -56,9 +56,9 @@ async def send_music(bot: Client, message: Message):
         await message.delete()
     except Exception as e:
         print(e)
-        await message.edit("`Fᴀɪʟᴇᴅ ᴛᴏ ғɪɴᴅ ꜱᴏɴɢ`")
+        await message.edit("`ᴍᴀʏ ʙᴇ ᴛᴜɴᴇ ɢʟᴛ ʟɪᴋʜᴀ ʜᴏ `")
         await asyncio.sleep(2)
         await message.delete()
 
 
-add_command_help("•─╼⃝𖠁 ᴍᴜꜱɪᴄ", [[".m ᴏʀ .music", "Sᴇᴀʀᴄʜ ꜱᴏɴɢꜱ ᴀɴᴅ ꜱᴇɴᴅ."]])
+add_command_help("➥ 𝐌ᴜꜱɪᴄ", [[".m ᴏʀ .music", "Sᴇᴀʀᴄʜ ꜱᴏɴɢꜱ ᴀɴᴅ ꜱᴇɴᴅ."]])
