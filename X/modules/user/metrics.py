@@ -16,12 +16,12 @@ class Custom(dict):
 async def word_count(bot: Client, message: Message):
     await message.delete()
     words = Custom()
-    progress = await bot.send_message(message.chat.id, "`Processed 0 messages...`")
+    progress = await bot.send_message(message.chat.id, "`ᴘʀᴏᴄᴇssᴇᴅ 0 ᴍᴇssᴀɢᴇs...`")
     total = 0
     async for msg in bot.iter_history(message.chat.id, 1000):
         total += 1
         if total % 100 == 0:
-            await progress.edit_text(f"`Processed {total} messages...`")
+            await progress.edit_text(f"`ᴘʀᴏᴄᴇssᴇᴅ {total} ᴍᴇssᴀɢᴇs...`")
             time.sleep(0.5)
         if msg.text:
             for word in msg.text.split():
@@ -38,7 +38,7 @@ async def word_count(bot: Client, message: Message):
 
 
 add_command_help(
-    "•─╼⃝𖠁 ᴍᴇᴛʀɪᴄꜱ",
+    "➥ 𝐌ᴇᴛʀɪᴄꜱ",
     [
         [
             ".wordcount",
