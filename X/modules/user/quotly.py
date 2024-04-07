@@ -13,10 +13,10 @@ from .help import *
 async def quotly(client: Client, message: Message):
     args = get_arg(message)
     if not message.reply_to_message and not args:
-        return await message.edit("**Please Reply to Messages**")
+        return await message.edit("**ᴘʟᴇᴀsᴇ ʀᴇᴘʟʏ ᴛᴏ ᴍᴇssᴀɢᴇs**")
     bot = "QuotLyBot"
     if message.reply_to_message:
-        await message.edit("`Be patient, dog . . .`")
+        await message.edit("`ʙᴇ ᴘᴀᴛɪᴇɴᴛ, ᴅᴏɢ . . .`")
         await client.unblock_user(bot)
         if args:
             await client.send_message(bot, f"/qcolor {args}")
@@ -35,11 +35,11 @@ async def quotly(client: Client, message: Message):
                     else None,
                 )
             else:
-                return await message.edit("**Failed to Make a Quotly Sticker**")
+                return await message.edit("**ғᴀɪʟᴇᴅ ᴛᴏ ᴍᴀᴋᴇ ᴀ ǫᴜᴏᴛʟʏ sᴛɪᴄᴋᴇʀ**")
 
 
 add_command_help(
-    "•─╼⃝𖠁 ǫᴜᴏᴛʟʏ",
+    "➥ 𝐐ᴜᴏᴛʟʏ",
     [
         [
             f"q or quotly",
