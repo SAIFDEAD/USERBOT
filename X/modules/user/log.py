@@ -63,10 +63,10 @@ async def log_tagged_messages(client: Client, message: Message):
         return
     if (no_log_pms_sql.is_approved(message.chat.id)) or (BOTLOG_CHATID == -100):
         return
-    result = f"<b>📨 #TAGS #MESSAGE</b>\n<b> • From : </b>{message.from_user.mention}"
-    result += f"\n<b> • Group : </b>{message.chat.title}"
+    result = f"<b>📨 #𝐓𝐀𝐆𝐒 #𝐌𝐄𝐒𝐒𝐀𝐆𝐄</b>\n<b> • From : </b>{message.from_user.mention}"
+    result += f"\n<b> • ɢʀᴏᴜᴘ : </b>{message.chat.title}"
     result += f"\n<b> • 👀 </b><a href = '{message.link}'>View Messages</a>"
-    result += f"\n<b> • Message : </b><code>{message.text}</code>"
+    result += f"\n<b> • ᴍᴇssᴀɢᴇ : </b><code>{message.text}</code>"
     await asyncio.sleep(0.5)
     await client.send_message(
         BOTLOG_CHATID,
@@ -149,7 +149,7 @@ async def set_gruplog(client: Client, message: Message):
 
 
 add_command_help(
-    "•─╼⃝𖠁 ʟᴏɢ",
+    "➥ 𝐋ᴏɢ",
     [
         [
             "log",
