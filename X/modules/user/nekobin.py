@@ -19,13 +19,13 @@ async def paste(bot: Client, message: Message):
             ) as response:
                 key = (await response.json())["result"]["key"]
     except Exception:
-        await message.edit_text("`Pasting failed`")
+        await message.edit_text("`ᴘᴀsᴛɪɴɢ ғᴀɪʟᴇᴅ`")
         await asyncio.sleep(2)
         await message.delete()
         return
     else:
         url = f"https://nekobin.com/{key}"
-        reply_text = f"Nekofied to **Nekobin** : {url}"
+        reply_text = f"ɴᴇᴋᴏғɪᴇᴅ ᴛᴏ **ɴᴇᴋᴏʙɪɴ** : {url}"
         delete = (
             True
             if len(message.command) > 1
@@ -49,7 +49,7 @@ async def paste(bot: Client, message: Message):
 
 
 add_command_help(
-    "•─╼⃝𖠁 ᴘᴀꜱᴛᴇ",
+    "➥ 𝐏ᴀꜱᴛᴇ",
     [
         [
             ".paste `or` .bin `or` .neko `or` .nekobin",
