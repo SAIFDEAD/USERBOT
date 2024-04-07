@@ -16,7 +16,7 @@ from .help import *
 async def _(client, message):
     if len(message.command) < 2:
         return
-    Tm = await edit_or_reply(message, "<code>Processing . . .</code>")
+    Tm = await edit_or_reply(message, "<code>ᴘʀᴏᴄᴇssɪɴɢ . . .</code>")
     link = message.text.split()[1]
     bot = "Nyolongbang_bot"
     await client.unblock_user(bot)
@@ -82,7 +82,7 @@ async def pencuri(client, message):
   
 
 add_command_help(
-    "•─╼⃝𖠁 ᴍᴀʟɪɴɢ",
+    "➥ 𝐌ᴀʟɪɴɢ",
     [
         [
             "copy <ʟɪɴᴋ ᴘʀᴏᴛᴇᴄᴛᴇᴅ ᴄʜᴀɴɴᴇʟ.>",
