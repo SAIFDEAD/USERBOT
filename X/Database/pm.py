@@ -51,3 +51,5 @@ async def reset_warns(user_id: int):
 async def get_warns(user_id: int):
     global warner_data
     return warner_data.get(user_id, 0)
+
+# SAIFDEAD
