@@ -17,7 +17,7 @@ import requests
 
 @Client.on_message(filters.command(["webshot", "ws"], cmd) & filters.me)
 async def webshot(client: Client, message):
-    Man = await message.edit("`Processing...`")
+    Man = await message.edit("`𝐏𝐫𝐨𝐜𝐞𝐬𝐬𝐢𝐧𝐠...`")
     try:
         user_link = message.command[1]
         try:
@@ -39,9 +39,9 @@ async def webshot(client: Client, message):
 
             await Man.delete()
         except Exception as dontload:
-            await Man.edit(f"Error! {dontload}")
+            await Man.edit(f"ᴇʀʀᴏʀ! {dontload}")
     except Exception as error:
-        await Man.edit(f"**Something went wrong\nLog:{error}...**")
+        await Man.edit(f"**sᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ ᴡʀᴏɴɢ\nLog:{error}...**")
 
 @Client.on_message(filters.command("limit", cmd) & filters.me)
 async def spamban(client: Client, m: Message):
@@ -54,7 +54,7 @@ async def spamban(client: Client, m: Message):
             start_param="start",
         )
     )
-    wait_msg = await edit_or_reply(m, "`Be patient, Tod, check the limits so you can play again. . .`")
+    wait_msg = await edit_or_reply(m, "`ʙᴇ ᴘᴀᴛɪᴇɴᴛ, ᴛᴏᴅ, ᴄʜᴇᴄᴋ ᴛʜᴇ ʟɪᴍɪᴛs so ʏᴏᴜ ᴄᴀɴ ᴘʟᴀʏ ᴀɢᴀɪɴ. . .`")
     await asyncio.sleep(1)
     spambot_msg = response.updates[1].message.id + 1
     status = await client.get_messages(chat_id="SpamBot", message_ids=spambot_msg)
@@ -183,18 +183,18 @@ add_command_help(
 
 
 add_command_help(
-    "•─╼⃝𖠁 ᴡᴇʙꜱʜᴏᴛ",
+    "➥ 𝐖ᴇʙꜱʜᴏᴛ",
     [
         [
             f"webshot <ʟɪɴᴋ> ᴏʀ {cmd}ꜱꜱ <ʟɪɴᴋ>",
-            "Tᴏ ꜱᴄʀᴇᴇɴꜱʜᴏᴛ ᴀ ɢɪᴠᴇɴ ᴡᴇʙ ᴘᴀɢᴇ.",
+            "Tᴏ ꜱᴄʀᴇᴇɴꜱʜᴏᴛ ғʀᴏᴍ ᴡᴇʙ ᴘᴀɢᴇ.",
         ],
     ],
 )
 
 
 add_command_help(
-    "•─╼⃝𖠁 ꜱᴏꜱᴍᴇᴅ",
+    "➥ 𝐒ᴏꜱᴍᴇᴅ",
     [
         [
             f"sosmed <ʟɪɴᴋ>",
