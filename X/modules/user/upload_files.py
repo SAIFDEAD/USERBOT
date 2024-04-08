@@ -17,14 +17,14 @@ async def upload_helper(bot: Client, message: Message):
     if len(message.command) > 1:
         await bot.send_document('self', message.command[1], progress=progress_callback, progress_args=(bot, message))
     else:
-        await message.edit('No path provided.')
+        await message.edit('No 𝚙𝚊𝚝𝚑 𝚙𝚛𝚘𝚟𝚒𝚍𝚎𝚍.')
         await asyncio.sleep(3)
 
     await message.delete()
 
 
 add_command_help(
-    "•─╼⃝𖠁 Uᴘʟᴏᴀᴅ",
+    "➥ 𝐔ᴘʟᴏᴀᴅ",
     [
         [".upload", "Uᴘʟᴏᴀᴅ ᴛʜᴇ ғɪʟᴇ ᴛᴏ ᴛᴇʟᴇɢʀᴀᴍ ғʀᴏᴍ ᴛʜᴇ ɢɪᴠᴇɴ ꜱʏꜱᴛᴇᴍ ғɪʟᴇ ᴘᴀᴛʜ."],
     ],
