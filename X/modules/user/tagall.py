@@ -19,7 +19,7 @@ async def mentionall(client: Client, message: Message):
     direp = message.reply_to_message
     args = get_arg(message)
     if not direp and not args:
-        return await message.edit("**Drop me a message or reply to a message!**")
+        return await message.edit("**ᴅʀᴏᴘ ᴍᴇ ᴀ ᴍᴇssᴀɢᴇ ᴏʀ ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴍᴇssᴀɢᴇ!**")
 
     spam_chats.append(chat_id)
     usrnum = 0
@@ -47,17 +47,17 @@ async def mentionall(client: Client, message: Message):
 @Client.on_message(filters.command("cancel", cmd) & filters.me)
 async def cancel_spam(client: Client, message: Message):
     if not message.chat.id in spam_chats:
-        return await message.edit("**Looks like there's no tagall here.**")
+        return await message.edit("**ʟᴏᴏᴋs ʟɪᴋᴇ ᴛʜᴇʀᴇ's ɴᴏ ᴛᴀɢᴀʟʟ ʜᴇʀᴇ.**")
     else:
         try:
             spam_chats.remove(message.chat.id)
         except:
             pass
-        return await message.edit("**Stop Mention.**")
+        return await message.edit("**sᴛᴏᴘ ᴍᴇɴᴛɪᴏɴ.**")
 
 
 add_command_help(
-    "•─╼⃝𖠁 ᴛᴀɢᴀʟʟ",
+    "➥ 𝐓ᴀɢᴀʟʟ",
     [
         [
             "mention [ᴛᴇxᴛ/ʀᴇᴘʟʏ ᴋᴇ ᴄʜᴀᴛ]",
