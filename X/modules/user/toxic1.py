@@ -11,14 +11,14 @@ from X.utils import extract_user
 from .help import *
 
 
-@Client.on_message(filters.command("toxicity", CMD_HANDLER) & filters.me)
+@Client.on_message(filters.command("dictator", CMD_HANDLER) & filters.me)
 async def ngejamet(client: Client, message: Message):
     user_id = await extract_user(message)
     if user_id in DEVS:
         return await edit_or_reply(
-            message, "**This command is forbidden to be used by my developers**"
+            message, "**ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ɪs ғᴏʀʙɪᴅᴅᴇɴ ᴛᴏ ʙᴇ ᴜsᴇᴅ ʙʏ ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀs**"
         )
-    xx = await edit_or_reply(message, "**WOW**")
+    xx = await edit_or_reply(message, "**ᴡᴏᴡ**")
     await asyncio.sleep(1.5)
     await xx.edit("**THE DICK OF AN ILLEGAL CHILD**")
     await asyncio.sleep(1.5)
@@ -61,9 +61,9 @@ async def ngejamet(client: Client, message: Message):
 
 
 add_command_help(
-    "•─╼⃝𖠁 ᴛᴏxᴄɪ𝟷",
+    "➥ 𝐃ɪᴄᴛᴀᴛᴏʀ",
     [
-        ["toxicity", "Tᴏ ɪᴜᴅɢᴇ ɪʟʟᴇɢɪᴛɪᴍᴀᴛᴇ ᴄʜɪʟᴅʀᴇɴ ʟɪᴋᴇ ʏᴏᴜ"],
+        ["dictator", "Tᴏ ɪᴜᴅɢᴇ ɪʟʟᴇɢɪᴛɪᴍᴀᴛᴇ ᴄʜɪʟᴅʀᴇɴ ʟɪᴋᴇ ʏᴏᴜ"],
         ["idiot", "Tᴏ Cᴏɴᴛᴀɪɴ ᴀɴ Iᴅɪᴏᴛ Kɪᴅ Lɪᴋᴇ ᴜ"],
     ]
   ) 
