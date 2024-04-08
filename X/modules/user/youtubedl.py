@@ -213,12 +213,13 @@ async def deezergeter(client: Client, message: Message):
         f.write(doc.content)
     time.time()
     car = f"""
-**Song Name :** {urlhp.get("title")}
-**Duration :** {urlhp.get('duration')} Seconds
-**Artist :** {polu.get("name")}
-Music Downloaded And Uploaded By Japanese X Userbot"""
+**𝐒ᴏɴɢ 𝐍ᴀᴍᴇ :** {urlhp.get("title")}
+**𝐃ᴜʀᴀᴛɪᴏɴ :** {urlhp.get('duration')} Secondspol
+**𝐀ʀᴛɪsᴛ :** {polu.get("name")}
+𝐌ᴜsɪᴄ 𝐃ᴏᴡɴʟᴏᴀᴅᴇᴅ 𝐀ɴᴅ 𝐔ᴘʟᴏᴀᴅᴇᴅ 𝐁ʏ 𝐃ɪᴄᴛᴀᴛᴏʀ 𝐔sᴇʀ𝐁ᴏᴛ """
     await rep.edit(f"`Downloaded {sname}! Now Uploading Song...`")
-    await client.send_audio(
+    await 
+    client.send_audio(
         message.chat.id,
         audio=open(sname, "rb"),
         duration=int(urlhp.get("duration")),
@@ -232,7 +233,7 @@ Music Downloaded And Uploaded By Japanese X Userbot"""
 
 
 add_command_help(
-    "•─╼⃝𖠁 ʏᴏᴜᴛᴜʙᴇ ᴅʟ",
+    "➥ 𝐘ᴏᴜᴛᴜʙᴇ ᴅʟ",
     [
         ["song", "Dᴏᴡɴʟᴏᴀᴅ Aᴜᴅɪᴏ Fʀᴏᴍ YᴏᴜTᴜʙᴇ."],
         [
@@ -243,7 +244,7 @@ add_command_help(
 )
 
 add_command_help(
-    "•─╼⃝𖠁 ꜱᴏɴɢ",
+    "➥ 𝐒ᴏɴɢ",
     [
         ["deezer", "Dᴏᴡɴʟᴏᴀᴅ Fʀᴏᴍ Dᴇᴇᴢᴇʀ."],
         [
