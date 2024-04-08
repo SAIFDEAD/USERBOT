@@ -110,7 +110,7 @@ async def module_peler(client: Client, message: Message):
 
 
 add_command_help(
-    "•─╼⃝𖠁 ꜱᴘᴇᴇᴅᴛᴇꜱᴛ",
+    "➥ 𝐒ᴘᴇᴇᴅᴛᴇꜱᴛ",
     [
         ["dc", "Tᴏ ꜱᴇᴇ ʏᴏᴜʀ Tᴇʟᴇɢʀᴀᴍ DC."],
         [
