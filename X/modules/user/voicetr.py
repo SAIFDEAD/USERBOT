@@ -24,7 +24,7 @@ async def voice(client: Client, message):
     elif not message.reply_to_message and len(cmd) == 1:
         await edit_or_reply(
             message,
-            "**Reply to messages or send text arguments to convert to voice**",
+            "**ʀᴇᴘʟʏ ᴛᴏ ᴍᴇssᴀɢᴇs ᴏʀ sᴇɴᴅ ᴛᴇxᴛ ᴀʀɢᴜᴍᴇɴᴛs ᴛᴏ ᴄᴏɴᴠᴇʀᴛ ᴛᴏ ᴠᴏɪᴄᴇ**",
         )
         return
     await client.send_chat_action(message.chat.id, enums.ChatAction.RECORD_AUDIO)
@@ -58,12 +58,12 @@ async def voicelang(client: Client, message: Message):
         lang = temp
         return
     await edit_or_reply(
-        message, "**The language for Google Voice is changed to** `{}`".format(lang)
+        message, "**ᴛʜᴇ ʟᴀɴɢᴜᴀɢᴇ for Google Voice is changed to** `{}`".format(lang)
     )
 
 
 add_command_help(
-    "•─╼⃝𖠁 ᴠᴏɪᴄᴇ",
+    "➥ 𝐕ᴏɪᴄᴇ",
     [
         [f"voice or {cmd}tts [text/reply]", "Cᴏɴᴠᴇʀᴛ ᴛᴇxᴛ ᴛᴏ ᴠᴏɪᴄᴇ ʙʏ ɢᴏᴏɢʟᴇ."],
         [
