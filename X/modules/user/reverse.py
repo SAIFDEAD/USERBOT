@@ -66,7 +66,7 @@ async def google_rs(client: Client, message: Message):
             img_file = os.path.join(screen_shot, "grs.jpg")
             await take_screen_shot(dis_loc, 0, img_file)
             if not os.path.lexists(img_file):
-                await message.edit("`Something went wrong in Conversion`")
+                await message.edit("`sᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ ᴡʀᴏɴɢ ɪɴ ᴄᴏɴᴠᴇʀsɪᴏɴ`")
                 await asyncio.sleep(5)
                 await message.delete()
                 return
@@ -182,7 +182,7 @@ async def tracemoe_rs(client: Client, message: Message):
 
 
 add_command_help(
-    "•─╼⃝𖠁 ʀᴇᴠᴇʀꜱᴇ",
+    "➥ 𝐑ᴇᴠᴇʀꜱᴇ",
     [
         ["reverse", "Rᴇᴘʟʏ ᴛᴏ ᴀ ɪᴍᴀɢᴇ ."],
         ["areverse", "Rᴇᴘʟʏ ᴛᴏ ᴀ ᴍᴇꜱꜱᴀɢᴇ ."],
