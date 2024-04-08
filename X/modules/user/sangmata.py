@@ -16,12 +16,12 @@ from .help import *
 @Client.on_message(filters.command(["sg", "sa", "sangmata"], cmd) & filters.me)
 async def sg(client: Client, message: Message):
     args = await extract_user(message)
-    lol = await edit_or_reply(message, "I'm curious, what's the name of Pepek?....`")
+    lol = await edit_or_reply(message, "ɪ'ᴍ ᴄᴜʀɪᴏᴜs, ᴡʜᴀᴛ's ᴛʜᴇ ɴᴀᴍᴇ ᴏғ ᴘᴇᴘᴇᴋ?....`")
     if args:
         try:
             user = await client.get_users(args)
         except Exception:
-            return await lol.edit(f"`Please specify a valid user!`")
+            return await lol.edit(f"`ᴘʟᴇᴀsᴇ sᴘᴇᴄɪғʏ ᴀ ᴠᴀʟɪᴅ ᴜsᴇʀ !`")
     bot = "@SangMata_BOT"
     try:
         await client.send_message(bot, f"{user.id}")
@@ -30,9 +30,9 @@ async def sg(client: Client, message: Message):
         await client.send_message(bot, f"{user.id}")
     await asyncio.sleep(1)
 
-    async for stalk in client.search_messages(bot, query="Name", limit=1):
+    async for stalk in client.search_messages(bot, query="Name", limit=10):
         if not stalk:
-            await message.edit_text("**This Person Has Never Changed His Name**")
+            await message.edit_text("**ᴛʜɪs ᴘᴇʀsᴏɴ ʜᴀs ɴᴇᴠᴇʀ ᴄʜᴀɴɢᴇᴅ ʜɪs ɴᴀᴍᴇ**")
             return
         elif stalk:
             await message.edit(stalk.text)
@@ -49,7 +49,7 @@ async def sg(client: Client, message: Message):
 
 
 add_command_help(
-    "•─╼⃝𖠁 ꜱᴀɴɢᴍᴀᴛᴀ",
+    "➥ 𝐒ᴀɴɢᴍᴀᴛᴀ",
     [
         [
             f"{cmd}sg <ʀᴇᴘʟʏ/ᴜꜱᴇʀɪᴅ/ᴜꜱᴇʀɴᴀᴍᴇ>",
