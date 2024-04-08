@@ -94,14 +94,14 @@ async def joinvc(client: Client, message: Message):
     if message.from_user.id != client.me.id:
         X = await message.reply("`Try to Join...`")
     else:
-        X = await message.edit("`Processing...`")
+        X = await message.edit("`ᴘʀᴏᴄᴇssɪɴɢ...`")
     with suppress(ValueError):
         chat_id = int(chat_id)
     try:
         await client.group_call.start(chat_id)
     except Exception as e:
-        return await X.edit(f"**ERROR:** `{e}`")
-    await X.edit(f"❏ **Successfully Joined Voice Chat**\n└ **Chat ID:** `{chat_id}`")
+        return await X.edit(f"**ᴇʀʀᴏʀ:** `{e}`")
+    await X.edit(f"❏ **sᴜᴄᴄᴇssғᴜʟʟʏ ᴊᴏɪɴᴇᴅ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ**\n└ **ᴄʜᴀᴛ ɪᴅ:** `{chat_id}`")
     await sleep(5)
     await client.group_call.set_is_mute(True)
 
@@ -115,7 +115,7 @@ async def leavevc(client: Client, message: Message):
     if message.from_user.id != client.me.id:
         X = await message.reply("`Come down first, guys...`")
     else:
-        X = await message.edit("`Processing...`")
+        X = await message.edit("`ᴘʀᴏᴄᴇssɪɴɢ...`")
     with suppress(ValueError):
         chat_id = int(chat_id)
     try:
@@ -129,7 +129,7 @@ async def leavevc(client: Client, message: Message):
 
 
 add_command_help(
-    "•─╼⃝𖠁 ᴠᴄᴛᴏᴏʟꜱ",
+    "➥ 𝐕ᴄᴛᴏᴏʟꜱ",
     [
         ["startvc", "Tᴏ Sᴛᴀʀᴛ Vᴏɪᴄᴇ Cʜᴀᴛ Oɴ Gʀᴏᴜᴘ."],
         ["stopvc", "Tᴏ Sᴛᴏᴘ Vᴏɪᴄᴇ Cʜᴀᴛ ᴏɴ Gʀᴏᴜᴘ."],
