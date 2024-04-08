@@ -26,7 +26,7 @@ from .help import *
 async def kang(client: Client, message: Message):
     user = client.me
     replied = message.reply_to_message
-    X = await edit_or_reply(message, "`Can the sticker be flipped?🤪...`")
+    X = await edit_or_reply(message, "`ᴄᴀɴ ᴛʜᴇ sᴛɪᴄᴋᴇʀ ʙᴇ ғʟɪᴘᴘᴇᴅ?🤪...`")
     media_ = None
     emoji_ = None
     is_anim = False
@@ -56,7 +56,7 @@ async def kang(client: Client, message: Message):
             ff_vid = True
         elif replied.sticker:
             if not replied.sticker.file_name:
-                await X.edit("**Stiker has no Name!**")
+                await X.edit("**sᴛɪᴋᴇʀ ʜᴀs ɴᴏ ɴᴀᴍᴇ!**")
                 return
             emoji_ = replied.sticker.emoji
             is_anim = replied.sticker.is_animated
@@ -72,7 +72,7 @@ async def kang(client: Client, message: Message):
             return
         media_ = await client.download_media(replied, file_name="X/resources/")
     else:
-        await X.edit("**Please reply to Photo/GIF/Sticker Media!**")
+        await X.edit("**ᴘʟᴇᴀsᴇ ʀᴇᴘʟʏ ᴛᴏ ᴘʜᴏᴛᴏ/ɢɪғ/sᴛɪᴄᴋᴇʀ ᴍᴇᴅɪᴀ!**")
         return
     if media_:
         args = get_arg(message)
@@ -142,9 +142,9 @@ async def kang(client: Client, message: Message):
                 await client.unblock_user("stickers")
                 await client.send_message("stickers", "/addsticker")
             except Exception as e:
-                return await X.edit(f"**ERROR:** `{e}`")
+                return await X.edit(f"**ᴇʀʀᴏʀ:** `{e}`")
             await asyncio.sleep(2)
-            await client.send_message("stickers", packname)
+            await client.send_message("𝐃ɪᴄᴛᴀᴛᴏʀ 𝐔sᴇʀ𝐁ᴏᴛ", packname)
             await asyncio.sleep(2)
             limit = "50" if is_anim else "120"
             while limit in await get_response(message, client):
@@ -431,7 +431,7 @@ async def stick2png(client: Client, message: Message):
 
 
 add_command_help(
-    "•─╼⃝𖠁 ꜱᴛɪᴄᴋᴇʀ",
+    "➥ 𝐒ᴛɪᴄᴋᴇʀ",
     [
         [
             f"kang `atau` {cmd}tikel",
@@ -452,7 +452,7 @@ add_command_help(
 
 
 add_command_help(
-    "•─╼⃝𖠁 ᴍᴇᴍɪғʏ",
+    "➥ 𝐌ᴇᴍɪғʏ",
     [
         [
             "mmf Top Text ; Bᴏᴛᴛᴏᴍ Tᴇxᴛ",
@@ -463,7 +463,7 @@ add_command_help(
 
 
 add_command_help(
-    "•─╼⃝𖠁 ᴛɪɴʏ",
+    "➥ 𝐓ɪɴʏ",
     [
         [
             "tiny <reply ke Photo/sticker>",
