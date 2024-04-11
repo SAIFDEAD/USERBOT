@@ -75,8 +75,8 @@ def random_interval():
 
 
 def get_random_hex(chars=4):
-    """Generate random hex. limited to chars provided.
-    If chars not provided then limit to 4
+    """ɢᴇɴᴇʀᴀᴛᴇ ʀᴀɴᴅᴏᴍ ʜᴇx. ʟɪᴍɪᴛᴇᴅ ᴛᴏ ᴄʜᴀʀs ᴘʀᴏᴠɪᴅᴇᴅ.
+    ɪғ ᴄʜᴀʀs ɴᴏᴛ ᴘʀᴏᴠɪᴅᴇᴅ ᴛʜᴇɴ ʟɪᴍɪᴛ ᴛᴏ 4
     """
     my_hex = uuid.uuid4().hex[:chars]
     return my_hex
