@@ -38,11 +38,11 @@ def paginate_help(page_number, loaded_modules, prefix):
         ] + [
             (
                 InlineKeyboardButton(
-                    text="•─╼⃝𖠁 ᴘʀᴇᴠɪᴏᴜꜱ", callback_data=f"{prefix}_prev({modulo_page})"
+                    text=" Pʀᴇᴠɪᴏᴜꜱ", callback_data=f"{prefix}_prev({modulo_page})"
                 ),
-                InlineKeyboardButton(text="╼⃝𖠁 ᴄʟᴏꜱᴇ 𖠁⃝╾", callback_data="close_help"),
+                InlineKeyboardButton(text="╼⃝𖠁 Cʟᴏꜱᴇ 𖠁⃝╾", callback_data="close_help"),
                 InlineKeyboardButton(
-                    text=" ɴᴇxᴛ 𖠁⃝╾─•", callback_data=f"{prefix}_next({modulo_page})"
+                    text=" Nᴇxᴛ ", callback_data=f"{prefix}_next({modulo_page})"
                 ),
             )
         ]
@@ -54,7 +54,7 @@ def cb_wrapper(func):
         users = list_users
         if cb.from_user.id not in users:
             await cb.answer(
-                "𝐘𝐚𝐡𝐚𝐡𝐚𝐡𝐚 𝐘𝐨𝐮 𝐜𝐚𝐧'𝐭 𝐝𝐨 𝐢𝐭 𝐢𝐟 𝐲𝐨𝐮 𝐰𝐚𝐧𝐭 𝐭𝐨 𝐬𝐞𝐞 𝐢𝐭 𝐚𝐧𝐝 𝐦𝐚𝐤𝐞 𝐢𝐭 𝐲𝐨𝐮𝐫𝐬𝐞𝐥𝐟 𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄 𝐗 𝐔𝐒𝐄𝐑𝐁𝐎𝐓",
+                "𝐘𝐚𝐡𝐚𝐡𝐚𝐡𝐚 𝐘𝐨𝐮 𝐜𝐚𝐧'𝐭 𝐝𝐨 𝐢𝐭 𝐢𝐟 𝐲𝐨𝐮 𝐰𝐚𝐧𝐭 𝐭𝐨 𝐬𝐞𝐞 𝐢𝐭 𝐚𝐧𝐝 𝐦𝐚𝐤𝐞 𝐢𝐭 𝐲𝐨𝐮𝐫𝐬𝐞𝐥𝐟 𝐃𝐢𝐜𝐭𝐚𝐭𝐨𝐫 𝐔𝐬𝐞𝐫𝐛𝐨𝐭",
                 cache_time=0,
                 show_alert=True,
             )
@@ -86,7 +86,7 @@ def inline_wrapper(func):
                         InlineQueryResultArticle(
                             title="𝐒𝐨𝐫𝐫𝐲, 𝐘𝐨𝐮 𝐌𝐮𝐬𝐭 𝐁𝐞 𝐀 𝐒𝐮𝐝𝐨 𝐔𝐬𝐞𝐫 𝐓𝐨 𝐔𝐬𝐞 𝐌𝐞!",
                             input_message_content=InputTextMessageContent(
-                                "𝐎𝐫 𝐲𝐨𝐮 𝐜𝐚𝐧 𝐦𝐚𝐤𝐞 𝐢𝐭 𝐲𝐨𝐮𝐫𝐬𝐞𝐥𝐟 𝐚𝐭 @Japanese_Userbot"
+                                "𝐎𝐫 𝐲𝐨𝐮 𝐜𝐚𝐧 𝐦𝐚𝐤𝐞 𝐢𝐭 𝐲𝐨𝐮𝐫𝐬𝐞𝐥𝐟 𝐚𝐭 @SAIFALLBOT"
                             ),
                         )
                     )
