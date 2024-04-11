@@ -7,3 +7,4 @@ async def expand_url(url):
             expanded = await resp.text()
 
         return expanded if expanded != "false" and expanded[:-1] != url else None
+        
