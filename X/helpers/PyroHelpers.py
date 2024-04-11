@@ -51,7 +51,7 @@ def GetFromUserID(message: Message):
 
 
 def GetChatID(message: Message):
-    """Get the group id of the incoming message"""
+    """ɢᴇᴛ ᴛʜᴇ ɢʀᴏᴜᴘ ɪᴅ ᴏғ ᴛʜᴇ ɪɴᴄᴏᴍɪɴɢ ᴍᴇssᴀɢᴇ"""
     return message.chat.id
 
 
