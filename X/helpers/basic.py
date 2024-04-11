@@ -2,7 +2,7 @@ from pyrogram.types import Message
 
 
 def get_user(message: Message, text: str) -> [int, str, None]:
-    """Get User From Message"""
+    """ɢᴇᴛ ᴜsᴇʀ ғʀᴏᴍ ᴍᴇssᴀɢᴇ"""
     if text is None:
         asplit = None
     else:
@@ -30,7 +30,7 @@ def get_user(message: Message, text: str) -> [int, str, None]:
 
 
 def get_text(message: Message) -> [None, str]:
-    """Extract Text From Commands"""
+    """ᴇxᴛʀᴀᴄᴛ ᴛᴇxᴛ ғʀᴏᴍ ᴄᴏᴍᴍᴀɴᴅs"""
     text_to_return = message.text
     if message.text is None:
         return None
