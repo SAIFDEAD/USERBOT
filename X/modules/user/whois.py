@@ -41,21 +41,21 @@ async def who_is(client: Client, message: Message):
         common = await client.get_common_chats(user.id)
         out_str = f"""<b>USER INFORMATION:</b>
 
-🆔 <b>User ID:</b> <code>{user.id}</code>
-👤 <b>First Name:</b> {first_name}
-🗣️ <b>Last Name:</b> {last_name}
-🌐 <b>Username:</b> {username}
-🏛️ <b>DC ID:</b> <code>{dc_id}</code>
-🤖 <b>Is Bot:</b> <code>{user.is_bot}</code>
-🚷 <b>Is Scam:</b> <code>{user.is_scam}</code>
-🚫 <b>Restricted:</b> <code>{user.is_restricted}</code>
-✅ <b>Verified:</b> <code>{user.is_verified}</code>
-⭐ <b>Premium:</b> <code>{user.is_premium}</code>
-📝 <b>User Bio:</b> {bio}
+🆔 <b>ᴜsᴇʀ ɪᴅ:</b> <code>{user.id}</code>
+👤 <b>ғɪʀsᴛ ɴᴀᴍᴇ:</b> {first_name}
+🗣️ <b>ʟᴀsᴛ ɴᴀᴍᴇ:</b> {last_name}
+🌐 <b>ᴜsᴇʀɴᴀᴍᴇ:</b> {username}
+🏛️ <b>ᴅᴄ ɪᴅ:</b> <code>{dc_id}</code>
+🤖 <b>ɪs ʙᴏᴛ:</b> <code>{user.is_bot}</code>
+🚷 <b>ɪs sᴄᴀᴍ:</b> <code>{user.is_scam}</code>
+🚫 <b>ʀᴇsᴛʀɪᴄᴛᴇᴅ:</b> <code>{user.is_restricted}</code>
+✅ <b>ᴠᴇʀɪғɪᴇᴅ:</b> <code>{user.is_verified}</code>
+⭐ <b>ᴘʀᴇᴍɪᴜᴍ:</b> <code>{user.is_premium}</code>
+📝 <b>ᴜsᴇʀ ʙɪᴏ:</b> {bio}
 
-👀 <b>Same groups seen:</b> {len(common)}
-👁️ <b>Last Seen:</b> <code>{status}</code>
-🔗 <b>User permanent link:</b> <a href='tg://user?id={user.id}'>{fullname}</a>
+👀 <b>sᴀᴍᴇ ɢʀᴏᴜᴘs sᴇᴇɴ:</b> {len(common)}
+👁️ <b>ʟᴀsᴛ sᴇᴇɴ:</b> <code>{status}</code>
+🔗 <b>ᴜsᴇʀ ᴘᴇʀᴍᴀɴᴇɴᴛ ʟɪɴᴋ:</b> <a href='tg://user?id={user.id}'>{fullname}</a>
 """
         photo_id = user.photo.big_file_id if user.photo else None
         if photo_id:
@@ -137,7 +137,7 @@ async def chatinfo_handler(client: Client, message: Message):
 
 
 add_command_help(
-    "•─╼⃝𖠁 ɪɴғᴏ",
+    "𝐈ɴғᴏ",
     [
         [
             "info <ᴜꜱᴇʀɴᴀᴍᴇ/ᴜꜱᴇʀɪᴅ/ʀᴇᴘʟʏ>",
