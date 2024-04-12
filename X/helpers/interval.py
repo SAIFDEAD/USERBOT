@@ -10,7 +10,7 @@ class IntervalHelper:
     def __init__(self, _interval):
         self._interval = _interval
         if not self.interval_ok():
-            raise Exception("Invalid interval format.")
+            raise Exception("ɪɴᴠᴀʟɪᴅ ɪɴᴛᴇʀᴠᴀʟ ғᴏʀᴍᴀᴛ.")
 
     def interval_ok(self):
         if IntervalHelper.interval_re.match(self._interval):
