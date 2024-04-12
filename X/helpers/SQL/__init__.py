@@ -22,7 +22,7 @@ try:
     SESSION = start()
 except AttributeError as e:
     LOGGER(__name__).warning(
-        "DB_URI is not configured. Features depending on the database might have issues."
+        "DB_URI ɪs ɴᴏᴛ ᴄᴏɴғɪɢᴜʀᴇᴅ. Features depending on the database might have issues."
     )
     LOGGER(__name__).info(str(e))
 
