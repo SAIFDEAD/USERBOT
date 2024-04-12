@@ -30,3 +30,4 @@ async def url_check(url):
                 return resp.status == 200
     except aiohttp.ClientError:
         return False
+            
