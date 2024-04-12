@@ -89,3 +89,4 @@ def get_req(user_id):
 
     SESSION.close()
     return rep
+    
