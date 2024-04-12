@@ -56,3 +56,4 @@ def rm_note(user_id, keyword):
     SESSION.delete(rem)
     SESSION.commit()
     return True
+    
