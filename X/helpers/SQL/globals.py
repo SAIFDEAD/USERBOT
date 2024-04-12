@@ -49,3 +49,4 @@ def delgvar(variable):
     )
     if rem:
         SESSION.commit()
+        
