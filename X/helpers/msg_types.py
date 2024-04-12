@@ -237,3 +237,4 @@ def get_welcome_type(msg):
         data_type = Types.TEXT
 
     return text, data_type, content
+    
