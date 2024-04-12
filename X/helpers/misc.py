@@ -60,9 +60,9 @@ def git():
         UPSTREAM_REPO = REPO_URL
     try:
         repo = Repo()
-        LOGGER("X").info(f"Git Client Found")
+        LOGGER("X").info(f"ɢɪᴛ ᴄʟɪᴇɴᴛ ғᴏᴜɴᴅ")
     except GitCommandError:
-        LOGGER("X").info(f"Invalid Git Command")
+        LOGGER("X").info(f"ɪɴᴠᴀʟɪᴅ ɢɪᴛ ᴄᴏᴍᴍᴀɴᴅ")
     except InvalidGitRepositoryError:
         repo = Repo.init()
         if "origin" in repo.remotes:
@@ -119,10 +119,10 @@ async def create_botlog(client):
     LOGGER("X").info(
         "WAIT A MOMENT MASTER. CURRENTLY CREATING A USERBOT LOG GROUP FOR YOU"
     )
-    desc = "Group Log for Japanese-X-Userbot.\n\PLEASE DO NOT LEAVE THE GROUP INI.\n\nPowered By ~ @Japanese_Userbot ❤️"
+    desc = "⚡ 𝐋ɛɢɛռɖaʀʏ 𝐎ғ 𝐒αιғβσтƨ ⚡ JOIN @SAIFALLBOT\n\PLEASE DO NOT LEAVE THE GROUP INI.\n\nPowered By ~ @SAIFALLBOT ❤️"
     try:
         photo = "X/resources/logo.jpg"
-        gruplog = await client.create_supergroup("Japanese-X-Userbot Logs", desc)
+        gruplog = await client.create_supergroup("Dɪᴄᴛᴀᴛᴏʀ UsᴇʀBᴏᴛ", desc)
         fine = gruplog.id
         await client.set_chat_photo(fine, photo=photo)
         if await in_heroku():
