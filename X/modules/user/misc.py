@@ -166,7 +166,7 @@ async def sosmed(client: Client, message: Message):
 
 
 add_command_help(
-    "•─╼⃝𖠁 ᴍɪꜱᴄ",
+    "➥ 𝐌ɪꜱᴄ",
     [
         ["limit", "Cʜᴇᴄᴋ Lɪᴍɪᴛ ᴛᴇʟᴇɢʀᴀᴍ ғʀᴏᴍ @SpamBot."],
         [
