@@ -117,3 +117,5 @@ add_command_help(
         ["raid", "Raid to user."],
         ["rfuck", " reply fuck to user"],
         ["dfuck", "to remove rfuck to user"],
+    ],
+  )
