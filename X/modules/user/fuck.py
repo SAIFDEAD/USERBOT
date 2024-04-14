@@ -1,4 +1,4 @@
-fromfrom random import choice
+from random import choice
 from pyrogram import Client, filters
 from pyrogram.types import Message
 from XDB.data import MASTERS, RAID
@@ -7,7 +7,7 @@ from config import CMD_HANDLER as cmd
 from .help import *
 import asyncio
 
-Client.on_message(filters.user(SUDO_USERS) & filters.command(["fuck"], ["."]))
+Client.on_message(filters.user(SUDO_USERS) & filters.command(["raid"], ["."]))
 async def raid(xspam: Client, message: Message):  
     kex = message.text.split(" ")
 
@@ -47,7 +47,7 @@ async def raid(xspam: Client, message: Message):
                 await asyncio.sleep(0.3)
 
     else:
-        await message.reply_text(".ғᴜᴄᴋ 10 <ᴜꜱᴇʀɴᴀᴍᴇ ᴏꜰ ᴜꜱᴇʀ> <ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴜꜱᴇʀ>")
+        await message.reply_text(".ʀᴀɪᴅ 10 <ᴜꜱᴇʀɴᴀᴍᴇ ᴏꜰ ᴜꜱᴇʀ> <ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴜꜱᴇʀ>")
 
 rusers = []
 
@@ -110,3 +110,10 @@ async def watcher(_, msg: Message):
     if id in rusers:
         reply = choice(RAID)
         await msg.reply_text(reply)
+
+add_command_help(
+    "➥ 𝐅ᴜᴄᴋ ",
+    [
+        ["raid", "Raid to user."],
+        ["rfuck", " reply fuck to user"],
+        ["dfuck", "to remove rfuck to user"],
