@@ -1,7 +1,7 @@
 from random import choice
 from pyrogram import Client, filters
 from pyrogram.types import Message
-from XDB.data import MASTERS, RAID
+from XDB.data import MASTERS, RAID, SDICTATOR
 from config import OWNER_ID
 from config import CMD_HANDLER as cmd
 from .help import *
@@ -52,7 +52,7 @@ async def raid(xspam: Client, message: Message):
 rusers = []
 
 @Client.on_message(filters.command("rfuck", cmd) & filters.me)
-async def rraid(xspam: Client, message: Message):
+async def rfuck(xspam: Client, message: Message):
     global rusers
     kex = message.text.split(" ")
 
@@ -81,7 +81,7 @@ async def rraid(xspam: Client, message: Message):
         await message.reply_text(".rfuck <ᴜꜱᴇʀɴᴀᴍᴇ ᴏꜰ ᴜꜱᴇʀ> <ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴜꜱᴇʀ>")
 
 @Client.on_message(filters.command("dfuck", cmd) & filters.me)
-async def draid(xspam: Client, message: Message):
+async def dfuck(xspam: Client, message: Message):
     global rusers
     kex = message.text.split(" ")
 
@@ -108,7 +108,7 @@ async def watcher(_, msg: Message):
     global rusers
     id = msg.from_user.id
     if id in rusers:
-        reply = choice(RAID)
+        reply = choice(SDICTATOR)
         await msg.reply_text(reply)
 
 add_command_help(
