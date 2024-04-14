@@ -7,7 +7,7 @@ from config import CMD_HANDLER as cmd
 from .help import *
 import asyncio
 
-Client.on_message(filters.user(SUDO_USERS) & filters.command(["raid"], ["."]))
+@Client.on_message(filters.command("raid", cmd) & filters.me)
 async def raid(xspam: Client, message: Message):  
     kex = message.text.split(" ")
 
@@ -51,7 +51,7 @@ async def raid(xspam: Client, message: Message):
 
 rusers = []
 
-@Client.on_message(filters.user(SUDO_USERS) & filters.command(["rfuck", "rraid"], ["."]))
+@Client.on_message(filters.command("rfuck", cmd) & filters.me)
 async def rraid(xspam: Client, message: Message):
     global rusers
     kex = message.text.split(" ")
@@ -80,7 +80,7 @@ async def rraid(xspam: Client, message: Message):
     else:
         await message.reply_text(".rfuck <ᴜꜱᴇʀɴᴀᴍᴇ ᴏꜰ ᴜꜱᴇʀ> <ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴜꜱᴇʀ>")
 
-@Client.on_message(filters.user(SUDO_USERS) & filters.command(["dfuck", "draid", "drraid"], ["."]))
+@Client.on_message(filters.command("dfuck", cmd) & filters.me)
 async def draid(xspam: Client, message: Message):
     global rusers
     kex = message.text.split(" ")
