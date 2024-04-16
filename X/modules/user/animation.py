@@ -740,7 +740,7 @@ async def helicopter(client: Client, message: Message):
         "╬═╬ \n"
         "╬═╬ \n"
         "╬═╬ \n"
-        "╬═╬ I AM COMING BABY TO YOUR HOME:) \n"
+        "╬═╬ I AM COMING BABY:) \n"
         "╬═╬☻/ \n"
         "╬═╬/▌ \n"
         "╬═╬/ \\ \n",
@@ -752,6 +752,13 @@ async def gf(client: Client, message: Message):
     await edit_or_reply(
         message,
         "_/﹋\\_\n" "(҂`_´)\n" "<,︻╦╤─ ҉\n" r"_/﹋\_" "\n**Do you want to be my girlfriend??!**",
+    )
+
+@Client.on_message(filters.command(" bf", cmd) & filters.me)
+async def gf(client: Client, message: Message):
+    await edit_or_reply(
+        message,
+        "_/﹋\\_\n" "(҂`_´)\n" "<,︻╦╤─ ҉\n" r"_/﹋\_" "\n**Do you want to be my boyfriend??!**",
     )
 
 
@@ -790,7 +797,7 @@ async def run(client: Client, message: Message):
     )
 
 
-@Client.on_message(filters.command("thumb", cmd) & filters.me)
+@Client.on_message(filters.command("ok", cmd) & filters.me)
 async def thumb(client: Client, message: Message):
     await edit_or_reply(
         message,
@@ -1193,7 +1200,7 @@ add_command_help(
         ["hack", "To display a fake kicking animation."],
         ["bomb", "To display the Bomb animation."],
         ["brain", "To display Brain animation 🧠."],
-        ["gf","To display gf art."],
+        ["gf ya bf","To display gf art."],
         ["drugs", "To display drugs art."],
         ["helicopter", "To display helicopter art."],
         ["thumb", "To display art thumb."],
@@ -1204,7 +1211,7 @@ add_command_help(
         ["cat", "To display cat art."],
         ["hug", "To get A Hug Gifs anime."],
         ["hmm", "Get Random Hmmm."],
-        ["love", "To Propose Someone."],
+        ["heart", "To Propose Someone."],
         ["loveyou", "It Will Send Random Emojis."],
         [
             "pat",
