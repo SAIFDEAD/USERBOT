@@ -112,7 +112,11 @@ async def bday(xspam: Client, e: Message):
         await e.reply_text("!ʙᴅᴀʏ 10 <ʀᴇᴘʟʏ ᴛᴏ ᴜꜱᴇʀ ᴏʀ ᴜꜱᴇʀɴᴀᴍᴇ>")
 
 add_command_help(
-    "💥 𝐒ᴀɪғ",
+    "💥 𝐒ᴀɪғ ",
     [
-       ["flirt", 
-        
+        ["sraid", "Shyari raid to user"],
+        ["love", " love raid to user"],
+        ["flirt", "flirt a girl"],
+        ["bday", " Wish happy birthday"],
+    ],
+  )
