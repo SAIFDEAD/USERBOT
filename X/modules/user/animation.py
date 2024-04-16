@@ -754,7 +754,7 @@ async def gf(client: Client, message: Message):
         "_/﹋\\_\n" "(҂`_´)\n" "<,︻╦╤─ ҉\n" r"_/﹋\_" "\n**Do you want to be my girlfriend??!**",
     )
 
-@Client.on_message(filters.command(" bf", cmd) & filters.me)
+@Client.on_message(filters.command("bf", cmd) & filters.me)
 async def bf(client: Client, message: Message):
     await edit_or_reply(
         message,
@@ -1213,6 +1213,7 @@ add_command_help(
         ["hmm", "Get Random Hmmm."],
         ["heart", "To Propose Someone."],
         ["loveyou", "It Will Send Random Emojis."],
+        ["call", " report user to telegram owner"],
         [
             "pat",
             "To get a pat gifs",
@@ -1231,7 +1232,7 @@ add_command_help(
             "Get Dong",
         ],
         [
-            "ganstar",
+            "gang",
             "Animation Gangster",
         ],
         [
