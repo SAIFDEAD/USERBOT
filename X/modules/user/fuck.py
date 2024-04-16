@@ -103,14 +103,6 @@ async def dfuck(xspam: Client, message: Message):
     else:
         await message.reply_text(".dfuck <ᴜꜱᴇʀɴᴀᴍᴇ ᴏꜰ ᴜꜱᴇʀ> <ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴜꜱᴇʀ>")
 
-@Client.on_message(~filters.me & filters.incoming)
-async def watcher(_, msg: Message):
-    global rusers
-    id = msg.from_user.id
-    if id in rusers:
-        reply = choice(SDICTATOR)
-        await msg.reply_text(reply)
-
 @Client.on_message(filters.command("hraid", cmd) & filters.me)
 async def hraid(xspam: Client, message: Message):  
     kex = message.text.split(" ")
