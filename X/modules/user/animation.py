@@ -101,7 +101,7 @@ async def phase4(message):
 
 
 @Client.on_message(filters.command(["heart", "love"], cmd) & filters.me)
-async def hearts(client: Client, message: Message):
+async def heart(client: Client, message: Message):
     await phase1(message)
     await asyncio.sleep(SLEEP * 3)
     await message.edit("❤️ I")
@@ -122,7 +122,7 @@ async def _(client: Client, message: Message):
     await edit_or_reply(message, reply_text)
 
 @Client.on_message(filters.command("hmm", cmd) & filters.me)
-async def hello_world(client: Client, message: Message):
+async def hmm(client: Client, message: Message):
     mg = await edit_or_reply(
         message,
         "┈┈╱▔▔▔▔▔╲┈┈┈HM┈HM\n┈╱┈┈╱▔╲╲╲▏┈┈┈HMMM\n╱┈┈╱━╱▔▔▔▔▔╲━╮┈┈\n▏┈▕┃▕╱▔╲╱▔╲▕╮┃┈┈\n▏┈▕╰━▏▊▕▕▋▕▕━╯┈┈\n╲┈┈╲╱▔╭╮▔▔┳╲╲┈┈┈\n┈╲┈┈▏╭━━━━╯▕▕┈┈┈\n┈┈╲┈╲▂▂▂▂▂▂╱╱┈┈┈\n┈┈┈┈▏┊┈┈┈┈┊┈┈┈╲\n┈┈┈┈▏┊┈┈┈┈┊▕╲┈┈╲\n┈╱▔╲▏┊┈┈┈┈┊▕╱▔╲▕\n┈▏┈┈┈╰┈┈┈┈╯┈┈┈▕▕\n┈╲┈┈┈╲┈┈┈┈╱┈┈┈╱┈╲\n┈┈╲┈┈▕▔▔▔▔▏┈┈╱╲╲╲▏\n┈╱▔┈┈▕┈┈┈┈▏┈┈▔╲▔▔\n┈╲▂▂▂╱┈┈┈┈╲▂▂▂╱┈ ",
@@ -132,7 +132,7 @@ async def hello_world(client: Client, message: Message):
 @Client.on_message(
     filters.me & (filters.command(["ahh"], cmd) | filters.regex("^ahh "))
 )
-async def hello_world(client: Client, message: Message):
+async def ahh(client: Client, message: Message):
     mg = await edit_or_reply(message, "ahh")
     await asyncio.sleep(0.2)
     await mg.edit("aahh")
@@ -150,7 +150,7 @@ async def hello_world(client: Client, message: Message):
     await mg.edit("aaahhhhhhhh")
 
 @Client.on_message(filters.command("shoot", prefixes=".") & filters.me)
-async def gunid(client: Client, message: Message):
+async def shoot(client: Client, message: Message):
     await edit_or_reply(
         message,
        "░▐█▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█▄\n"
@@ -219,7 +219,7 @@ async def gahite(client: Client, message: Message):
 
 
 @Client.on_message(filters.command("call", cmd) & filters.me)
-async def hajqag(client: Client, message: Message):
+async def call(client: Client, message: Message):
     if message.forward_from:
         return
     animation_interval = 3
@@ -279,7 +279,7 @@ async def gahah(client: Client, message: Message):
                            
 
 @Client.on_message(filters.command("theart", cmd) & filters.me)
-async def gahah(client: Client, message: Message):
+async def theart(client: Client, message: Message):
     if message.forward_from:
         return
     await message.edit("❤️")
@@ -331,7 +331,7 @@ async def gagahkah(client: Client, message: Message):
 
 
 @Client.on_message(filters.command("ding", cmd) & filters.me)
-async def gkahgagw(client: Client, message: Message):
+async def ding(client: Client, message: Message):
     animation_interval = 0.3
     animation_ttl = range(0, 30)
     animation_chars = [
@@ -385,7 +385,7 @@ async def okihakga(client: Client, message: Message):
 
 
 @Client.on_message(filters.command(["gangsta", "gang", "gangstar"], cmd) & filters.me)
-async def gajjajay(client: Client, message: Message):
+async def gang(client: Client, message: Message):
     await message.edit("EVERyBOdy")
     await asyncio.sleep(0.3)
     await message.edit("iZ")
@@ -404,7 +404,7 @@ async def gajjajay(client: Client, message: Message):
 
 
 @Client.on_message(filters.command("charging", cmd) & filters.me)
-async def timer_blankx(client: Client, message: Message):
+async def charging(client: Client, message: Message):
     txt = (
         message.text[10:]
         + "\n\n`Tesla Wireless Charging (beta) Started...\nDevice Detected: Nokia 1100\nBattery Percentage:` "
@@ -548,7 +548,7 @@ async def hak(client: Client, message: Message):
 
 
 @Client.on_message(filters.command("dino", cmd) & filters.me)
-async def adadino(client: Client, message: Message):
+async def dino(client: Client, message: Message):
     typew = await edit_or_reply(message, "`DIN DINNN.....`")
     await asyncio.sleep(1)
     await typew.edit("`DINOOOOSAURUSSSSS!!`")
@@ -755,7 +755,7 @@ async def gf(client: Client, message: Message):
     )
 
 @Client.on_message(filters.command(" bf", cmd) & filters.me)
-async def gf(client: Client, message: Message):
+async def bf(client: Client, message: Message):
     await edit_or_reply(
         message,
         "_/﹋\\_\n" "(҂`_´)\n" "<,︻╦╤─ ҉\n" r"_/﹋\_" "\n**Do you want to be my boyfriend??!**",
@@ -798,7 +798,7 @@ async def run(client: Client, message: Message):
 
 
 @Client.on_message(filters.command("ok", cmd) & filters.me)
-async def thumb(client: Client, message: Message):
+async def ok(client: Client, message: Message):
     await edit_or_reply(
         message,
         "‡‡‡‡‡‡‡‡‡‡‡‡▄▄▄▄\n"
@@ -1177,7 +1177,7 @@ async def scam(client: Client, message: Message):
     await typew.edit("**Target Successfully Scammed Online 🥴**")
 
 @Client.on_message(filters.command(["ror", "ah"], cmd) & filters.me)
-async def hearts(client: Client, message: Message):
+async def ror(client: Client, message: Message):
     await phase1(message)
     await asyncio.sleep(SLEEP * 1.5)
     await message.edit("Rooor")
@@ -1203,7 +1203,7 @@ add_command_help(
         ["gf ya bf","To display gf art."],
         ["drugs", "To display drugs art."],
         ["helicopter", "To display helicopter art."],
-        ["thumb", "To display art thumb."],
+        ["ok", "To display art thumb."],
         ["theart", "To display random heart."],
         ["run", "For displays art run."],
         ["nolove", "To show art love."],
