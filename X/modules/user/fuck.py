@@ -51,58 +51,6 @@ async def raid(xspam: Client, message: Message):
 
 rusers = []
 
-@Client.on_message(filters.command("rfuck", cmd) & filters.me)
-async def rfuck(xspam: Client, message: Message):
-    global rusers
-    kex = message.text.split(" ")
-
-    if len(kex) > 1:
-        ok = await xspam.get_users(kex[1])
-        id = ok.id
-        if id in MASTERS:
-            await message.reply_text("ɴᴏᴘᴇ ᴛʜɪꜱ ɢᴜʏ ɪꜱ ᴅᴇᴠᴇʟᴏᴘᴇʀ ❣️")
-        elif id == OWNER_ID:
-            await message.reply_text("ɴᴏᴘᴇ ᴛʜɪꜱ ɢᴜʏ ɪꜱ ᴏᴡɴᴇʀ ᴏꜰ ᴛʜᴇꜱᴇ ʙᴏᴛꜱ 🥀")
-        else:
-            rusers.append(id)
-            await message.reply_text("ᴀᴄᴛɪᴠᴀᴛᴇᴅ ʀᴇᴘʟʏʀᴀɪᴅ ✅")
-
-    elif message.reply_to_message:
-        user_id = message.reply_to_message.from_user.id
-        if id in MASTERS:
-            await message.reply_text("ɴᴏᴘᴇ ᴛʜɪꜱ ɢᴜʏ ɪꜱ ᴅᴇᴠᴇʟᴏᴘᴇʀ ❣️")
-        elif id == OWNER_ID:
-            await message.reply_text("ɴᴏᴘᴇ ᴛʜɪꜱ ɢᴜʏ ɪꜱ ᴏᴡɴᴇʀ ᴏꜰ ᴛʜᴇꜱᴇ ʙᴏᴛꜱ 🥀")
-        else:
-            rusers.append(user_id)
-            await message.reply_text("» ᴀᴄᴛɪᴠᴀᴛᴇᴅ ʀᴇᴘʟʏʀᴀɪᴅ ✅")
-
-    else:
-        await message.reply_text(".rfuck <ᴜꜱᴇʀɴᴀᴍᴇ ᴏꜰ ᴜꜱᴇʀ> <ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴜꜱᴇʀ>")
-
-@Client.on_message(filters.command("dfuck", cmd) & filters.me)
-async def dfuck(xspam: Client, message: Message):
-    global rusers
-    kex = message.text.split(" ")
-
-    if len(kex) > 1:
-        ok = await xspam.get_users(kex[1])
-        id = ok.id
-        if id in rusers:
-            rusers.remove(id)
-            await message.reply_text("ʀᴇᴘʟʏ ʀᴀɪᴅ ᴅᴇ-ᴀᴄᴛɪᴠᴀᴛᴇᴅ ✅")
-
-    elif message.reply_to_message:
-        user_id = message.reply_to_message.from_user.id
-        ok = await xspam.get_users(user_id)
-        id = ok.id
-        if id in rusers:
-            rusers.remove(id)
-            await message.reply_text("ʀᴇᴘʟʏ ʀᴀɪᴅ ᴅᴇ-ᴀᴄᴛɪᴠᴀᴛᴇᴅ ✅")
-
-    else:
-        await message.reply_text(".dfuck <ᴜꜱᴇʀɴᴀᴍᴇ ᴏꜰ ᴜꜱᴇʀ> <ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴜꜱᴇʀ>")
-
 @Client.on_message(filters.command("hraid", cmd) & filters.me)
 async def hraid(xspam: Client, message: Message):  
     kex = message.text.split(" ")
@@ -149,8 +97,6 @@ add_command_help(
     "➥ 𝐅ᴜᴄᴋ ",
     [
         ["raid", "Raid to user."],
-        ["rfuck", " reply fuck to user"],
-        ["dfuck", "to remove rfuck to user"],
         ["hraid", " Raid to user in hindi"],
     ],
   )
