@@ -33,8 +33,8 @@ async def sraid(xspam: Client, e: Message):
     else:
         await e.reply_text("!ꜱʀᴀɪᴅ 10 <ʀᴇᴘʟʏ ᴛᴏ ᴜꜱᴇʀ ᴏʀ ᴜꜱᴇʀɴᴀᴍᴇ>")
 
-@Client.on_message(filters.command("love", cmd) & filters.me)
-async def love(xspam: Client, e: Message):
+@Client.on_message(filters.command("pyaar", cmd) & filters.me)
+async def pyaar(xspam: Client, e: Message):
     kex = "".join(e.text.split(maxsplit=1)[1:]).split(" ", 2)
 
     if len(kex) == 2:
@@ -115,7 +115,7 @@ add_command_help(
     "💥 𝐒ᴀɪғ ",
     [
         ["sraid", "Shyari raid to user"],
-        ["love", " love raid to user"],
+        ["pyaar", " love raid to user"],
         ["flirt", "flirt a girl"],
         ["bday", " Wish happy birthday"],
     ],
