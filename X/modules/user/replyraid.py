@@ -1,14 +1,15 @@
 from random import choice
 from pyrogram import Client, filters
 from pyrogram.types import Message
-from XDB.data import MASTERS, SDICTATOR
+from XDB.data import MASTERS, REPLY_RAID
 from config import OWNER_ID
 from config import CMD_HANDLER as cmd
 from .help import *
-import asyncio
+import asyncio 
 
-async def rraid(e):
-    if e.sender_id in SUDO_USERS:
+@Client.on_message(filters.command("rraid", cmd) & filters.me)
+async def rraid(xspam: Client, message: Message):  
+    if e.sender_id in OWNER_ID:
         mkrr = e.text.split(" ", 1)
         if len(mkrr) == 2:
             entity = await e.client.get_entity(mkrr[1])
@@ -19,23 +20,23 @@ async def rraid(e):
 
         try:
             user_id = entity.id
-            if user_id in ALTRON:
-                await e.reply("𝙽𝙾, 𝚃𝙷𝙸𝚂 𝙶𝚄𝚈 𝙸𝚂 𝙳𝙴𝚅𝙻𝙾𝙿𝙴𝚁 𝙾𝙵 𝙳𝙴𝙰𝙳 𝙱𝙾𝚃 ")
-            elif user_id == OWNER_ID:
-                await e.reply("𝙽𝙾, 𝚃𝙷𝙸𝚂 𝙶𝚄𝚈 𝙸𝚂 𝙾𝚆𝙽𝙴𝚁 𝙾𝙵 𝙳𝙴𝙰𝙳 𝙱𝙾𝚃 .")
-            elif user_id in SUDO_USERS:
-                await e.reply("𝙽𝙾, 𝚃𝙷𝙸𝚂 𝙶𝚄𝚈 𝙸𝚂 𝚂𝚄𝙳𝙾 𝚄𝚂𝙴𝚁 𝙾𝙵 𝙳𝙴𝙰𝙳 𝙱𝙾𝚃 .")
-            else:
+                   if id in MASTERS:
+            await message.reply_text("ɴᴏᴘᴇ ᴛʜɪꜱ ɢᴜʏ ɪꜱ ᴅᴇᴠᴇʟᴏᴘᴇʀ ❣️")
+        elif id == OWNER_ID:
+            await message.reply_text("ɴᴏᴘᴇ ᴛʜɪꜱ ɢᴜʏ ɪꜱ ᴏᴡɴᴇʀ ᴏꜰ ᴛʜᴇꜱᴇ ʙᴏᴛꜱ 🥀")
+        else:
                 global REPLY_RAID
                 check = f"{user_id}_{e.chat_id}"
                 if check not in REPLY_RAID:
                     REPLY_RAID.append(check)
                 await e.reply("» ᴛʜɪᴋ ʜᴀɪ ʙʜᴀɪ ʙᴏʟɴᴇ ᴅᴏ ᴇs ᴍᴄ ᴋᴏ !! ✅")
         except NameError:
-            await e.reply(f"𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲: 𝐑𝐞𝐩𝐥𝐲𝐑𝐚𝐢𝐝\n  » {hl}rraid <ᴜꜱᴇʀɴᴀᴍᴇ ᴏꜰ ᴜꜱᴇʀ>\n  » {hl}rraid <ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴜꜱᴇʀ>"
+            await e.reply("» .rraid <ᴜꜱᴇʀɴᴀᴍᴇ ᴏꜰ ᴜꜱᴇʀ>\n  » .rraid <ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴜꜱᴇʀ>"
 
-async def drraid(e):
-    if e.sender_id in SUDO_USERS:
+
+@Client.on_message(filters.command("drraid", cmd) & filters.me)
+async def drraid(xspam: Client, message: Message):  
+    if e.sender_id in OWNER_ID:
         text = e.text.split(" ", 1)
 
         if len(text) == 2:
@@ -51,4 +52,13 @@ async def drraid(e):
                 REPLY_RAID.remove(check)
             await e.reply("» ᴛʜɪᴋ ʜᴀɪ ᴍᴀғ ᴋᴀʀ ʀʜᴇ ʜᴀɪ !! ✅")
         except NameError:
-            await e.reply(f"𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲: 𝐃𝐑𝐞𝐩𝐥𝐲𝐑𝐚𝐢𝐝\n  » {hl}drraid <ᴜꜱᴇʀɴᴀᴍᴇ ᴏꜰ ᴜꜱᴇʀ>\n  » {hl}drraid <ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴜꜱᴇʀ>")
+            await e.reply( "» .drraid <ᴜꜱᴇʀɴᴀᴍᴇ ᴏꜰ ᴜꜱᴇʀ>\n  » .drraid <ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴜꜱᴇʀ>")
+
+
+add_command_help(
+    "➥ 𝐑ᴇᴘʟʏʀᴀɪᴅ",
+    [
+        ["rraid", "start rraid."],
+        ["drraid", "remove rraid"],
+    ],
+  )
