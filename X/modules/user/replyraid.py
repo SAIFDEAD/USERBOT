@@ -38,7 +38,7 @@ async def rraid(xspam: Client, message: Message):
                 await e.reply("𝙽𝙾, 𝚃𝙷𝙸𝚂 𝙶𝚄𝚈 𝙸𝚂 𝙳𝙸𝙲𝚃𝙰𝚃𝙾𝚁")
             elif user_id == OWNER_ID:
                 await e.reply("𝙽𝙾, 𝚃𝙷𝙸𝚂 𝙶𝚄𝚈 𝙸𝚂 𝙾𝚆𝙽𝙴𝚁.")
-             else:
+            else:
                 global REPLY_RAID
                 check = f"{user_id}_{e.chat_id}"
                 if check not in REPLY_RAID:
