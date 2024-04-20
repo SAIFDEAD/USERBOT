@@ -7,72 +7,75 @@ from config import CMD_HANDLER as cmd
 from .help import *
 import asyncio 
 
-REPLY_RAID = []
-
-@Client.on_message(filters.command)
-async def _(event):  
-    global REPLY_RAID
-    check = f"{event.sender_id}_{event.chat_id}"
-    if check in REPLY_RAID:
-        await asyncio.sleep(0.1)
-        await event.client.send_message(
-            entity=event.chat_id,
-            message="""{}""".format(choice(SDICTATOR)),
-            reply_to=event.message.id,
-        )
+rusers = []
 
 @Client.on_message(filters.command("rraid", cmd) & filters.me)
-async def rraid(xspam: Client, message: Message):  
-    if e.sender_id in OWNER_ID:
-        mkrr = e.text.split(" ", 1)
-        if len(mkrr) == 2:
-            entity = await e.client.get_entity(mkrr[1])
+async def rraid(xspam: Client, message: Message):
+    global rusers
+    kex = message.text.split(" ")
 
-        elif e.reply_to_msg_id:             
-            a = await e.get_reply_message()
-            entity = await e.client.get_entity(a.sender_id)
+    if len(kex) > 1:
+        ok = await xspam.get_users(kex[1])
+        id = ok.id
+        if id in MASTERS:
+            await message.reply_text("𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 𝙾𝙵 𝙳𝙸𝙲𝚃𝙰𝚃𝙾𝚁 𝚄𝚂𝙴𝚁𝙱𝙾𝚃")
+        elif id == OWNER_ID:
+            await message.reply_text("𝙾𝚆𝙽𝙴𝚁 𝙾𝙵 𝚄𝚂𝙴𝚁𝙱𝙾𝚃🥀")
+        else:
+            rusers.append(id)
+            await message.reply_text("ᴀᴄᴛɪᴠᴀᴛᴇᴅ ʀᴇᴘʟʏʀᴀɪᴅ ✅")
 
-        try:
-            user_id = entity.id
-            if user_id in MASTERS:
-                await e.reply("𝙽𝙾, 𝚃𝙷𝙸𝚂 𝙶𝚄𝚈 𝙸𝚂 𝙳𝙸𝙲𝚃𝙰𝚃𝙾𝚁")
-            elif user_id == OWNER_ID:
-                await e.reply("𝙽𝙾, 𝚃𝙷𝙸𝚂 𝙶𝚄𝚈 𝙸𝚂 𝙾𝚆𝙽𝙴𝚁.")
-            else:
-                global REPLY_RAID
-                check = f"{user_id}_{e.chat_id}"
-                if check not in REPLY_RAID:
-                    REPLY_RAID.append(check)
-                await e.reply("» ᴛʜɪᴋ ʜᴀɪ ʙʜᴀɪ ʙᴏʟɴᴇ ᴅᴏ ᴇs ᴍᴄ ᴋᴏ !! ✅")
-        except NameError:
-            await e.reply("» .rraid <ᴜꜱᴇʀɴᴀᴍᴇ ᴏꜰ ᴜꜱᴇʀ>\n  » .rraid <ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴜꜱᴇʀ>"
+    elif message.reply_to_message:
+        user_id = message.reply_to_message.from_user.id
+        if id in MASTERS:
+            await message.reply_text("𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 𝙾𝙵 𝙳𝙸𝙲𝚃𝙰𝚃𝙾𝚁 𝚄𝚂𝙴𝚁𝙱𝙾𝚃")
+        elif id == OWNER_ID:
+            await message.reply_text("𝙾𝚆𝙽𝙴𝚁 𝙾𝙵 𝚄𝚂𝙴𝚁𝙱𝙾𝚃🥀")
+        else:
+            rusers.append(user_id)
+            await message.reply_text("» ᴀᴄᴛɪᴠᴀᴛᴇᴅ ʀᴇᴘʟʏʀᴀɪᴅ ✅")
 
+    else:
+        await message.reply_text(".ʀʀᴀɪᴅ <ᴜꜱᴇʀɴᴀᴍᴇ ᴏꜰ ᴜꜱᴇʀ> <ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴜꜱᴇʀ>")
 
-@Client.on_message(filters.command("drraid", cmd) & filters.me)
-async def drraid(xspam: Client, message: Message):  
-    if e.sender_id in OWNER_ID:
-        text = e.text.split(" ", 1)
+@Client.on_message(filters.command("draid", cmd) & filters.me)
+async def draid(xspam: Client, message: Message):
+    global rusers
+    kex = message.text.split(" ")
 
-        if len(text) == 2:
-            entity = await e.client.get_entity(text[1])
-        elif e.reply_to_msg_id:             
-            a = await e.get_reply_message()
-            entity = await e.client.get_entity(a.sender_id)
+    if len(kex) > 1:
+        ok = await xspam.get_users(kex[1])
+        id = ok.id
+        if id in rusers:
+            rusers.remove(id)
+            await message.reply_text("ʀᴇᴘʟʏ ʀᴀɪᴅ ᴅᴇ-ᴀᴄᴛɪᴠᴀᴛᴇᴅ ✅")
 
-        try:
-            check = f"{entity.id}_{e.chat_id}"
-            global REPLY_RAID
-            if check in REPLY_RAID:
-                REPLY_RAID.remove(check)
-            await e.reply("» ᴛʜɪᴋ ʜᴀɪ ᴍᴀғ ᴋᴀʀ ʀʜᴇ ʜᴀɪ !! ✅")
-        except NameError:
-            await e.reply( "» .drraid <ᴜꜱᴇʀɴᴀᴍᴇ ᴏꜰ ᴜꜱᴇʀ>\n  » .drraid <ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴜꜱᴇʀ>")
+    elif message.reply_to_message:
+        user_id = message.reply_to_message.from_user.id
+        ok = await xspam.get_users(user_id)
+        id = ok.id
+        if id in rusers:
+            rusers.remove(id)
+            await message.reply_text("ʀᴇᴘʟʏ ʀᴀɪᴅ ᴅᴇ-ᴀᴄᴛɪᴠᴀᴛᴇᴅ ✅")
+
+    else:
+        await message.reply_text(".ᴅʀʀᴀɪᴅ <ᴜꜱᴇʀɴᴀᴍᴇ ᴏꜰ ᴜꜱᴇʀ> <ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴜꜱᴇʀ>")
+
+@Client.on_message(~filters.me & filters.incoming)
+async def watcher(_, msg: Message):
+    global rusers
+    id = msg.from_user.id
+    if id in rusers:
+        reply = choice(SDICTATOR)
+        await msg.reply_text(reply)
 
 
 add_command_help(
     "➥ 𝐑ᴇᴘʟʏʀᴀɪᴅ",
     [
         ["rraid", "start rraid."],
-        ["drraid", "remove rraid"],
+        ["draid", "remove rraid"],
+
     ],
+        
   )
