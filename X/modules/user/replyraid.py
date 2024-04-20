@@ -9,8 +9,8 @@ import asyncio
 
 REPLY_RAID = []
 
-@Client.on_message(filters.command & filters.me)
-async def (event):  
+@Client.on_message(filter & filters.me )
+async def _(event):  
     global REPLY_RAID
     check = f"{event.sender_id}_{event.chat_id}"
     if check in REPLY_RAID:
