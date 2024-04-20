@@ -10,7 +10,7 @@ import asyncio
 REPLY_RAID = []
 
 @Client.on_message(filters.command & filters.me)
-async def (xspam: Client, message: Message):  
+async def (event):  
     global REPLY_RAID
     check = f"{event.sender_id}_{event.chat_id}"
     if check in REPLY_RAID:
