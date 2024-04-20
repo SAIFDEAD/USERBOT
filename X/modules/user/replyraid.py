@@ -1,11 +1,25 @@
 from random import choice
 from pyrogram import Client, filters
 from pyrogram.types import Message
-from XDB.data import MASTERS, REPLY_RAID
+from XDB.data import MASTERS, SDICTATOR
 from config import OWNER_ID
 from config import CMD_HANDLER as cmd
 from .help import *
 import asyncio 
+
+REPLY_RAID = []
+
+@Client.on_message(filters.command & filters.me)
+async def (xspam: Client, message: Message):  
+    global REPLY_RAID
+    check = f"{event.sender_id}_{event.chat_id}"
+    if check in REPLY_RAID:
+        await asyncio.sleep(0.1)
+        await event.client.send_message(
+            entity=event.chat_id,
+            message="""{}""".format(choice(SDICTATOR)),
+            reply_to=event.message.id,
+        )
 
 @Client.on_message(filters.command("rraid", cmd) & filters.me)
 async def rraid(xspam: Client, message: Message):  
