@@ -9,7 +9,7 @@ import asyncio
 
 REPLY_RAID = []
 
-@Client.on_message(filters.command=True)
+@Client.on_message(filters.command)
 async def _(event):  
     global REPLY_RAID
     check = f"{event.sender_id}_{event.chat_id}"
