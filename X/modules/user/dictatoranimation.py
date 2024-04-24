@@ -19,7 +19,7 @@ Client.on_message(filters.command(["demon"], cmd) & filters.me)
 async def demon(client: Client, message: Message):
     await edit_or_reply(
         message,
-       ⠛⠛⣿⣿⣿⣿⣿⡷⢶⣦⣶⣶⣤⣤⣤⣀/n⠀⠀⠀
+       "⠛⠛⣿⣿⣿⣿⣿⡷⢶⣦⣶⣶⣤⣤⣤⣀\n"⠀⠀
  ⠀    ⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷/n⠀
    ⠀⠀⠀⠉⠉⠉⠙⠻⣿⣿⠿⠿⠛⠛⠛⠻⣿⣿⣇/n
  ⠀   ⠀⢤⣀⣀⣀⠀⠀⢸⣷⡄⠀⣁⣀⣤⣴⣿⣿⣿⣆/n
