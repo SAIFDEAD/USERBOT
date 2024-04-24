@@ -856,6 +856,58 @@ async def pat(client: Client, message: Message):
     )
 
 
+@Client.on_message(filters.command(["sad"], cmd) & filters.me)
+async def sad(client: Client, message: Message):
+    await edit_or_reply(
+        message,
+        "⡏⠉⠛⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⣿\n"
+        "⣿⠀⠀⠀⠈⠛⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠛⠉⠁⠀⣿\n"
+        "⣿⣧⡀⠀⠀⠀⠀⠙⠿⠿⠿⠻⠿⠿⠟⠿⠛⠉⠀⠀⠀⠀⠀⣸⣿\n"
+        "⣿⣿⣷⣄⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣿\n"
+        "⣿⣿⣿⣿⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠠⣴⣿⣿⣿⣿\n"
+        " ⣿⣿⣿⡟⠀⠀⢰⣹⡆⠀⠀⠀⠀⠀⠀⣭⣷⠀⠀⠀⠸⣿⣿⣿⣿\n"
+        " ⣿⣿⣿⠃⠀⠀⠈⠉⠀⠀⠤⠄⠀⠀⠀⠉⠁⠀⠀⠀⠀⢿⣿⣿⣿\n"
+        " ⣿⣿⣿⢾⣿⣷⠀⠀⠀⠀⡠⠤⢄⠀⠀⠀⠠⣿⣿⣷⠀⢸⣿⣿⣿\n"
+        " ⣿⣿⣿⡀⠉⠀⠀⠀⠀⠀⢄⠀⢀⠀⠀⠀⠀⠉⠉⠁⠀⠀⣿⣿⣿\n"
+        " ⣿⣿⣿⣧⠀⠀⠀⠀⠀⠀⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⣿⣿\n"
+        " ⣿⣿⣿⣿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿\n",
+    )
+
+
+@Client.on_message(filters.command(["cool"], cmd) & filters.me)
+async def cool(client: Client, message: Message):
+    await edit_or_reply(
+        message,
+        "█▀ █▀█ █▀█ █░\n"
+        "█▄ █▄█ █▄█ █▄\n,
+
+@Client.on_message(filters.command(["tiger"], cmd) & filters.me)
+async def tiger(client: Client, message: Message):
+    await edit_or_reply(
+        message,
+        "┈╱▔╲▂╱╱╱╱▂╱▔╲┈┈\n"
+        "▕▔╲┈╱▔╲┈┈╱╲╱▔▏┈\n"
+        "▕▏┈▏╱▉╲┈┈╱▉╲▕▏┈\n"
+        " ┈╲▃▏▔▔▔╲▂▂▂▕╱┈┈\n"
+        " ┈┈┈▏┊┊┳┊╲▂╱┳▏┈┈\n"
+        " ┈┈▕╲▂┊╰━━┻━╱┈┈┈\n"
+        " ┈┈╱┈┈▔▔╲▂▂╱╲┈┈┈\n",
+    )
+
+@Client.on_message(filters.command(["hug"], cmd) & filters.me)
+async def hug(client: Client, message: Message):
+    await edit_or_reply(
+        message,
+        "┊GIVE┊┊ME ┊A ┊┊HUG┊┊\n"
+        " ┊┊┊┊┊╱▔▔▔▔╲┊┊┊┊┊\n"
+        " ┊╭╮┊┊▏╭┛┗╮▕┊┊╭╮┊\n"
+        " ╭┛╰┳━▏┈╭╮┈▕━┳╯┗╮\n"
+        " ┃┈┈┃┈╲╰▅▅╯╱┈┃┈┈┃\n"
+        " ╰━━┻┓┈╲▂▂╱┈┏┻━━╯\n"
+        " ┊┊┊┊┃┈┈┈┈┈┈┃┊┊┊┊\n",
+    )
+
+
 @Client.on_message(filters.command("nolove", cmd) & filters.me)
 async def nolove(client: Client, message: Message):
     typew = await edit_or_reply(
