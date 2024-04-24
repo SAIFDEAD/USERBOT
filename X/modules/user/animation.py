@@ -879,7 +879,7 @@ async def cool(client: Client, message: Message):
     await edit_or_reply(
         message,
         "█▀ █▀█ █▀█ █░\n"
-        "█▄ █▄█ █▄█ █▄\n,
+        "█▄ █▄█ █▄█ █▄\n",
 
 @Client.on_message(filters.command(["tiger"], cmd) & filters.me)
 async def tiger(client: Client, message: Message):
@@ -898,7 +898,7 @@ async def tiger(client: Client, message: Message):
 async def hug(client: Client, message: Message):
     await edit_or_reply(
         message,
-        "┊GIVE┊┊ME ┊A ┊┊HUG┊┊\n"
+        " ┊ GIVE┊┊ME ┊A ┊┊HUG┊┊\n"
         " ┊┊┊┊┊╱▔▔▔▔╲┊┊┊┊┊\n"
         " ┊╭╮┊┊▏╭┛┗╮▕┊┊╭╮┊\n"
         " ╭┛╰┳━▏┈╭╮┈▕━┳╯┗╮\n"
@@ -907,7 +907,84 @@ async def hug(client: Client, message: Message):
         " ┊┊┊┊┃┈┈┈┈┈┈┃┊┊┊┊\n",
     )
 
+@Client.on_message(filters.command(["lol"], cmd) & filters.me)
+async def lol(client: Client, message: Message):
+    await edit_or_reply(
+        message,
+        " ╱╱▏┈┈╱╱╱╱▏╱╱\n"
+        " ▇╱▏┈┈▇▇▇╱▏▇╱\n"
+        " ▇╱▏▁┈▇╱▇╱▏▇╱▏▁\n"
+        " ▇╱╱╱▏▇╱▇╱▏▇╱╱╱\n"
+        " ▇▇▇╱┈▇▇▇╱┈▇▇▇╱\n",
+    )
 
+@Client.on_message(filters.command(["hello"], cmd) & filters.me)
+async def hello(client: Client, message: Message):
+    await edit_or_reply(
+        message,
+        "╔┓┏╦━━╦┓╔┓╔━━╗╔╗\n"
+        "║┗┛║┗━╣┃║┃║ಠ_ಠ║║╣\n"
+        "║┏┓║┏━╣┗╣┗ ᗒᗣᗕ║╠╣\n"
+        "╚┛┗╩━━╩━╩━╩━━╝╚╝\n",
+    )
+
+@Client.on_message(filters.command(["hii"], cmd) & filters.me)
+async def hii(client: Client, message: Message):
+    await edit_or_reply(
+        message,
+        "❣️✨✨❣️✨🌺🌺🌺\n"
+        "💘✨✨❣️✨✨🌺✨\n"
+        "💝💝💝💖✨✨🌺✨\n"
+        "❤️✨✨❤️✨✨🌺✨\n"
+        "❤️✨✨❤️✨🌺🌺🌺\n"
+        "☁☁☁☁☁☁☁☁\n",
+    )
+
+@Client.on_message(filters.command(["hey"], cmd) & filters.me)
+async def hey(client: Client, message: Message):
+    await edit_or_reply(
+        message,
+        "╔╦╦╦══╦══╗\n"
+        "║╔╣╠╝╔╬╝╔╣\n"
+        "╚╝╚╩══╩══╝\n",
+    )
+
+@Client.on_message(filters.command(["battery"], cmd) & filters.me)
+async def battery(client: Client, message: Message):
+    await edit_or_reply(
+        message,
+        "╔═══════════╗\n"
+        "║██░░░░░░░░░╚╗\n"
+        "║██░ Low Battery ░║\n"
+        "║██░░░░░░░░░╔╝\n"
+        "╚═══════════╝\n",
+    )
+
+@Client.on_message(filters.command(["give"], cmd) & filters.me)
+async def give(client: Client, message: Message):
+    await edit_or_reply(
+        message,
+        "   ∧,,,∧\n"
+        "  (  ̳• · • ̳)\n"
+        "/    づ You want my heart?\n"
+        "   ∧,,,∧\n"
+        " (  ̳• · • ̳)\n"
+        "/    づ♡ Ok here's my heart\n"
+        "   ∧,,,∧\n"
+        " (  ̳• · • ̳)\n"
+        " U ♡C~   Nevermind, you dont deserve it \n",
+    )
+
+@Client.on_message(filters.command(["saif"], cmd) & filters.me)
+async def saif(client: Client, message: Message):
+    await edit_or_reply(
+        message,
+       "╔══╗\n"
+       "╚╗╔╝\n"
+       "╔╝(｡•́‿•̀｡) \n"
+       "╚══.¸.[𝚂𝙰𝙸𝙵]\n",
+    )
+      
 @Client.on_message(filters.command("nolove", cmd) & filters.me)
 async def nolove(client: Client, message: Message):
     typew = await edit_or_reply(
@@ -1266,6 +1343,15 @@ add_command_help(
         ["heart", "To Propose Someone."],
         ["loveyou", "It Will Send Random Emojis."],
         ["call", " report user to telegram owner"],
+        ["hug", "to display hug animation"],
+        ["give", "to give heart to a girl or boy"],
+        ["saif", "send and see"],
+        ["lol", "display lots of lol animation"],
+        ["hey", "animation hello"],
+        ["hii", "flower hello "],
+        ["tiger", "to see face of tiger"],
+        ["cool", "to display cool fonts"],
+        ["sad", "sad mood "],
         [
             "pat",
             "To get a pat gifs",
