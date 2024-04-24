@@ -881,8 +881,8 @@ async def cool(client: Client, message: Message):
         "█▀ █▀█ █▀█ █░\n"
         "█▄ █▄█ █▄█ █▄\n",
 
-@Client.on_message(filters.command(["tiger"], cmd) & filters.me)
-async def tiger(client: Client, message: Message):
+@Client.on_message(filters.command(["cub"], cmd) & filters.me)
+async def cub(client: Client, message: Message):
     await edit_or_reply(
         message,
         "┈╱▔╲▂╱╱╱╱▂╱▔╲┈┈\n"
@@ -1349,7 +1349,7 @@ add_command_help(
         ["lol", "display lots of lol animation"],
         ["hey", "animation hello"],
         ["hii", "flower hello "],
-        ["tiger", "to see face of tiger"],
+        ["cub", "to see cub "],
         ["cool", "to display cool fonts"],
         ["sad", "sad mood "],
         [
