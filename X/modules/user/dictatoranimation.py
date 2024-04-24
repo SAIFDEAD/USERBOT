@@ -14,8 +14,8 @@ from X.helpers.constants import MEMES
 
 from .help import * 
 
-@Client.on_message(filters.command(["demon"], cmd) & filters.me)
-async def demon(client: Client, message: Message):
+@Client.on_message(filters.command(["sad"], cmd) & filters.me)
+async def sad(client: Client, message: Message):
     await edit_or_reply(
         message,
         "⠛⠛⣿⣿⣿⣿⣿⡷⢶⣦⣶⣶⣤⣤⣤⣀\n"
