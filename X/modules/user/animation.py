@@ -880,6 +880,7 @@ async def cool(client: Client, message: Message):
         message,
         "█▀ █▀█ █▀█ █░\n"
         "█▄ █▄█ █▄█ █▄\n",
+    )
 
 @Client.on_message(filters.command(["cub"], cmd) & filters.me)
 async def cub(client: Client, message: Message):
