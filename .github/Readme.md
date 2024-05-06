@@ -71,12 +71,3 @@
 <p align="center"><a href="https://t.me/DEAD_GRPCHAT"><img src="https://img.shields.io/badge/𝚃𝙴𝙻𝙴𝙶𝚁𝙰𝙼-𝚂𝚄𝙿𝙿𝙾𝚁𝚃-black?&style=for-the-badge&logo=telegram" width="220" height="38.45"></a></p>
 
 <p align="center"><a href="https://t.me/SAIFALLBOT"><img src="https://img.shields.io/badge/𝚃𝙴𝙻𝙴𝙶𝚁𝙰𝙼-𝚄𝙿𝙳𝙰𝚃𝙴𝚂-black?&style=for-the-badge&logo=telegram" width="220" height="38.45"></a></p>
-
-
-
-
-
-
-
-
-𝗙𝗨𝗟𝗟 𝗖𝗥𝗘𝗗𝗜𝗧  [𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄-𝐗-𝐔𝐒𝐄𝐑𝐁𝐎𝐓](https://github.com/Team-Japanese/Japanese-X-Userbot)
